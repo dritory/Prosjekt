@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="ECCFC018E1C5FEE09D32718AD0D3B1D99546B38A4C578ACCD45F3C5507074A2627C51586B2F567735BEE81D1284E2AFDF5B1388899229C9D61EBB6738F47E225" Timestamp="1D72BE5C5B70A18" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="56974EEED00A8AEC675E4C3CEEDC587F82758BE723E8A4B5B035989E1075F454D219CBE79EE23B248040560EC0A34B7BE5B815BCC931A4A59B3042E0B144EAED" Timestamp="1D72BED24F05C86" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -198,7 +198,6 @@
 			<NodeLabel AttachedTo="48" Bounds="-72 285 42 14" Id="49" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>error in</p.Text>
 			</NodeLabel>
-			<Wire Id="50" Joints="N(48:Value)|(15,290) h(280) v(-15) N(16:L3)|(300,275)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="770 305 40 15" DataItem="75" Id="79" Label="80" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
@@ -349,6 +348,7 @@
 			<CaseStructure Bounds="75 210 105 115" Default="10357" Id="10356" Selected="10358" UserSelectorBounds="8 0 88 17">
 				<CaseStructure.Case Bounds="5 5 95 105" Id="10357" Pattern="False">
 					<Wire Id="10969" Joints="N(10949:10357)|(4,30) N(10952:10357)|(91,30)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="10991" Joints="N(10986:10357)|(4,75) h(82) v(-15) N(10989:10357)|(91,60)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 95 105" Id="10358" Pattern="True">
 					<MethodCall Bounds="5 25 70 40" Id="10318" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Tx\\encode.gvi&quot;" Signature="@16eca18c13034ee4909f21d81b2280fe" Target="encode.gvi" xmlns="http://www.ni.com/MocCommon">
@@ -382,6 +382,8 @@
 					<Wire Id="10960" Joints="N(10961:10358)|(60,4) N(10318:T4)|(60,25)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="10963" Joints="N(10964:10358)|(50,101) N(10318:B3)|(50,65)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="10966" Joints="N(10967:10358)|(60,101) N(10318:B4)|(60,65)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="10987" Joints="N(10986:10358)|(4,75) h(-5) v(-15) N(10318:L3)|(5,60)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="10988" Joints="N(10318:R3)|(75,60) N(10989:10358)|(91,60)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Selector Bounds="-4 100 13 10" Docking="Left" Id="10359" Terminals="10356=10975, 10357, 10358" />
 				<CaseStructure.Tunnel Bounds="-4 30 13 10" Docking="Left" Id="10949" Terminals="10356=10319, 10357=10969, 10358=10948" />
@@ -391,6 +393,8 @@
 				<CaseStructure.Tunnel Bounds="60 -4 10 13" Docking="Top" Id="10961" Terminals="10356=10341, 10357, 10358=10960" />
 				<CaseStructure.Tunnel Bounds="50 106 10 13" Docking="Bottom" Id="10964" Terminals="10356=10348, 10357, 10358=10963" />
 				<CaseStructure.Tunnel Bounds="60 106 10 13" Docking="Bottom" Id="10967" Terminals="10356=10355, 10357, 10358=10966" />
+				<CaseStructure.Tunnel Bounds="-4 75 13 10" Docking="Left" Id="10986" Terminals="10356=10985, 10357=10991, 10358=10987" />
+				<CaseStructure.Tunnel Bounds="96 60 13 10" Docking="Right" Id="10989" Terminals="10356=10984, 10357=10991, 10358=10988" />
 			</CaseStructure>
 			<DataAccessor Bounds="1 310 40 15" DataItem="10970" Id="10973" Label="10974" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -407,6 +411,8 @@
 				<p.Text>total bit length</p.Text>
 			</NodeLabel>
 			<Wire Id="10983" Joints="N(10977:size(s\))|(255,350) N(10981:Value)|(263,350)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="10984" Joints="N(10989:10356)|(184,275) N(16:L3)|(300,275)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="10985" Joints="N(48:Value)|(15,290) N(10986:10356)|(71,290)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
@@ -432,8 +438,8 @@
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="10330" LabelOwner="[UIModel]10329" Left="[float]932" Text="[string]RS code word length (n), symbols" Top="[float]160" Width="[float]177" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="10336" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[int]1" IsReadOnly="[bool]False" Label="[UIModel]10337" Left="[float]932" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" TabIndex="[int]5" Top="[float]260" Value="{DataItemBinding Id=10335}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="10337" LabelOwner="[UIModel]10336" Left="[float]932" Text="[string]RS data word length (k), symbols" Top="[float]240" Width="[float]174" xmlns="http://www.ni.com/PanelCommon" />
-			<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="10312" IsReadOnly="[bool]False" Label="[UIModel]10976" Left="[float]276" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]6" Top="[float]308" TrueContent="[string]On" Value="{DataItemBinding Id=10311}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Height="[float]16" Id="10976" LabelOwner="[UIModel]10312" Left="[float]276" Text="[string]Frame sync" Top="[float]288" Width="[float]60" xmlns="http://www.ni.com/PanelCommon" />
+			<Switch BaseName="[string]Square LED" Enabled="[bool]True" FalseContent="[string]Off" Height="[float]72" Id="10312" IsReadOnly="[bool]False" Label="[UIModel]10976" Left="[float]276" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]6" Top="[float]308" TrueContent="[string]On" Value="{DataItemBinding Id=10311}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="10976" LabelOwner="[UIModel]10312" Left="[float]276" Text="[string]Frame sync" Top="[float]288" Width="[float]60" xmlns="http://www.ni.com/PanelCommon" />
 		</NativeFrontPanel>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="Int8[]" Id="30" Name="input bit stream" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>

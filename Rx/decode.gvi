@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="7EA5D7E74BB6F5B5ECDD692EA476AC1D601DA3A4ECF5EF2212FA8D829E71B7E9169ABD2E8BFF9AB653C6584E8C004139EFE12ABAC93FF24941C4217EE9417961" Timestamp="1D72BE93E051055" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="33D081F34A34D9E62092D47184BC83104CAF488FE4463F3E364C896B530786D3B44A692D9253196212109C64342FAE52AAFBF71BAD433CD00ED50058A5B05142" Timestamp="1D72BED0C1E0C09" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -20,33 +20,33 @@
 				</IconTemplate>
 			</IconPanel>
 		</Icon>
-		<ConnectorPane Height="40" Id="9" ListViewHeight="100" ListViewWidth="150" Width="80" xmlns="http://www.ni.com/PlatformFramework">
+		<ConnectorPane Height="40" Id="9" ListViewHeight="190" ListViewWidth="150" Width="80" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="35" />
 			<ConnectorPaneTerminal Hotspot="0 15" />
 			<ConnectorPaneTerminal Hotspot="0 25" />
 			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 80" Parameter="327" />
-			<ConnectorPaneTerminal Hotspot="15 0" />
-			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 95" Parameter="26" />
+			<ConnectorPaneTerminal Hotspot="25 0" ListViewHotspot="0 110" Parameter="951" />
 			<ConnectorPaneTerminal Hotspot="80 5" ListViewHotspot="150 50" Parameter="834" />
 			<ConnectorPaneTerminal Hotspot="80 15" />
 			<ConnectorPaneTerminal Hotspot="80 25" />
 			<ConnectorPaneTerminal Hotspot="80 35" ListViewHotspot="150 65" Parameter="499" />
 			<ConnectorPaneTerminal Hotspot="15 40" />
 			<ConnectorPaneTerminal Hotspot="25 40" />
-			<ConnectorPaneTerminal Hotspot="35 0" />
+			<ConnectorPaneTerminal Hotspot="35 0" ListViewHotspot="0 125" Parameter="1003" />
 			<ConnectorPaneTerminal Hotspot="35 40" />
-			<ConnectorPaneTerminal Hotspot="45 0" />
+			<ConnectorPaneTerminal Hotspot="45 0" ListViewHotspot="0 140" Parameter="139" />
 			<ConnectorPaneTerminal Hotspot="45 40" />
-			<ConnectorPaneTerminal Hotspot="55 0" />
+			<ConnectorPaneTerminal Hotspot="55 0" ListViewHotspot="0 155" Parameter="263" />
 			<ConnectorPaneTerminal Hotspot="55 40" />
-			<ConnectorPaneTerminal Hotspot="65 0" />
+			<ConnectorPaneTerminal Hotspot="65 0" ListViewHotspot="0 170" Parameter="668" />
 			<ConnectorPaneTerminal Hotspot="65 40" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
 		<BlockDiagram Id="12">
-			<CaseStructure Bounds="385 220 485 540" DataType="@ca21e797c92442f09637987b4fb8858e" Default="17" Id="15" Selected="16" UserSelectorBounds="147 0 191 17">
-				<CaseStructure.Case Bounds="5 5 475 530" Id="16" Pattern="&quot;reed-solomon&quot;">
+			<CaseStructure Bounds="385 220 485 540" DataType="@ca21e797c92442f09637987b4fb8858e" Default="16" Id="15" Selected="17" UserSelectorBounds="146 0 194 17">
+				<CaseStructure.Case Bounds="5 5 475 530" Id="16" Pattern="&quot;reed-solomon&quot;, Default">
 					<MethodCall Bounds="215 335 50 50" Id="32" ResolveFailedHint="MT RS Symbol Decoder (normal).gvi, Package: (NI Modulation Toolkit for Software Defined Radio for LabVIEW NXG 3.0, Version: 18.5.0)" Signature="@59179b20c8c24844866a62ffec206446" Target="NI::Modulation::MT RS Symbol Decoder (normal).gvi" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -76,7 +76,7 @@
 					<Wire Id="1072" Joints="N(32:R4)|(265,380) h(95) v(-145) N(666:16)|(471,235)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="1073" Joints="N(32:R0)|(265,340) h(6) v(-235) N(942:16)|(471,105)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
-				<CaseStructure.Case Bounds="5 5 475 530" Id="17" Pattern="&quot;convolutional&quot;, Default">
+				<CaseStructure.Case Bounds="5 5 475 530" Id="17" Pattern="&quot;convolutional&quot;">
 					<Wire Id="42" Joints="N(137:17)|(4,75) h(171) v(30) N(947:L0)|(210,105)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="145" Joints="N(261:17)|(4,150) h(61) v(-35) N(947:L1)|(210,115)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="269" Joints="N(325:17)|(4,170) h(86) v(-45) N(947:L2)|(210,125)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -260,16 +260,16 @@
 			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="669" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[int]1" IsReadOnly="[bool]False" Label="[UIModel]670" Left="[float]452" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" TabIndex="[int]9" Top="[float]132" Value="{DataItemBinding Id=668}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="670" LabelOwner="[UIModel]669" Left="[float]452" Text="[string]traceback depth" Top="[float]112" Width="[float]86" xmlns="http://www.ni.com/PanelCommon" />
 		</NativeFrontPanel>
-		<DataItem AdaptToDiagramType="True" CallIndex="2" DataType="@ca21e797c92442f09637987b4fb8858e" Id="26" Name="code type" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>0</p.DefaultValue>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" DataType="@ca21e797c92442f09637987b4fb8858e" Id="26" Name="code type" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>1</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="Int32[]" Id="35" Name="input data" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallIndex="3" DataType="@e34a4309e3c24dff95145963be162e6f" Id="139" Name="convolutional rate" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="3" DataType="@e34a4309e3c24dff95145963be162e6f" Id="139" Name="convolutional rate" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallIndex="4" DataType="Int32" Id="263" Name="convolutional constraint length" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="4" DataType="Int32" Id="263" Name="convolutional constraint length" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>3</p.DefaultValue>
 		</DataItem>
 		<DataItem CallDirection="Input" CallIndex="1" DataType="Error" Id="327" Name="error in" xmlns="http://www.ni.com/MocCommon">
@@ -296,16 +296,16 @@
 				<TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallIndex="5" DataType="Int32" Id="668" Name="traceback depth" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="5" DataType="Int32" Id="668" Name="traceback depth" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>15</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="Int32[]" Id="834" Name="output bit stream" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallIndex="6" DataType="Int32" Id="951" Name="RS code word length (n), symbols" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="6" DataType="Int32" Id="951" Name="RS code word length (n), symbols" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>7</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallIndex="7" DataType="Int32" Id="1003" Name="RS data word length (k), symbols" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="7" DataType="Int32" Id="1003" Name="RS data word length (k), symbols" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>3</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>

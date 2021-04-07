@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="15BFD9814071550A3EAB2B24E60070936E98CEA0F641DFAF60BBA096918028A5069B9FA464AA8C1BC279DD2BD852E0802A09A96754505B74AD2A5EFAF526E4E4" Timestamp="1D72BE91ECA9F88" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="1E695A046CBD158A0F17AD87679AE81DBAE1D80F2F9CA215F595E9A6AAA29A28C7D9F64A7620330B6D96563E4FE359FAFF81B426782FF7908B4F4BFDC021B568" Timestamp="1D72BED1203C9DD" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -43,8 +43,8 @@
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
 		<BlockDiagram Id="12">
-			<CaseStructure Bounds="365 240 465 475" DataType="@ca21e797c92442f09637987b4fb8858e" Default="16" Id="15" Selected="1001" UserSelectorBounds="137 0 191 17">
-				<CaseStructure.Case Bounds="5 5 455 465" Id="16" Pattern="&quot;convolutional&quot;, Default">
+			<CaseStructure Bounds="365 240 465 475" DataType="@ca21e797c92442f09637987b4fb8858e" Default="1001" Id="15" Selected="1001" UserSelectorBounds="136 0 194 17">
+				<CaseStructure.Case Bounds="5 5 455 465" Id="16" Pattern="&quot;convolutional&quot;">
 					<Wire Id="64" Joints="N(201:16)|(4,70) N(203:L0)|(205,70)" xmlns="http://www.ni.com/PlatformFramework" />
 					<MethodCall Bounds="205 65 50 50" Id="203" ResolveFailedHint="MT Convolutional Encoder (Rate).gvi, Package: (NI Modulation Toolkit for Software Defined Radio for LabVIEW NXG 3.0, Version: 18.5.0)" Signature="@bc0d898b49d849489c8dfc087f21a14d" Target="NI::Modulation::MT Convolutional Encoder (Rate).gvi" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
@@ -76,7 +76,7 @@
 					<Wire Id="603" Joints="N(203:R0)|(255,70) N(604:16)|(451,70)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="623" Joints="N(203:R4)|(255,110) N(622:16)|(451,110)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
-				<CaseStructure.Case Bounds="5 5 455 465" Id="1001" Pattern="&quot;reed-solomon&quot;">
+				<CaseStructure.Case Bounds="5 5 455 465" Id="1001" Pattern="&quot;reed-solomon&quot;, Default">
 					<MethodCall Bounds="220 245 50 50" Id="1002" ResolveFailedHint="MT RS Symbol Encoder (normal).gvi, Package: (NI Modulation Toolkit for Software Defined Radio for LabVIEW NXG 3.0, Version: 18.5.0)" Signature="@56c5f42927214cba81b79618f98fa464" Target="NI::Modulation::MT RS Symbol Encoder (normal).gvi" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -120,11 +120,11 @@
 				<CaseStructure.Tunnel Bounds="-4 260 13 10" Docking="Left" Id="1249" Terminals="15=1248, 16, 1001=1013, 17" />
 				<CaseStructure.Tunnel Bounds="-4 280 13 10" Docking="Left" Id="1370" Terminals="15=1369, 16, 1001=1257, 17" />
 			</CaseStructure>
-			<Wire Id="47" Joints="N(54:Value)|(185,230) h(5) v(15) h(165) v(40) N(18:15)|(361,285)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="145 225 40 15" DataItem="51" Id="54" Label="55" xmlns="http://www.ni.com/MocCommon">
+			<Wire Id="47" Joints="N(54:Value)|(185,245) h(170) v(40) N(18:15)|(361,285)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="145 240 40 15" DataItem="51" Id="54" Label="55" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@ca21e797c92442f09637987b4fb8858e" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="54" Bounds="86 225 54 14" Id="55" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="54" Bounds="86 240 54 14" Id="55" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>code type</p.Text>
 			</NodeLabel>
 			<DataAccessor Bounds="145 310 40 15" DataItem="57" Id="62" Label="63" xmlns="http://www.ni.com/MocCommon">
@@ -186,12 +186,12 @@
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
-			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Enabled="[bool]True" Height="[float]24" Id="52" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]999" Left="[float]276" MinHeight="[float]24" TabIndex="[int]0" Top="[float]148" Value="{DataItemBinding Id=51}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Enabled="[bool]True" Height="[float]24" Id="52" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]999" Left="[float]274" MinHeight="[float]24" TabIndex="[int]0" Top="[float]160" Value="{DataItemBinding Id=51}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<EnumSelectorInfo DisplayValue="[string]reed-solomon" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
 				<EnumSelectorInfo DisplayValue="[string]convolutional" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
 				<EnumSelectorInfo DisplayValue="[string]no code" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
 			</EnumSelector>
-			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="999" LabelOwner="[UIModel]52" Left="[float]276" Text="[string]code type" Top="[float]128" Width="[float]53" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="999" LabelOwner="[UIModel]52" Left="[float]274" Text="[string]code type" Top="[float]140" Width="[float]53" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="338" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[int]1" IsReadOnly="[bool]False" Label="[UIModel]339" Left="[float]560" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" TabIndex="[int]1" Top="[float]48" Value="{DataItemBinding Id=337}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="339" LabelOwner="[UIModel]338" Left="[float]560" Text="[string]convolutional constraint length" Top="[float]28" Width="[float]165" xmlns="http://www.ni.com/PanelCommon" />
 			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Enabled="[bool]True" Height="[float]24" Id="205" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]206" Left="[float]560" MinHeight="[float]24" TabIndex="[int]2" Top="[float]96" Value="{DataItemBinding Id=204}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
