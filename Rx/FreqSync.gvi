@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="9E0D34B2B2B78B65CFFA720EB713833563EB96E04E346AB182C0C9F5512B1DE5D2258AA023C7F9F8811C319B323A9D6C88FF39BAE0D63EF6A958D1FDDC9DCB2D" Timestamp="1D72AF16DD0695C" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="FA4AE1146F390D68D25A0B6F4C184ED43F44C76756C63B598DF1AD7521072A433E25F9D5C5540E4EEA767AF35CFFA20774F5D8CA2A6731C2D5BB4B3F2D084389" Timestamp="1D72BDFFB131682" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -20,13 +20,13 @@
 				</IconTemplate>
 			</IconPanel>
 		</Icon>
-		<ConnectorPane Height="50" Id="9" ListViewHeight="220" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+		<ConnectorPane Height="50" Id="9" ListViewHeight="205" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="108" />
 			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="25" />
 			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 65" Parameter="77" />
 			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 155" Parameter="236" />
-			<ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 200" Parameter="770" />
-			<ConnectorPaneTerminal Hotspot="25 0" ListViewHotspot="0 185" Parameter="744" />
+			<ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 185" Parameter="770" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
 			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 95" Parameter="140" />
 			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 125" Parameter="189" />
 			<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 140" Parameter="210" />
@@ -260,7 +260,7 @@
 				<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 			</PatternGeneratorRampBySamplesArray>
 			<ArraySize Bounds="975 360 40 20" Id="123" />
-			<Multiply Bounds="1065 330 30 30" Id="128" Terminals="o=130, c0t0v=318, c1t0v=323" />
+			<Multiply Bounds="1065 330 30 30" Id="128" Terminals="o=130, c0t0v=848, c1t0v=323" />
 			<Wire Id="130" Joints="N(128:o)|(1095,345) N(112:L1)|(1115,345)" xmlns="http://www.ni.com/PlatformFramework" />
 			<PolarToComplex Bounds="1355 285 30 30" Id="136" />
 			<DataAccessor Bounds="1685 270 40 15" DataItem="140" Id="144" Label="145" xmlns="http://www.ni.com/MocCommon">
@@ -329,7 +329,6 @@
 			<NodeLabel AttachedTo="237" Bounds="66 680 69 14" Id="239" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Frame index</p.Text>
 			</NodeLabel>
-			<Wire Id="242" Joints="N(60:R2)|(620,405) h(130) B(1) N(214:Value)|(788,405) B(1) N(733:344)|(750,481)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Multiply Bounds="305 665 30 30" Id="248" Terminals="o=804, c0t0v=313, c1t0v=249" />
 			<Wire Id="249" Joints="N(237:Value)|(180,685) N(248:c1t0v)|(305,685)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Multiply Bounds="1395 260 30 30" Id="287" Terminals="o=798, c0t0v=147, c1t0v=289" />
@@ -345,7 +344,6 @@
 				<p.Text>exclude end</p.Text>
 			</NodeLabel>
 			<Wire Id="317" Joints="N(315:Out)|(415,490) N(68:L2)|(445,490)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="318" Joints="N(60:R1)|(620,395) h(80) B(1) h(35) N(742:344)|(735,481) B(1) v(-30) B(4) N(193:Value)|(758,365) B(4) v(-30) N(128:c0t0v)|(1065,335)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="323" Joints="N(324:o)|(1055,385) h(5) B(1) h(80) N(112:B1)|(1140,380) B(1) v(-35) N(128:c1t0v)|(1065,350)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Add Bounds="1025 370 30 30" Id="324" Terminals="o=323, c0t0v=325, c1t0v=791" />
 			<Wire Id="325" Joints="N(123:size(s\))|(1015,375) N(324:c0t0v)|(1025,375)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -355,49 +353,13 @@
 			<Comment Bounds="975 280 205 15" Id="336" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>create phase compensation array</p.Text>
 			</Comment>
-			<Comment Bounds="705 595 195 15" Id="338" xmlns="http://www.ni.com/MocCommon">
-				<p.Text>phase offset at start of message</p.Text>
-			</Comment>
 			<DataAccessor Bounds="920 520 40 15" DataItem="339" Id="342" Label="343" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="342" Bounds="965 520 68 14" Id="343" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>phase offset</p.Text>
 			</NodeLabel>
-			<CaseStructure Bounds="710 485 185 105" Default="345" Id="344" Selected="346" UserSelectorBounds="48 0 88 17">
-				<CaseStructure.Case Bounds="5 5 175 95" Id="345" Pattern="False">
-					<Literal Bounds="101 30 40 15" DataType="Double" Id="750" xmlns="http://www.ni.com/MocCommon">
-						<p.Data>0x0</p.Data>
-						<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-					</Literal>
-					<Wire Id="751" Joints="N(750:Out)|(141,35) N(739:345)|(171,35)" xmlns="http://www.ni.com/PlatformFramework" />
-				</CaseStructure.Case>
-				<CaseStructure.Case Bounds="5 5 175 95" Id="346" Pattern="True">
-					<Subtract Bounds="75 20 30 30" Id="241" />
-					<Multiply Bounds="25 25 30 30" Id="245" Terminals="o=251, c0t0v=741, c1t0v=735" />
-					<Wire Id="732" Joints="N(733:346)|(35,4) v(21) N(241:x)|(75,25)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="735" Joints="N(736:346)|(20,91) v(-46) N(245:c1t0v)|(25,45)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="738" Joints="N(241:x-y)|(105,35) N(739:346)|(171,35)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="741" Joints="N(742:346)|(20,4) v(26) N(245:c0t0v)|(25,30)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="251" Joints="N(245:o)|(55,40) N(241:y)|(75,40)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Comment Bounds="30 70 135 15" Id="756" xmlns="http://www.ni.com/MocCommon">
-						<p.Text>doesn't do anything?</p.Text>
-					</Comment>
-				</CaseStructure.Case>
-				<CaseStructure.Selector Bounds="-4 40 13 10" Docking="Left" Id="347" Terminals="344=749, 345, 346" />
-				<CaseStructure.Tunnel Bounds="35 -4 10 13" Docking="Top" Id="733" Terminals="344=242, 345, 346=732" />
-				<CaseStructure.Tunnel Bounds="20 96 10 13" Docking="Bottom" Id="736" Terminals="344=804, 345, 346=735" />
-				<CaseStructure.Tunnel Bounds="176 35 13 10" Docking="Right" Id="739" Terminals="344=752, 345=751, 346=738" />
-				<CaseStructure.Tunnel Bounds="20 -4 10 13" Docking="Top" Id="742" Terminals="344=318, 345, 346=741" />
-			</CaseStructure>
-			<DataAccessor Bounds="660 585 40 15" DataItem="744" Id="747" Label="748" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-			</DataAccessor>
-			<NodeLabel AttachedTo="747" Bounds="497 585 158 14" Id="748" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>compensate for phase offset</p.Text>
-			</NodeLabel>
-			<Wire Id="749" Joints="N(747:Value)|(700,590) h(5) v(-60) N(347:344)|(706,530)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="752" Joints="N(739:344)|(899,525) h(16) B(1) N(342:Value)|(923,525) B(1) v(-10) h(265) v(-165) N(795:c1t0v)|(1190,350)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="752" Joints="N(843:x-y)|(730,515) h(185) B(1) h(265) v(-165) N(795:c1t0v)|(1190,350) B(1) v(10) N(342:Value)|(923,525)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="754" Joints="N(112:R0)|(1165,335) N(795:c0t0v)|(1190,335)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="760" Joints="N(33:R4)|(500,425) N(60:L4)|(570,425)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="60 590 40 15" DataItem="770" Id="773" Label="774" xmlns="http://www.ni.com/MocCommon">
@@ -415,9 +377,9 @@
 				<p.Text>input 1</p.Text>
 			</NodeLabel>
 			<Wire Id="791" Joints="N(789:Out)|(995,390) N(324:c1t0v)|(1025,390)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Add Bounds="1190 330 30 30" Id="795" Terminals="o=820, c0t0v=754, c1t0v=752" />
+			<Add Bounds="1190 330 30 30" Id="795" Terminals="o=839, c0t0v=754, c1t0v=752" />
 			<Wire Id="798" Joints="N(287:o)|(1425,275) N(144:Value)|(1688,275)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="804" Joints="N(248:o)|(335,680) h(400) N(736:344)|(735,594)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="804" Joints="N(248:o)|(335,680) h(310) v(-155) N(844:c1t0v)|(650,525)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="806" Joints="N(307:o)|(285,625) h(10) v(-145) N(68:L1)|(445,480)" xmlns="http://www.ni.com/PlatformFramework" />
 			<MethodCall Bounds="1250 355 50 50" Id="811" ResolveFailedHint="Unwrap Phase.gvi, Package: (LabVIEW NXG Analysis Basic Files, Version: 3.0.0)" Signature="@4cf095ea836d4f44a67b42c2e5e938e7" Target="NI::Analysis::Conditioning::Unwrap Phase.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
@@ -463,9 +425,7 @@
 			<NodeLabel AttachedTo="816" Bounds="1203 366 30 15" Id="818" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>phase unit</p.Text>
 			</NodeLabel>
-			<Wire Id="820" Joints="N(795:o)|(1220,345) h(24) B(1) h(66) v(-40) N(136:theta)|(1355,305) B(1) v(15) N(811:L0)|(1250,360)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Subtract Bounds="530 290 30 30" Id="821" />
-			<Wire Id="823" Joints="N(821:x-y)|(560,305) h(5) v(80) N(60:L0)|(570,385)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="823" Joints="N(842:o)|(560,305) h(5) v(80) N(60:L0)|(570,385)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Literal Bounds="420 295 40 15" DataType="Double" Id="829" xmlns="http://www.ni.com/MocCommon">
 				<NumericBehavior ConstantType="Pi" Interpretation="Exact" ValueFormatter="LV:R" />
 				<FixedConstantFacade Facade="Pi" />
@@ -480,13 +440,23 @@
 				<p.Text>y</p.Text>
 			</NodeLabel>
 			<Wire Id="835" Joints="N(833:Out)|(460,315) N(830:y)|(460,315)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="837" Joints="N(33:R0)|(500,385) h(6) v(-90) N(821:x)|(530,295)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="838" Joints="N(830:x/y)|(490,310) N(821:y)|(530,310)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="837" Joints="N(33:R0)|(500,385) h(6) v(-90) N(842:c0t0v)|(530,295)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="838" Joints="N(830:x/y)|(490,310) N(842:c1t0v)|(530,310)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="839" Joints="N(795:o)|(1220,345) h(10) B(1) v(-40) N(840:x)|(1275,305) B(1) v(15) N(811:L0)|(1250,360)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Negate Bounds="1275 290 30 30" Id="840" />
+			<Wire Id="841" Joints="N(840:-x)|(1305,305) N(136:theta)|(1355,305)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Add Bounds="530 290 30 30" Id="842" Terminals="o=823, c0t0v=837, c1t0v=838" />
+			<Subtract Bounds="700 500 30 30" Id="843" />
+			<Multiply Bounds="650 505 30 30" Id="844" Terminals="o=849, c0t0v=848, c1t0v=804" />
+			<Wire Id="845" Joints="N(60:R2)|(620,405) h(75) B(1) N(214:Value)|(788,405) B(1) v(100) N(843:x)|(700,505)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="848" Joints="N(60:R1)|(620,395) h(25) B(1) v(-30) B(2) N(193:Value)|(758,365) B(2) v(-30) N(128:c0t0v)|(1065,335) B(1) v(115) N(844:c0t0v)|(650,510)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="849" Joints="N(844:o)|(680,520) N(843:y)|(700,520)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="645 545 180 15" Id="850" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>Compensate for phase offset</p.Text>
+			</Comment>
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
-			<Switch BaseName="[string]Square LED" Enabled="[bool]True" FalseContent="[string]Off" Height="[float]72" Id="745" IsReadOnly="[bool]False" Label="[UIModel]755" Left="[float]420" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]0" Top="[float]148" TrueContent="[string]On" Value="{DataItemBinding Id=744}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="755" LabelOwner="[UIModel]745" Left="[float]420" Text="[string]compensate for phase offset" Top="[float]128" Width="[float]151" xmlns="http://www.ni.com/PanelCommon" />
 		</NativeFrontPanel>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="ComplexDouble[]" Id="25" Name="Training codes" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
@@ -535,9 +505,6 @@
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="4" DataType="Double" Id="339" Name="phase offset" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x0</p.DefaultValue>
-		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="6" DataType="Boolean" Id="744" Name="compensate for phase offset" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>True</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="4" DataType="@be9e6496893442a4b708bce654371ca2" Id="770" Name="barker code" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>3</p.DefaultValue>

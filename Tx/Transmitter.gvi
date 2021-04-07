@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="27E3F9939BFAA88E99254986A56C797F0821E6ED0A74C70A7AF59C96D06A739161BF3954FF053E79B5949FFE55F6C2D643A573D18EB3DFB3A68A4142BE955F8D" Timestamp="1D72AF5F0F2BC61" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="ECCFC018E1C5FEE09D32718AD0D3B1D99546B38A4C578ACCD45F3C5507074A2627C51586B2F567735BEE81D1284E2AFDF5B1388899229C9D61EBB6738F47E225" Timestamp="1D72BE5C5B70A18" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -20,7 +20,7 @@
 				</IconTemplate>
 			</IconPanel>
 		</Icon>
-		<ConnectorPane Height="50" Id="9" ListViewHeight="235" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+		<ConnectorPane Height="50" Id="9" ListViewHeight="250" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="30" />
 			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 140" Parameter="157" />
 			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 155" Parameter="161" />
@@ -29,7 +29,7 @@
 			<ConnectorPaneTerminal Hotspot="25 0" ListViewHotspot="0 95" Parameter="115" />
 			<ConnectorPaneTerminal Hotspot="50 5" ListViewHotspot="150 50" Parameter="92" />
 			<ConnectorPaneTerminal Hotspot="50 15" ListViewHotspot="150 170" Parameter="10268" />
-			<ConnectorPaneTerminal Hotspot="50 25" />
+			<ConnectorPaneTerminal Hotspot="50 25" ListViewHotspot="150 230" Parameter="10978" />
 			<ConnectorPaneTerminal Hotspot="50 35" />
 			<ConnectorPaneTerminal Hotspot="15 50" ListViewHotspot="0 110" Parameter="75" />
 			<ConnectorPaneTerminal Hotspot="25 50" ListViewHotspot="0 125" Parameter="82" />
@@ -112,6 +112,7 @@
 				<EnumSelectorInfo DisplayValue="[string]random" Value="[ushort]3" ValueType="[Type]UInt16" />
 			</EnumSelector>
 			<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="10971" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]36" MinWidth="[float]34" Name="[string]encode" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]10" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=10970}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="10979" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]total bit length" TabIndex="[int]11" Top="[float]0" Value="{DataItemBinding Id=10978}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<MethodCall Bounds="300 240 40 40" Id="16" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Tx\\BPSKMod.gvi&quot;" Signature="@6a3977919aae48b8b24bed23fe4a736c" Target="BPSKMod.gvi" xmlns="http://www.ni.com/MocCommon">
@@ -309,7 +310,7 @@
 			</NodeLabel>
 			<Wire Id="10316" Joints="N(10314:Value)|(15,440) h(351) v(-175) N(10298:10295)|(396,265)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="10319" Joints="N(35:Value)|(5,245) N(10949:10356)|(71,245)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="10320" Joints="N(10952:10356)|(184,245) N(16:L0)|(300,245)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="10320" Joints="N(10952:10356)|(184,245) h(26) B(1) N(16:L0)|(300,245) B(1) v(95) N(10977:array)|(215,340)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="-35 190 40 15" DataItem="10321" Id="10325" Label="10326" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@ca21e797c92442f09637987b4fb8858e" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
@@ -398,6 +399,14 @@
 				<p.Text>encode</p.Text>
 			</NodeLabel>
 			<Wire Id="10975" Joints="N(10973:Value)|(41,315) N(10359:10356)|(71,315)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ArraySize Bounds="215 335 40 20" Id="10977" />
+			<DataAccessor Bounds="260 345 40 15" DataItem="10978" Id="10981" Label="10982" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Int32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="10981" Bounds="305 345 82 14" Id="10982" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>total bit length</p.Text>
+			</NodeLabel>
+			<Wire Id="10983" Joints="N(10977:size(s\))|(255,350) N(10981:Value)|(263,350)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
@@ -501,6 +510,9 @@
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="9" DataType="Boolean" Id="10970" Name="encode" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="3" DataType="Int32" Id="10978" Name="total bit length" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
@@ -625,7 +637,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]Samples per symbol" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@01333589b9564bc49ae8e30217387b4d">
+					<Attributed AttributedType="@8bab067bf3a64a72b95a6a988df88804">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]filter parameter" />
 						</AttributeValues>
@@ -784,7 +796,7 @@
 		<p.TypeReference TypeId="f1048763d8f04c32b36f472d3796cca9">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="Double" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="01333589b9564bc49ae8e30217387b4d">
+		<p.TypeReference TypeId="8bab067bf3a64a72b95a6a988df88804">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="Double" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="52e24a9437414bab92f84e5fb398458b">

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="773D2EF1706A9494DECB9197AFA7D99EF25ECCBF499185D61A3981E7300C852A371ABDC9E9352F91E3F8A610E1449AC3D7474FC8B3BD3BF1C929DC7CA0F83304" Timestamp="1D72AF403F7CD76" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="76150CD5BE24369814F2C94707F46DC5803F4B67B6F243E858416F63A24915C2D5DE895BD56BA11ABCAE6196A3C9F2010E1AA2D4062D61D5FCB857E978DBE8BA" Timestamp="1D72BDE72511AE8" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -516,7 +516,7 @@
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
 				</Axis>
-				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="10216" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10219" Orientation="[SMOrientation]Vertical" Range="[IRange]-4, 3, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="10216" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10219" Orientation="[SMOrientation]Vertical" Range="[IRange]-8E-14, 8E-14, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="10219">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
 					</RangeLabeledDivisions>
@@ -617,12 +617,12 @@
 			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="10426" Interval="[double]1" IsReadOnly="[bool]False" Label="[UIModel]10427" Left="[float]52" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" TabIndex="[int]11" Top="[float]452" Value="{DataItemBinding Id=10425}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="10427" LabelOwner="[UIModel]10426" Left="[float]52" Text="[string]Min correlation" Top="[float]432" Width="[float]81" xmlns="http://www.ni.com/PanelCommon" />
 			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=10440}" DataSourceType="[Type]Double[]" Enabled="[bool]True" Height="[float]280" Id="10442" Label="[UIModel]10460" Left="[float]484" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]True" SuppressScaleLayout="[bool]False" TabIndex="[int]12" Top="[float]580" Width="[float]1144" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="10443" IsInverted="[bool]False" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10454" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 16000, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="10443" IsInverted="[bool]False" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10454" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 9000, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="10454">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
 				</Axis>
-				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="10444" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10455" Orientation="[SMOrientation]Vertical" Range="[IRange]0, 290, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="10444" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10455" Orientation="[SMOrientation]Vertical" Range="[IRange]0, 50, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="10455">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
 					</RangeLabeledDivisions>
@@ -645,7 +645,7 @@
 			<Switch BaseName="[string]Square LED" Enabled="[bool]True" FalseContent="[string]Off" Height="[float]72" Id="20638" IsReadOnly="[bool]False" Label="[UIModel]20644" Left="[float]212" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]13" Top="[float]212" TrueContent="[string]On" Value="{DataItemBinding Id=20637}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="20644" LabelOwner="[UIModel]20638" Left="[float]212" Text="[string]Frame sync" Top="[float]192" Width="[float]60" xmlns="http://www.ni.com/PanelCommon" />
 			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=30700}" Enabled="[bool]True" Height="[float]232" Id="30701" Label="[UIModel]40721" Left="[float]212" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" TabIndex="[int]14" Top="[float]852" Width="[float]362" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="30702" IsInverted="[bool]False" Label="[string]Time [seconds]" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]40715" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 110, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="30702" IsInverted="[bool]False" Label="[string]Time [seconds]" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]40715" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 100, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="40715">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
@@ -10715,20 +10715,20 @@
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="41115" LabelOwner="[UIModel]41077" Left="[float]276" Text="[string]decode" Top="[float]192" Width="[float]40" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="41141" Interval="[int]1" IsReadOnly="[bool]False" Label="[UIModel]41142" Left="[float]52" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" TabIndex="[int]27" Top="[float]404" Value="{DataItemBinding Id=41140}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="41142" LabelOwner="[UIModel]41141" Left="[float]52" Text="[string]Padding length" Top="[float]384" Width="[float]81" xmlns="http://www.ni.com/PanelCommon" />
-			<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="41150" IsReadOnly="[bool]False" Label="[UIModel]41155" Left="[float]340" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]28" Top="[float]212" TrueContent="[string]On" Value="{DataItemBinding Id=41149}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Height="[float]16" Id="41155" LabelOwner="[UIModel]41150" Left="[float]340" Text="[string]encode" Top="[float]192" Width="[float]39" xmlns="http://www.ni.com/PanelCommon" />
-			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=41156}" Height="[float]296" Id="41158" Label="[UIModel]41176" Left="[float]772" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]True" SuppressScaleLayout="[bool]False" TabIndex="[int]29" Top="[float]324" Width="[float]392" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="41159" Label="[string]Time" MajorDivisions="[UIModel]41170" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 100, System.Double" ValueType="[Type]Double">
+			<Switch BaseName="[string]Square LED" Enabled="[bool]True" FalseContent="[string]Off" Height="[float]72" Id="41150" IsReadOnly="[bool]False" Label="[UIModel]41155" Left="[float]340" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]28" Top="[float]212" TrueContent="[string]On" Value="{DataItemBinding Id=41149}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="41155" LabelOwner="[UIModel]41150" Left="[float]340" Text="[string]encode" Top="[float]192" Width="[float]39" xmlns="http://www.ni.com/PanelCommon" />
+			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=41156}" Enabled="[bool]True" Height="[float]296" Id="41158" Label="[UIModel]41176" Left="[float]772" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]True" SuppressScaleLayout="[bool]False" TabIndex="[int]29" Top="[float]324" Width="[float]392" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="41159" IsInverted="[bool]False" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]41170" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 260, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="41170">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
 				</Axis>
-				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="41160" Label="[string]Amplitude" MajorDivisions="[UIModel]41171" Orientation="[SMOrientation]Vertical" Range="[IRange]0, 10, System.Double" ValueType="[Type]Double">
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="41160" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]41171" Orientation="[SMOrientation]Vertical" Range="[IRange]-7E-14, 7E-14, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="41171">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
 					</RangeLabeledDivisions>
 				</Axis>
-				<Plot HorizontalScale="[UIModel]41159" Id="41161" Label="[string]Plot" VerticalScale="[UIModel]41160" />
+				<Plot HorizontalScale="[UIModel]41159" Id="41161" Label="[string]Plot" VerticalScale="[UIModel]41160" Visibility="[SMVisibility]Visible" />
 				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="41162" LineStroke="[SMSolidColorBrush]#ff7b161a" PointShape="[PointShape]Ellipse" />
 				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="41163" LineStroke="[SMSolidColorBrush]#ff008ee4" PointShape="[PointShape]Rectangle" />
 				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="41164" LineStroke="[SMSolidColorBrush]#ffe2b683" PointShape="[PointShape]Diamond" />
@@ -10738,11 +10738,11 @@
 				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="41168" LineStroke="[SMSolidColorBrush]#ff7f7f7f" PointShape="[PointShape]Diamond" />
 				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="41169" LineStroke="[SMSolidColorBrush]#ff3c0726" PointShape="[PointShape]Cross" />
 			</Graph>
-			<PlotLegend Graph="[UIModel]41158" Height="[float]28" Id="41172" Left="[float]1171" Top="[float]324" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<CursorLegend DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Graph="[UIModel]41158" Height="[float]102" Id="41173" Left="[float]777" MinHeight="[float]80" Top="[float]649" Visible="[bool]False" Width="[float]251" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<ScaleLegend Graph="[UIModel]41158" Height="[float]50" Id="41174" Left="[float]1171" MinHeight="[float]50" Top="[float]518" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<GraphTools Graph="[UIModel]41158" Id="41175" Left="[float]777" Top="[float]627" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Height="[float]16" Id="41176" LabelOwner="[UIModel]41158" Left="[float]772" Text="[string]symbols downsampled" Top="[float]304" Width="[float]122" xmlns="http://www.ni.com/PanelCommon" />
+			<PlotLegend Enabled="[bool]True" Graph="[UIModel]41158" Height="[float]28" Id="41172" Left="[float]1171" Top="[float]324" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<CursorLegend DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Enabled="[bool]True" Graph="[UIModel]41158" Height="[float]102" Id="41173" Left="[float]777" MinHeight="[float]80" NameColumnWidth="[double]80" Top="[float]649" Visible="[bool]False" Width="[float]251" XColumnWidth="[double]30" YColumnWidth="[double]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<ScaleLegend Enabled="[bool]True" Graph="[UIModel]41158" Height="[float]54" Id="41174" Left="[float]1171" MinHeight="[float]50" Top="[float]518" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<GraphTools Enabled="[bool]True" Graph="[UIModel]41158" Id="41175" Left="[float]777" Top="[float]627" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="41176" LabelOwner="[UIModel]41158" Left="[float]772" Text="[string]symbols downsampled" Top="[float]304" Width="[float]122" xmlns="http://www.ni.com/PanelCommon" />
 		</NativeFrontPanel>
 		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="27" Name="Barker insert index" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>44</p.DefaultValue>
@@ -10760,7 +10760,7 @@
 			<p.DefaultValue>10000</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="@bab45f4a5f5d404faaa8b35b260c35b1" Id="100" Name="ChannelConfig" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>0x4034000000000000_1_16_0x0_0x3FF0000000000000_0x0_</p.DefaultValue>
+			<p.DefaultValue>0x4034000000000000_1_16_0x0_0x3FF0000000000000_0x40C3880000000000_</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="ComplexDouble[]" Id="157" Name="IQ diagram" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
@@ -11091,7 +11091,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]filter length" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@01333589b9564bc49ae8e30217387b4d">
+					<Attributed AttributedType="@8bab067bf3a64a72b95a6a988df88804">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]filter parameter" />
 						</AttributeValues>
@@ -11287,7 +11287,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]Input array size" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@d618f46fa8b9487b8df1372eaf16856b">
+					<Attributed AttributedType="@18505ec75a0d45aebcf5c71c7d651465">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]current BER" />
 						</AttributeValues>
@@ -11427,7 +11427,7 @@
 		<p.TypeReference TypeId="a04dfd3da46f4398a3cb8a5d0e737578">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="Int32" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="01333589b9564bc49ae8e30217387b4d">
+		<p.TypeReference TypeId="8bab067bf3a64a72b95a6a988df88804">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="Double" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="f4dc81be9caf4c62ab0ddbb323d28954">
@@ -11532,7 +11532,7 @@
 		<p.TypeReference TypeId="b7125f5969854e488e6e5740b8490f6c">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="B2" DataType="Int32" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="d618f46fa8b9487b8df1372eaf16856b">
+		<p.TypeReference TypeId="18505ec75a0d45aebcf5c71c7d651465">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="Double" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="1c73cfdcdb7f479dae7f7b9acc933380">
