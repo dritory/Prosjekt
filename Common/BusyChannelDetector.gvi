@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="CA835A36C454D967353DEA019DFA5A9B3052196EA3A3EE4BD908A049DC493D1917F4BF204186B031735F06B4A931512DF1457044B6A524C87575EBDED7AE9E44" Timestamp="1D71D9F6A522B27" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="8F2EA14C9E0EDD78839786BAFD2073CBD310322A236921412D58AE5BD82B99458B5A2C089D9AC202E6F2B169D7F0FD529CED68BA32F6E7DDA8DFF136E8B78B93" Timestamp="1D72D2DF6E0CC8B" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -49,7 +49,7 @@
 			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="59" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]estimated power" TabIndex="[int]4" Top="[float]0" Value="{DataItemBinding Id=58}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
-			<MethodCall Bounds="370 320 40 40" Id="15" ResolveFailedHint="&quot;C:\\Users\\lolsk\\OneDrive\\Documents\\LabVIEW Projects\\modulation\\Common\\PowerEstimator.gvi&quot;" Signature="@935931850fe345878198b1f20cbb4f83" Target="PowerEstimator.gvi" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="370 320 40 40" Id="15" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Common\\PowerEstimator.gvi&quot;" Signature="@935931850fe345878198b1f20cbb4f83" Target="PowerEstimator.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="input signal" />
