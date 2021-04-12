@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="E1065DD64BE0003BD53183679DD73D9607235A5BB0D97DDC7C517F3F9DED57000E3865E6F552721BF39FF4D42D9FBA35BD5E5D01307D03A5252763C479293B52" Timestamp="1D72BEB3D41AF3C" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="35AB8EC45D97B15FA45C59A07A5FC62487B1CDD62CD9245BEBC0261BC868D59F5B11A5675ABCA012A6B41378B5C1062C6431FEB2332D82E74647CA0600AD8D05" Timestamp="1D72E283AFC740C" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -40,11 +40,12 @@
 			<WhileLoop Bounds="174 70 1146 690" DiagramId="10294" Id="10293">
 				<LoopIteration Bounds="5 660 15 15" Id="10295" />
 				<LoopCondition Bounds="1061 620 15 15" Id="10296" />
-				<MethodCall Bounds="291 190 50 50" Id="15" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Tx\\Transmitter.gvi&quot;" Signature="@6246527e31314fd68a0d09316c571cd4" Target="Transmitter.gvi" xmlns="http://www.ni.com/MocCommon">
+				<MethodCall Bounds="291 190 50 50" Id="15" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Tx\\Transmitter.gvi&quot;" Signature="@d54bf4d7260f4b33a65908db263c7f24" Target="Transmitter.gvi" xmlns="http://www.ni.com/MocCommon">
 					<p.MethodDeclaration>
 						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 							<Parameter Id="B0" Desc="filter parameter" />
 							<Parameter Id="B1" Desc="filter length" />
+							<Parameter Id="B2" Desc="Interleaver" />
 							<Parameter Id="L0" Desc="input bit stream" />
 							<Parameter Id="L1" Desc="IQ rate" />
 							<Parameter Id="L2" Desc="Symbol rate (sym/s)" />
@@ -61,6 +62,7 @@
 					</p.MethodDeclaration>
 					<Terminal DataType="Double" Direction="Input" Hotspot="15 50" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Int32" Direction="Input" Hotspot="25 50" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Boolean" Direction="Input" Hotspot="35 50" Id="B2" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Int8[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Double" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Int32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
@@ -74,9 +76,10 @@
 					<Terminal DataType="Int32" Direction="Output" Hotspot="50 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 				</MethodCall>
-				<MethodCall Bounds="746 245 80 70" Id="17" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Rx\\Receiver.gvi&quot;" Signature="@6266d29a31e1426aab5c4068ff260340" Target="Receiver.gvi" xmlns="http://www.ni.com/MocCommon">
+				<MethodCall Bounds="746 245 80 70" Id="17" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Rx\\Receiver.gvi&quot;" Signature="@4aed897f01c74757a8e05f1f212aeeb9" Target="Receiver.gvi" xmlns="http://www.ni.com/MocCommon">
 					<p.MethodDeclaration>
 						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+							<Parameter Id="B0" Desc="Interleaver" />
 							<Parameter Id="L0" Desc="Signal in" />
 							<Parameter Id="L1" Desc="filter length" />
 							<Parameter Id="L2" Desc="filter parameter" />
@@ -99,6 +102,7 @@
 							<Parameter Id="R6" Desc="error out" />
 						</MethodDeclaration>
 					</p.MethodDeclaration>
+					<Terminal DataType="Boolean" Direction="Input" Hotspot="15 70" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="ComplexDouble[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Int32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Double" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
@@ -494,6 +498,13 @@
 				<NodeLabel AttachedTo="41157" Bounds="831 320 125 14" Id="41177" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>symbols downsampled</p.Text>
 				</NodeLabel>
+				<DataAccessor Bounds="106 445 40 15" DataItem="41178" Id="41181" Label="41182" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="41181" Bounds="40 445 61 14" Id="41182" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Interleaver</p.Text>
+				</NodeLabel>
+				<Wire Id="41183" Joints="N(41181:Value)|(146,450) h(180) v(-45) B(2) h(435) N(17:B0)|(761,315) B(2) N(15:B2)|(326,240)" xmlns="http://www.ni.com/PlatformFramework" />
 				<LeftShiftRegister Bounds="-4 505 13 10" Docking="Left" Id="10485" RightRegister="10486" Terminals="o0, i0=30698" />
 				<RightShiftRegister Bounds="1137 505 13 10" Docking="Right" Id="10486" Terminals="10293, 10294=30699" />
 			</WhileLoop>
@@ -513,12 +524,12 @@
 			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="28" Interval="[int]1" IsReadOnly="[bool]False" Label="[UIModel]10267" Left="[float]52" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" TabIndex="[int]5" Top="[float]356" Value="{DataItemBinding Id=27}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="10267" LabelOwner="[UIModel]28" Left="[float]52" Text="[string]Barker insert index" Top="[float]336" Width="[float]98" xmlns="http://www.ni.com/PanelCommon" />
 			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=10213}" DataSourceType="[Type]@ab7178fa24b34aeea95211126f9a86ff" Enabled="[bool]True" Height="[float]212" Id="10214" Label="[UIModel]10224" Left="[float]212" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" TabIndex="[int]6" Top="[float]612" Width="[float]264" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="10215" IsInverted="[bool]False" Label="[string]Time [seconds]" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10218" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 0.013000000000000001, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="10215" IsInverted="[bool]False" Label="[string]Time [seconds]" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10218" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 0.005, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="10218">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
 				</Axis>
-				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="10216" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10219" Orientation="[SMOrientation]Vertical" Range="[IRange]-2, 2, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="10216" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10219" Orientation="[SMOrientation]Vertical" Range="[IRange]-3, 3, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="10219">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
 					</RangeLabeledDivisions>
@@ -619,12 +630,12 @@
 			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="10426" Interval="[double]1" IsReadOnly="[bool]False" Label="[UIModel]10427" Left="[float]52" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" TabIndex="[int]11" Top="[float]452" Value="{DataItemBinding Id=10425}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="10427" LabelOwner="[UIModel]10426" Left="[float]52" Text="[string]Min correlation" Top="[float]432" Width="[float]81" xmlns="http://www.ni.com/PanelCommon" />
 			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=10440}" DataSourceType="[Type]Double[]" Enabled="[bool]True" Height="[float]280" Id="10442" Label="[UIModel]10460" Left="[float]484" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]True" SuppressScaleLayout="[bool]False" TabIndex="[int]12" Top="[float]580" Width="[float]1144" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="10443" IsInverted="[bool]False" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10454" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 6000, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="10443" IsInverted="[bool]False" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10454" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 8000, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="10454">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
 				</Axis>
-				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="10444" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10455" Orientation="[SMOrientation]Vertical" Range="[IRange]0, 40, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="10444" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10455" Orientation="[SMOrientation]Vertical" Range="[IRange]0, 210, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="10455">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
 					</RangeLabeledDivisions>
@@ -647,7 +658,7 @@
 			<Switch BaseName="[string]Square LED" Enabled="[bool]True" FalseContent="[string]Off" Height="[float]72" Id="20638" IsReadOnly="[bool]False" Label="[UIModel]20644" Left="[float]212" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]13" Top="[float]212" TrueContent="[string]On" Value="{DataItemBinding Id=20637}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="20644" LabelOwner="[UIModel]20638" Left="[float]212" Text="[string]Frame sync" Top="[float]192" Width="[float]60" xmlns="http://www.ni.com/PanelCommon" />
 			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=30700}" Enabled="[bool]True" Height="[float]232" Id="30701" Label="[UIModel]40721" Left="[float]212" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" TabIndex="[int]14" Top="[float]852" Width="[float]362" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="30702" IsInverted="[bool]False" Label="[string]Time [seconds]" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]40715" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 110, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="30702" IsInverted="[bool]False" Label="[string]Time [seconds]" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]40715" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 3100, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="40715">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
@@ -10720,12 +10731,12 @@
 			<Switch BaseName="[string]Square LED" Enabled="[bool]True" FalseContent="[string]Off" Height="[float]72" Id="41150" IsReadOnly="[bool]False" Label="[UIModel]41155" Left="[float]340" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]28" Top="[float]212" TrueContent="[string]On" Value="{DataItemBinding Id=41149}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="41155" LabelOwner="[UIModel]41150" Left="[float]340" Text="[string]encode" Top="[float]192" Width="[float]39" xmlns="http://www.ni.com/PanelCommon" />
 			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=41156}" Enabled="[bool]True" Height="[float]296" Id="41158" Label="[UIModel]41176" Left="[float]772" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]True" SuppressScaleLayout="[bool]False" TabIndex="[int]29" Top="[float]324" Width="[float]392" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="41159" IsInverted="[bool]False" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]41170" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 300, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="41159" IsInverted="[bool]False" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]41170" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 290, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="41170">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
 				</Axis>
-				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="41160" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]41171" Orientation="[SMOrientation]Vertical" Range="[IRange]-1.3, 1.3, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="41160" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]41171" Orientation="[SMOrientation]Vertical" Range="[IRange]-2, 2, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="41171">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
 					</RangeLabeledDivisions>
@@ -10745,6 +10756,8 @@
 			<ScaleLegend Enabled="[bool]True" Graph="[UIModel]41158" Height="[float]54" Id="41174" Left="[float]1171" MinHeight="[float]50" Top="[float]518" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<GraphTools Enabled="[bool]True" Graph="[UIModel]41158" Id="41175" Left="[float]777" Top="[float]627" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="41176" LabelOwner="[UIModel]41158" Left="[float]772" Text="[string]symbols downsampled" Top="[float]304" Width="[float]122" xmlns="http://www.ni.com/PanelCommon" />
+			<Switch BaseName="[string]Square LED" Enabled="[bool]True" FalseContent="[string]Off" Height="[float]72" Id="41179" IsReadOnly="[bool]False" Label="[UIModel]41184" Left="[float]340" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]30" Top="[float]100" TrueContent="[string]On" Value="{DataItemBinding Id=41178}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="41184" LabelOwner="[UIModel]41179" Left="[float]340" Text="[string]Interleaver" Top="[float]80" Width="[float]56" xmlns="http://www.ni.com/PanelCommon" />
 		</NativeFrontPanel>
 		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="27" Name="Barker insert index" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>44</p.DefaultValue>
@@ -10863,10 +10876,13 @@
 				<Array Lengths="0" />
 			</p.DefaultValue>
 		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="41178" Name="Interleaver" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="6246527e31314fd68a0d09316c571cd4">
-			<Attributed AttributedType="@b2442b0a792948999246b36e3adf0c67">
+		<p.TypeReference TypeId="d54bf4d7260f4b33a65908db263c7f24">
+			<Attributed AttributedType="@7819c8b7c4124f0caad27d0e4dee809d">
 				<AttributeValues>
 					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]50" />
 					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]50" />
@@ -10884,8 +10900,8 @@
 				<DataType>UInt16</DataType>
 			</Enumeration>
 		</p.TypeReference>
-		<p.TypeReference TypeId="6266d29a31e1426aab5c4068ff260340">
-			<Attributed AttributedType="@73ecfd83838749a88abe3be950ee5050">
+		<p.TypeReference TypeId="4aed897f01c74757a8e05f1f212aeeb9">
+			<Attributed AttributedType="@adb280c8bb8e42f983406af93c3a72a0">
 				<AttributeValues>
 					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]70" />
 					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]80" />
@@ -11009,7 +11025,7 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="b2442b0a792948999246b36e3adf0c67">
+		<p.TypeReference TypeId="7819c8b7c4124f0caad27d0e4dee809d">
 			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Transmitter.gvi" ReturnType="Void" GenericTypeDefinition="Void">
 				<Parameters>
 					<Attributed AttributedType="@371748fc892d40ee8cd0bfb9784bd12c">
@@ -11020,6 +11036,11 @@
 					<Attributed AttributedType="@345dae9de0294ff58004e8595134bcef">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]filter length" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@3a21718515ca41a08cf2329573a21f94">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Interleaver" />
 						</AttributeValues>
 					</Attributed>
 					<Attributed AttributedType="@56b91004eb0748e9b42ecf828045227a">
@@ -11085,9 +11106,14 @@
 				</Parameters>
 			</Function>
 		</p.TypeReference>
-		<p.TypeReference TypeId="73ecfd83838749a88abe3be950ee5050">
+		<p.TypeReference TypeId="adb280c8bb8e42f983406af93c3a72a0">
 			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Receiver.gvi" ReturnType="Void" GenericTypeDefinition="Void">
 				<Parameters>
+					<Attributed AttributedType="@cd046751b2c64e41ba5173de74ce9a5a">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Interleaver" />
+						</AttributeValues>
+					</Attributed>
 					<Attributed AttributedType="@f7a459b8440f4e8da39435ae4d495e97">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]Signal in" />
@@ -11098,7 +11124,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]filter length" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@8bab067bf3a64a72b95a6a988df88804">
+					<Attributed AttributedType="@01333589b9564bc49ae8e30217387b4d">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]filter parameter" />
 						</AttributeValues>
@@ -11294,7 +11320,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]Input array size" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@18505ec75a0d45aebcf5c71c7d651465">
+					<Attributed AttributedType="@d618f46fa8b9487b8df1372eaf16856b">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]current BER" />
 						</AttributeValues>
@@ -11395,6 +11421,9 @@
 		<p.TypeReference TypeId="345dae9de0294ff58004e8595134bcef">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="B1" DataType="Int32" />
 		</p.TypeReference>
+		<p.TypeReference TypeId="3a21718515ca41a08cf2329573a21f94">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="B2" DataType="Boolean" />
+		</p.TypeReference>
 		<p.TypeReference TypeId="56b91004eb0748e9b42ecf828045227a">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="Int8[]" />
 		</p.TypeReference>
@@ -11431,13 +11460,16 @@
 		<p.TypeReference TypeId="f201dd0663f74ed6888e534dd97b6278">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R4" DataType="Error" />
 		</p.TypeReference>
+		<p.TypeReference TypeId="cd046751b2c64e41ba5173de74ce9a5a">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="B0" DataType="Boolean" />
+		</p.TypeReference>
 		<p.TypeReference TypeId="f7a459b8440f4e8da39435ae4d495e97">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="ComplexDouble[]" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="a04dfd3da46f4398a3cb8a5d0e737578">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="Int32" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="8bab067bf3a64a72b95a6a988df88804">
+		<p.TypeReference TypeId="01333589b9564bc49ae8e30217387b4d">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="Double" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="f4dc81be9caf4c62ab0ddbb323d28954">
@@ -11542,7 +11574,7 @@
 		<p.TypeReference TypeId="b7125f5969854e488e6e5740b8490f6c">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="B2" DataType="Int32" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="18505ec75a0d45aebcf5c71c7d651465">
+		<p.TypeReference TypeId="d618f46fa8b9487b8df1372eaf16856b">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="Double" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="1c73cfdcdb7f479dae7f7b9acc933380">
