@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="F280704B1FE10D142B82245D818A9763D8EC603AE70279530EA2C7F5D84008C73C36BE128221A4ECF36E867FC4C366151E971FC0B475B9777FDC877438582CBC" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="08E87103D700715A90D26516EB933C6EFD2F070C3C66E6B89F58FEBABB6C0D22C9048582A7660821F7F4FC3FA3044FCDA80955DD7C3C9FE6666BDAB6046DC449" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Interface for MATLAB®" Name="http://www.ni.com/Matlab" OldestCompatibleVersion="5.3.1.49152" Version="5.3.1.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Desktop SystemDesigner Plugin" Name="http://www.ni.com/SystemDesigner/Desktop/SystemModel" OldestCompatibleVersion="5.1.0.0" Version="5.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/EnvoyManagement" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Interface for MATLAB®" Name="http://www.ni.com/SystemDesigner/Matlab/SystemModel" OldestCompatibleVersion="5.3.1.49152" Version="5.3.1.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/MetaDiagram" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/SystemDiagram" OldestCompatibleVersion="5.1.0.0" Version="5.1.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/SystemModel" OldestCompatibleVersion="6.2.0.0" Version="6.2.0.49152" />
@@ -145,6 +147,27 @@
 						<Instance Id="3029" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
 							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="TestScrambler.gvi" p10:Process.AssociatedIdentifier="3027" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
 						</Instance>
+						<Instance Id="3035" Source="{http://www.ni.com/SystemDesigner/Matlab/SystemModel}Process.MatlabInterface">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Matlab/SystemModel}Process.MatlabInterface]Process.MatlabInterface" p9:ShowInDiagram="False" p10:Process.AliasName="source.mli" p10:Process.AssociatedIdentifier="3033" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="3047" Source="{http://www.ni.com/SystemDesigner/Matlab/SystemModel}Process.MatlabInterface">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Matlab/SystemModel}Process.MatlabInterface]Process.MatlabInterface" p9:ShowInDiagram="False" p10:Process.AliasName="sink.mli" p10:Process.AssociatedIdentifier="3045" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="3181" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="TestSource.gvi" p10:Process.AssociatedIdentifier="3179" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="3382" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="Interleaver.gvi" p10:Process.AssociatedIdentifier="3380" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="3376" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="Interleaver test.gvi" p10:Process.AssociatedIdentifier="3374" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="3527" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="Source.gvi" p10:Process.AssociatedIdentifier="3525" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="3533" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="Sink.gvi" p10:Process.AssociatedIdentifier="3531" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
 						<Superimposition Id="7" Name="Root Superimposition">
 							<Superimpose Source="26">
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="324" />
@@ -187,6 +210,13 @@
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="2718" />
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="3023" />
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="3029" />
+								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="3035" />
+								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="3047" />
+								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="3181" />
+								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="3376" />
+								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="3382" />
+								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="3527" />
+								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="3533" />
 							</Superimpose>
 						</Superimposition>
 					</MappingManager>
@@ -423,6 +453,13 @@
 						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="2716" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Receiver.gvi" StoragePath="Rx\Receiver.gvi" />
 						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="3021" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="FrameScrambler.gvi" StoragePath="Common\FrameScrambler.gvi" />
 						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="3027" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TestScrambler.gvi" StoragePath="Tests\TestScrambler.gvi" />
+						<SourceFileReference Bindings="EnvoyManager,ContentKind_{http://www.ni.com/SystemDesigner/Matlab/SystemModel}Process.MatlabInterface,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="3033" ModelDefinitionType="{http://www.ni.com/Matlab}MatlabDefinition" Name="source.mli" StoragePath="Matlab\source.mli" />
+						<SourceFileReference Bindings="EnvoyManager,ContentKind_{http://www.ni.com/SystemDesigner/Matlab/SystemModel}Process.MatlabInterface,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="3045" ModelDefinitionType="{http://www.ni.com/Matlab}MatlabDefinition" Name="sink.mli" StoragePath="Matlab\sink.mli" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="3179" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TestSource.gvi" StoragePath="Tests\TestSource.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="3374" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Interleaver test.gvi" StoragePath="Tests\Interleaver test.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="3380" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Interleaver.gvi" StoragePath="Common\Interleaver.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="3525" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Source.gvi" StoragePath="Tx\Source.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="3531" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Sink.gvi" StoragePath="Rx\Sink.gvi" />
 					</EmbeddedDefinitionReference>
 					<EmbeddedDefinitionReference Bindings="RcxRepositoryManagerDefinition" Id="43" ModelDefinitionType="RepositoryManagerDefinition" Name="rcx.lib" Reparentable="False">
 						<RepositoryManagerDefinition />
@@ -516,6 +553,13 @@
 				<SourceFileReference Id="2717" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Receiver.gvi" StoragePath="Rx\Receiver.gvi" />
 				<SourceFileReference Id="3022" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="FrameScrambler.gvi" StoragePath="Common\FrameScrambler.gvi" />
 				<SourceFileReference Id="3028" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TestScrambler.gvi" StoragePath="Tests\TestScrambler.gvi" />
+				<SourceFileReference Bindings="EnvoyManager" Id="3034" ModelDefinitionType="{http://www.ni.com/Matlab}MatlabDefinition" Name="source.mli" StoragePath="Matlab\source.mli" />
+				<SourceFileReference Bindings="EnvoyManager" Id="3046" ModelDefinitionType="{http://www.ni.com/Matlab}MatlabDefinition" Name="sink.mli" StoragePath="Matlab\sink.mli" />
+				<SourceFileReference Id="3180" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TestSource.gvi" StoragePath="Tests\TestSource.gvi" />
+				<SourceFileReference Id="3375" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Interleaver test.gvi" StoragePath="Tests\Interleaver test.gvi" />
+				<SourceFileReference Id="3381" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Interleaver.gvi" StoragePath="Common\Interleaver.gvi" />
+				<SourceFileReference Id="3526" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Source.gvi" StoragePath="Tx\Source.gvi" />
+				<SourceFileReference Id="3532" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Sink.gvi" StoragePath="Rx\Sink.gvi" />
 			</EmbeddedDefinitionReference>
 			<EmbeddedDefinitionReference Id="24" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
 				<PackageReferencesDefinition>
