@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="CBAC1E7F433999086204C86C2DD1CCAE13EBACC87EA2BAE1B0BE9477627CF684E9AE6C88D3D2DB4E8A747E865AE7085667653DDD62CF3C90BADD90B5324DA319" Timestamp="1D72EC0E4AFBE1A" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="CD91C691B13B2326E833C481E415663A84AA11B5F30ABA7312AAA6FAAEC43C6203C8D68B2122E6347551838CA7FE752939674E550D8AEFC3E9AE8F08C6CDB730" Timestamp="1D7306C18CDC079" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -276,7 +276,7 @@
 			<ReleaseQueue Bounds="2675 10 40 40" Id="16515" />
 			<Wire Id="16516" Joints="N(16515:error out)|(2715,45) h(5) v(15) N(126:L1)|(2745,60)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="16519" Joints="N(16588:16576)|(2504,45) N(16515:error in)|(2675,45)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="16522" Joints="N(125:R0)|(910,50) h(58) v(-320) N(16463:o0)|(1446,-270)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="16522" Joints="N(125:R0)|(910,50) h(40) v(-320) N(16463:o0)|(1446,-270)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="16529" Joints="N(26726:16576)|(2504,15) N(16515:queue)|(2675,15)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="16549" Joints="N(125:R1)|(910,60) h(85) v(-15) N(16498:error in)|(1000,45)" xmlns="http://www.ni.com/PlatformFramework" />
 			<WhileLoop Bounds="1100 -110 1400 615" DiagramId="16577" Id="16576">
@@ -686,27 +686,13 @@
 						<Wire Id="51789" Joints="N(51790:51389)|(4,185) N(51236:L0)|(100,185)" xmlns="http://www.ni.com/PlatformFramework" />
 					</CaseStructure.Case>
 					<CaseStructure.Case Bounds="5 5 430 245" Id="51390" Pattern="True">
-						<MethodCall Bounds="190 85 40 40" Id="52097" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Rx\\Sink.gvi&quot;" Signature="@32de943f766f44cdbd6a2dc9ce934634" Target="Sink.gvi" xmlns="http://www.ni.com/MocCommon">
-							<p.MethodDeclaration>
-								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-									<Parameter Id="L0" Desc="input bit stream" />
-									<Parameter Id="L3" Desc="error in" />
-									<Parameter Id="R3" Desc="error out" />
-								</MethodDeclaration>
-							</p.MethodDeclaration>
-							<Terminal DataType="Int8[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
-						</MethodCall>
-						<Wire Id="52098" Joints="N(51702:51390)|(4,120) N(52097:L3)|(190,120)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="52099" Joints="N(51705:51390)|(100,4) v(86) N(52097:L0)|(190,90)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="52100" Joints="N(52097:R3)|(230,120) h(191) v(-5) N(51699:51390)|(426,115)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="52101" Joints="N(51714:51390)|(4,145) N(51711:51390)|(426,145)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="52102" Joints="N(51702:51390)|(4,120) h(5) v(-5) N(51699:51390)|(426,115)" xmlns="http://www.ni.com/PlatformFramework" />
 					</CaseStructure.Case>
 					<CaseStructure.Selector Bounds="-4 220 13 10" Docking="Left" Id="51391" Terminals="51388=51797, 51389, 51390" />
-					<CaseStructure.Tunnel Bounds="431 115 13 10" Docking="Right" Id="51699" Terminals="51388=41148, 51389=51698, 51390=52100" />
-					<CaseStructure.Tunnel Bounds="-4 120 13 10" Docking="Left" Id="51702" Terminals="51388=51212, 51389=51701, 51390=52098" />
-					<CaseStructure.Tunnel Bounds="100 -4 10 13" Docking="Top" Id="51705" Terminals="51388=51233, 51389=51704, 51390=52099" />
+					<CaseStructure.Tunnel Bounds="431 115 13 10" Docking="Right" Id="51699" Terminals="51388=41148, 51389=51698, 51390=52102" />
+					<CaseStructure.Tunnel Bounds="-4 120 13 10" Docking="Left" Id="51702" Terminals="51388=51212, 51389=51701, 51390=52102" />
+					<CaseStructure.Tunnel Bounds="100 -4 10 13" Docking="Top" Id="51705" Terminals="51388=51233, 51389=51704, 51390" />
 					<CaseStructure.Tunnel Bounds="431 145 13 10" Docking="Right" Id="51711" Terminals="51388=51241, 51389=51710, 51390=52101" />
 					<CaseStructure.Tunnel Bounds="-4 145 13 10" Docking="Left" Id="51714" Terminals="51388=51246, 51389=51713, 51390=52101" />
 					<CaseStructure.Tunnel Bounds="-4 185 13 10" Docking="Left" Id="51790" Terminals="51388=28086, 51389=51789, 51390" />
@@ -822,12 +808,12 @@
 			<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Enabled="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="27770" IsReadOnly="[bool]False" Label="[UIModel]27774" Left="[float]114" MinHeight="[float]24" TabIndex="[int]13" Text="{DataItemBinding Id=27769}" Top="[float]228" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="27774" LabelOwner="[UIModel]27770" Left="[float]114" Text="[string]RF Channel" Top="[float]208" Width="[float]60" xmlns="http://www.ni.com/PanelCommon" />
 			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=27815}" DataSourceType="[Type]@ab7178fa24b34aeea95211126f9a86ff" Enabled="[bool]True" Height="[float]248" Id="27817" Label="[UIModel]27835" Left="[float]406" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]True" SuppressScaleLayout="[bool]False" TabIndex="[int]14" Top="[float]100" Width="[float]428" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="27818" IsInverted="[bool]False" Label="[string]Samples" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]27829" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 0.005, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="27818" IsInverted="[bool]False" Label="[string]Samples" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]27829" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 0.05, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="27829">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
 				</Axis>
-				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="27819" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]27830" Orientation="[SMOrientation]Vertical" Range="[IRange]-6, 5, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="27819" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]27830" Orientation="[SMOrientation]Vertical" Range="[IRange]-20, 4, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="27830">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
 					</RangeLabeledDivisions>
@@ -889,7 +875,7 @@
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
 				</Axis>
-				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="38219" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]38230" Orientation="[SMOrientation]Vertical" Range="[IRange]0, 0.0005, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="38219" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]38230" Orientation="[SMOrientation]Vertical" Range="[IRange]0, 0.04, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="38230">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
 					</RangeLabeledDivisions>
@@ -953,7 +939,7 @@
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
 				</Axis>
-				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="39192" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]39203" Orientation="[SMOrientation]Vertical" Range="[IRange]0, 90, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="39192" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]39203" Orientation="[SMOrientation]Vertical" Range="[IRange]0, 100, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="39203">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
 					</RangeLabeledDivisions>
@@ -985,7 +971,7 @@
 			</EnumSelector>
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="41142" LabelOwner="[UIModel]41011" Left="[float]112" Text="[string]barker code" Top="[float]688" Width="[float]63" xmlns="http://www.ni.com/PanelCommon" />
 			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=41172}" Enabled="[bool]True" Height="[float]232" Id="41178" Label="[UIModel]51198" Left="[float]163" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" TabIndex="[int]32" Top="[float]756" Width="[float]362" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="41179" IsInverted="[bool]False" Label="[string]Time [seconds]" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]51192" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 400, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="41179" IsInverted="[bool]False" Label="[string]Time [seconds]" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]51192" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 190, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="51192">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
@@ -11029,12 +11015,12 @@
 			<Button ClickMode="[ClickMode]Release" Content="[string]STOP" ContentVisibility="[Visibility]Visible" Enabled="[bool]True" Height="[float]72" Id="51222" IsMomentary="[bool]True" IsTabStop="[bool]True" Label="[UIModel]51223" Left="[float]1232" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]39" Top="[float]132" Value="{DataItemBinding Id=51221}" Width="[float]136" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Id="51223" LabelOwner="[UIModel]51222" Left="[float]1232" Text="[string]Stop_RX_2" Top="[float]112" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
 			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=51247}" Enabled="[bool]True" Height="[float]264" Id="51249" Label="[UIModel]51267" Left="[float]852" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]True" SuppressScaleLayout="[bool]False" TabIndex="[int]40" Top="[float]100" Width="[float]408" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="51250" IsInverted="[bool]False" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]51261" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 1300, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="51250" IsInverted="[bool]False" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]51261" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 900, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="51261">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
 				</Axis>
-				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="51251" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]51262" Orientation="[SMOrientation]Vertical" Range="[IRange]-6, 5, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="51251" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]51262" Orientation="[SMOrientation]Vertical" Range="[IRange]-17, 4, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="51262">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
 					</RangeLabeledDivisions>
@@ -11336,14 +11322,6 @@
 		</p.TypeReference>
 		<p.TypeReference TypeId="8d669485529e4e1cb1b0610036a1e81f">
 			<Attributed AttributedType="@c7be3fdf13564e5596d70fbca6e601c3">
-				<AttributeValues>
-					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
-					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="32de943f766f44cdbd6a2dc9ce934634">
-			<Attributed AttributedType="@c1769e133cad47babc7e69608e0a24d6">
 				<AttributeValues>
 					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
 					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
@@ -11844,27 +11822,6 @@
 				</Parameters>
 			</Function>
 		</p.TypeReference>
-		<p.TypeReference TypeId="c1769e133cad47babc7e69608e0a24d6">
-			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Sink.gvi" ReturnType="Void" GenericTypeDefinition="Void">
-				<Parameters>
-					<Attributed AttributedType="@56b91004eb0748e9b42ecf828045227a">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]input bit stream" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@b473a1d5786147b0b105193d92f053ac">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]error in" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@17bf61b52c9c4b0083ca3aeab43abcb0">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]error out" />
-						</AttributeValues>
-					</Attributed>
-				</Parameters>
-			</Function>
-		</p.TypeReference>
 		<p.TypeReference TypeId="03c6a942df4141c299d572193d7fc1b8">
 			<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="L0" DataType=":UDR:TagRefnum|NI::USRP::niUSRP.udr::niUSRPClass|niaggregate://path/ref:%2F%2FNI%2FUSRP%2FUSRP-src%2F18.5.0/file:%2F%2FUSRP.gcomp%5CUSRP.gcomp/file:%2F%2FniUSRP.udr" />
 		</p.TypeReference>
@@ -12037,12 +11994,6 @@
 		</p.TypeReference>
 		<p.TypeReference TypeId="a7caadc12e8548e39975be65e1cdb179">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="Int8[]" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="b473a1d5786147b0b105193d92f053ac">
-			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="Error" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="17bf61b52c9c4b0083ca3aeab43abcb0">
-			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R3" DataType="Error" />
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
@@ -12232,23 +12183,6 @@
 								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 								<FileNameText Attached="[bool]True" Height="[float]36" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Example signal" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
 									<FontSetting FontFamily="Verdana" FontSize="6" />
-								</FileNameText>
-							</IconTemplate>
-						</IconPanel>
-					</Icon>
-				</MergeItem>
-			</MergeScript>
-		</p.IconModel>
-		<p.IconModel Target="Sink.gvi">
-			<MergeScript>
-				<MergeItem Path="." IsPrimary="True">
-					<Icon ListViewIconCrop="0 0 40 40">
-						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
-								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
-								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-								<FileNameText Attached="[bool]True" Height="[float]36" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Sink" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
-									<FontSetting FontFamily="Verdana" FontSize="11.25" />
 								</FileNameText>
 							</IconTemplate>
 						</IconPanel>

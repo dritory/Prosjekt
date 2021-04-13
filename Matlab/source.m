@@ -44,11 +44,24 @@ fopen(u1);
 % create our clean up object
 cleanupObj = onCleanup(@() cleanMeUp(u1));
 
+HEADER = 'OggS         ²>%¿    ã,ïOpusHead8€»';
+OGG_HEADER = "OggS         ²>%¿    ã,ï";
+OPUS_HEADER = "OpusHead8€»     ";
+
 % Receive a single UDP packet
-packetData = fread(u1,512, 'uint8');
+packetData = fread(u1, 512);
+
+%fileID = fopen("rec3.ogg", "w");
+
+%fwrite(fileID, packetData,'uint8');
+
+%fclose(fileID);
+
+%[y,fs] = audioread("rec2.ogg", "double");
+
 
 bytes = dec2bin(packetData);
-data = str2num(reshape(bytes.',[],1));
+data =  str2num(reshape(bytes.',[],1));
 
 data = cast(data, 'uint8');
 

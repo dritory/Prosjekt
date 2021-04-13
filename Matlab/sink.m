@@ -1,13 +1,38 @@
 function sink(data)
 
-fileID = fopen("temp.ogg", "w");
+bits = reshape(data,8,[])';
 
-fwrite(fileID, data,'*ubit1', 'ieee-le');
+binary = arrayfun(@(x)sprintf('%d',x), bits);
+bytes = bin2dec(binary);
+bytes = cast(bytes, 'uint8');
 
-fclose(fileID);
+u = udp('', 'LocalHost', '', 'LocalPort', 36363);
+u.EnablePortSharing = 'on';
 
-[y,fs] = audioread("temp.ogg", "double");
+fopen(u);
 
-sound(y, fs);
+cleanupObj = onCleanup(@() cleanMeUp(u));
 
-plot(y);
+
+fwrite(u, bytes, 'uint8');
+
+%fileID = fopen("rec.ogg", "w");
+
+%fwrite(fileID, bytes,'uint8');
+
+%fclose(fileID);
+
+%[y,fs] = audioread("rec.ogg", "double");
+
+%sound(y, fs);
+
+%plot(y);
+
+end
+ % fires when main function terminates
+function cleanMeUp(u)
+    % Clean up
+    fclose(u);
+    delete(u);
+    clear u;
+end
