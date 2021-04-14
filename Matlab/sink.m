@@ -1,12 +1,13 @@
 function sink(data)
 
-bits = reshape(data,8,[])';
+%bits = reshape(data,8,[])';
 
-binary = arrayfun(@(x)sprintf('%d',x), bits);
-bytes = bin2dec(binary);
-bytes = cast(bytes, 'uint8');
+%binary = arrayfun(@(x)sprintf('%d',x), bits);
+%bytes = bin2dec(binary);
+bytes = cast(data, 'double');
 
-u = udp('', 'LocalHost', '', 'LocalPort', 36363);
+% Remoteport is VERY important on sending udp, otherwise it will not work
+u = udp('', 'LocalHost', '', 'RemotePort', 36363);
 u.EnablePortSharing = 'on';
 
 fopen(u);

@@ -36,7 +36,7 @@ function data = source()
             
 % Listen on all available Ethernet interfaces at local port 8000.
 % Specify a LocalHost (host name or IP address) if known
-u1 = udp('', 'LocalHost', '', 'LocalPort', 26363);
+u1 = udp('', 'LocalHost', '', 'LocalPort', 26363, 'DatagramTerminateMode', 'on');
 u1.EnablePortSharing = 'on';
 
 fopen(u1);
@@ -44,12 +44,8 @@ fopen(u1);
 % create our clean up object
 cleanupObj = onCleanup(@() cleanMeUp(u1));
 
-HEADER = 'OggS         ²>%¿    ã,ïOpusHead8€»';
-OGG_HEADER = "OggS         ²>%¿    ã,ï";
-OPUS_HEADER = "OpusHead8€»     ";
-
 % Receive a single UDP packet
-packetData = fread(u1, 512);
+packetData = fread(u1);
 
 %fileID = fopen("rec3.ogg", "w");
 
@@ -60,10 +56,10 @@ packetData = fread(u1, 512);
 %[y,fs] = audioread("rec2.ogg", "double");
 
 
-bytes = dec2bin(packetData);
-data =  str2num(reshape(bytes.',[],1));
+%bytes = dec2bin(packetData);
+%data =  str2num(reshape(bytes.',[],1));
 
-data = cast(data, 'uint8');
+data = cast(packetData, 'uint8');
 
 end
 

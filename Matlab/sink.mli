@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="18F6705B5B5D0B63879159359067005374E6DC9A5A6634A9B119BA7E1DCC5BCD127B377855B51AFBBC4A5F1614F6DB142250536469C5B5672E9A28DD33CE5F3B" Timestamp="1D72EC08702AC90" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="CA3D8F52B21899F8BB982950D300F237EA4A0DB3E65C0F75BB4F93677198C5BFB1BF41D9E32CB3E51348AFD46C61EE79C652B7E554C67F07A10BED9E30744426" Timestamp="1D73157A87BFAC4" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Interface for MATLAB®" Name="http://www.ni.com/Matlab" OldestCompatibleVersion="5.3.1.49152" Version="5.3.1.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
@@ -43,7 +43,7 @@
 							</IconTemplate>
 						</IconPanel>
 					</Icon>
-					<ConnectorPane Height="40" Id="21" ListViewHeight="85" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+					<ConnectorPane Height="40" Id="21" ListViewHeight="100" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
 						<ConnectorPaneTerminal ListViewHotspot="0 65" Parameter="25" />
 						<ConnectorPaneTerminal Hotspot="0 15" />
 						<ConnectorPaneTerminal Hotspot="0 25" />
