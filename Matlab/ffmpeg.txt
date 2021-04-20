@@ -1,0 +1,1 @@
+ffmpeg -re -y -i elsys.mp3 -vn -vbr off -ar 16000 -b:a 10k -compression_level 5 -packet_loss 10 -application voip -codec:a libopus -page_duration 10 -f ogg udp://127.0.0.1:26363?pkt_size=512

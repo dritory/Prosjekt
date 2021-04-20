@@ -10,7 +10,7 @@ source_port = 26363
 sink_port = 36363
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-sock.bind((IP, source_port))
+sock.bind((IP, sink_port))
 
 sock2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="33D081F34A34D9E62092D47184BC83104CAF488FE4463F3E364C896B530786D3B44A692D9253196212109C64342FAE52AAFBF71BAD433CD00ED50058A5B05142" Timestamp="1D72BED0C1E0C09" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="54CBE4C67279D43601B0B37C754A48FB0C300228BF13597B5F779B4A905171E1296E3645CF65DABFC1D4D5E4E5DAB845EF0469B0F6B63871D826139161C73073" Timestamp="1D7351BE06C3925" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -69,7 +69,7 @@
 						<Terminal DataType="Int32[]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 					</MethodCall>
-					<Wire Id="950" Joints="N(137:16)|(4,75) h(200) v(265) N(32:L0)|(215,340)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="950" Joints="N(137:16)|(4,105) h(200) v(235) N(32:L0)|(215,340)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="957" Joints="N(1001:16)|(4,350) N(32:L1)|(215,350)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="1010" Joints="N(1069:16)|(4,380) h(96) v(-20) N(32:L2)|(215,360)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="1071" Joints="N(497:16)|(4,235) h(146) v(145) N(32:L4)|(215,380)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -77,12 +77,12 @@
 					<Wire Id="1073" Joints="N(32:R0)|(265,340) h(6) v(-235) N(942:16)|(471,105)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 475 530" Id="17" Pattern="&quot;convolutional&quot;">
-					<Wire Id="42" Joints="N(137:17)|(4,75) h(171) v(30) N(947:L0)|(210,105)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="145" Joints="N(261:17)|(4,150) h(61) v(-35) N(947:L1)|(210,115)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="269" Joints="N(325:17)|(4,170) h(86) v(-45) N(947:L2)|(210,125)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="42" Joints="N(137:17)|(4,105) N(947:L0)|(210,105)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="145" Joints="N(261:17)|(4,115) N(947:L1)|(210,115)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="269" Joints="N(325:17)|(4,125) N(947:L2)|(210,125)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="339" Joints="N(497:17)|(4,235) h(191) v(-90) N(947:L4)|(210,145)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="511" Joints="N(947:R4)|(260,145) h(15) v(90) N(666:17)|(471,235)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="674" Joints="N(832:17)|(4,130) h(36) v(-40) h(195) N(947:T1)|(235,100)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="674" Joints="N(832:17)|(4,90) h(231) N(947:T1)|(235,100)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="841" Joints="N(947:R0)|(260,105) N(942:17)|(471,105)" xmlns="http://www.ni.com/PlatformFramework" />
 					<MethodCall Bounds="210 100 50 50" Id="947" ResolveFailedHint="MT Convolutional Decoder (Viterbi Soft Decision, Rate).gvi, Package: (NI Modulation Toolkit for Software Defined Radio for LabVIEW NXG 3.0, Version: 18.5.0)" Signature="@b1f87d01fe7c4293952db78eb932cdd2" Target="NI::Modulation::MT Convolutional Decoder (Viterbi Soft Decision, Rate).gvi" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
@@ -114,48 +114,48 @@
 					</MethodCall>
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 475 530" Id="19" Pattern="&quot;no code&quot;">
-					<Wire Id="948" Joints="N(137:19)|(4,75) h(231) v(30) N(942:19)|(471,105)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="948" Joints="N(137:19)|(4,105) N(942:19)|(471,105)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="949" Joints="N(497:19)|(4,235) N(666:19)|(471,235)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Selector Bounds="-4 40 13 10" Docking="Left" Id="18" Terminals="15=30, 16, 17, 19" />
-				<CaseStructure.Tunnel Bounds="-4 75 13 10" Docking="Left" Id="137" Terminals="15=136, 16=950, 17=42, 19=948" />
-				<CaseStructure.Tunnel Bounds="-4 150 13 10" Docking="Left" Id="261" Terminals="15=260, 16, 17=145, 19" />
-				<CaseStructure.Tunnel Bounds="-4 170 13 10" Docking="Left" Id="325" Terminals="15=324, 16, 17=269, 19" />
+				<CaseStructure.Tunnel Bounds="-4 105 13 10" Docking="Left" Id="137" Terminals="15=136, 16=950, 17=42, 19=948" />
+				<CaseStructure.Tunnel Bounds="-4 115 13 10" Docking="Left" Id="261" Terminals="15=260, 16, 17=145, 19" />
+				<CaseStructure.Tunnel Bounds="-4 125 13 10" Docking="Left" Id="325" Terminals="15=324, 16, 17=269, 19" />
 				<CaseStructure.Tunnel Bounds="-4 235 13 10" Docking="Left" Id="497" Terminals="15=496, 16=1071, 17=339, 19=949" />
 				<CaseStructure.Tunnel Bounds="476 235 13 10" Docking="Right" Id="666" Terminals="15=665, 16=1072, 17=511, 19=949" />
-				<CaseStructure.Tunnel Bounds="-4 130 13 10" Docking="Left" Id="832" Terminals="15=831, 16, 17=674, 19" />
+				<CaseStructure.Tunnel Bounds="-4 90 13 10" Docking="Left" Id="832" Terminals="15=831, 16, 17=674, 19" />
 				<CaseStructure.Tunnel Bounds="476 105 13 10" Docking="Right" Id="942" Terminals="15=941, 16=1073, 17=841, 19=948" />
 				<CaseStructure.Tunnel Bounds="-4 350 13 10" Docking="Left" Id="1001" Terminals="15=1000, 16=957, 17, 19" />
 				<CaseStructure.Tunnel Bounds="-4 380 13 10" Docking="Left" Id="1069" Terminals="15=1068, 16=1010, 17, 19" />
 			</CaseStructure>
-			<DataAccessor Bounds="260 160 40 15" DataItem="26" Id="27" Label="29" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="270 260 40 15" DataItem="26" Id="27" Label="29" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@ca21e797c92442f09637987b4fb8858e" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="27" Bounds="201 160 54 14" Id="29" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="27" Bounds="211 260 54 14" Id="29" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>code type</p.Text>
 			</NodeLabel>
-			<Wire Id="30" Joints="N(27:Value)|(300,165) h(35) v(100) N(18:15)|(381,265)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="270 295 40 15" DataItem="35" Id="40" Label="41" xmlns="http://www.ni.com/MocCommon">
+			<Wire Id="30" Joints="N(27:Value)|(310,265) N(18:15)|(381,265)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="270 325 40 15" DataItem="35" Id="40" Label="41" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Int32[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="40" Bounds="208 295 57 14" Id="41" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="40" Bounds="208 325 57 14" Id="41" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>input data</p.Text>
 			</NodeLabel>
-			<Wire Id="136" Joints="N(40:Value)|(310,300) N(137:15)|(381,300)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="270 370 40 15" DataItem="139" Id="143" Label="144" xmlns="http://www.ni.com/MocCommon">
+			<Wire Id="136" Joints="N(40:Value)|(310,330) N(137:15)|(381,330)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="270 340 40 15" DataItem="139" Id="143" Label="144" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@e34a4309e3c24dff95145963be162e6f" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="143" Bounds="166 370 99 14" Id="144" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="143" Bounds="166 340 99 14" Id="144" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>convolutional rate</p.Text>
 			</NodeLabel>
-			<Wire Id="260" Joints="N(143:Value)|(310,375) N(261:15)|(381,375)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="270 390 40 15" DataItem="263" Id="267" Label="268" xmlns="http://www.ni.com/MocCommon">
+			<Wire Id="260" Joints="N(143:Value)|(310,345) h(50) v(-5) N(261:15)|(381,340)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="270 355 40 15" DataItem="263" Id="267" Label="268" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="267" Bounds="94 390 171 14" Id="268" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="267" Bounds="94 355 171 14" Id="268" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>convolutional constraint length</p.Text>
 			</NodeLabel>
-			<Wire Id="324" Joints="N(267:Value)|(310,395) N(325:15)|(381,395)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="324" Joints="N(267:Value)|(310,360) h(50) v(-10) N(325:15)|(381,350)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="275 455 40 15" DataItem="327" Id="337" Label="338" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
@@ -170,13 +170,13 @@
 				<p.Text>error out</p.Text>
 			</NodeLabel>
 			<Wire Id="665" Joints="N(666:15)|(874,460) N(509:Value)|(978,460)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="270 350 40 15" DataItem="668" Id="672" Label="673" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="270 310 40 15" DataItem="668" Id="672" Label="673" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="672" Bounds="176 350 89 14" Id="673" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="672" Bounds="176 310 89 14" Id="673" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>traceback depth</p.Text>
 			</NodeLabel>
-			<Wire Id="831" Joints="N(672:Value)|(310,355) N(832:15)|(381,355)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="831" Joints="N(672:Value)|(310,315) N(832:15)|(381,315)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="975 325 40 15" DataItem="834" Id="839" Label="840" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Int32[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>

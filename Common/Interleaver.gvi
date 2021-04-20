@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="D0AEFE2378339BD453CD5E6114C2CB2495AC102AFA42B89906E8B8D2CE568C703C6AF3586ED317B76C7D8DF2B4F7D4C6A7BF1EC9A555FD14ACE192718FF99081" Timestamp="1D72E283BE5AF94" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="CF9C31463CA41F8D4B4CAF385F94E10577EA35B68D6E9B959D90AC481512AA9ECFD510BC58030FE00841D49134BFFF5D715205385F8B8FF75531ECBCAEACA629" Timestamp="1D735D9E3505EBF" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -72,7 +72,7 @@
 			<Label Id="578" LabelOwner="[UIModel]576" Left="[float]460" Text="[string]data out" Top="[float]16" xmlns="http://www.ni.com/PanelCommon" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
-			<CaseStructure Bounds="10 335 447 205" DataType="@a2578e59405e411fa4c4616868bc9073" Id="63" Label="796" Selected="769" UserSelectorBounds="164 0 119 17">
+			<CaseStructure Bounds="10 335 447 205" DataType="@a2578e59405e411fa4c4616868bc9073" Id="63" Label="796" Selected="80" UserSelectorBounds="164 0 119 17">
 				<CaseStructure.Case Bounds="5 5 437 195" Id="80" Pattern="&quot;TX&quot;">
 					<MethodCall Bounds="290 55 50 50" Id="711" ResolveFailedHint="MT Permute.gvi, Package: (NI Modulation Toolkit for Software Defined Radio for LabVIEW NXG 3.0, Version: 18.5.0)" Signature="@a1c275badefe48cda47fbf93a0450a8a" Target="NI::Modulation::MT Permute.gvi" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
@@ -136,6 +136,14 @@
 					<Wire Id="745" Joints="N(732:R4)|(250,120) h(29) v(-20) N(711:L4)|(290,100)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="746" Joints="N(711:R4)|(340,100) h(5) v(25) N(573:80)|(433,125)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="747" Joints="N(732:R0)|(250,80) h(34) v(-10) N(711:L1)|(290,70)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Literal Bounds="185 30 25 15" DataType="Boolean" Id="816" Label="817" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>True</p.Data>
+						<BooleanBehavior />
+					</Literal>
+					<NodeLabel AttachedTo="816" Bounds="185 12 30 15" Id="817" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>reset</p.Text>
+					</NodeLabel>
+					<Wire Id="818" Joints="N(816:Out)|(210,35) h(5) N(732:T0)|(215,75)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 437 195" Id="81" Pattern="&quot;RX&quot;">
 					<MethodCall Bounds="175 75 50 50" Id="749" ResolveFailedHint="Random Permutation.gvi, Package: (LabVIEW NXG Analysis Advanced Files, Version: 3.0.0)" Signature="@0f8b19ee246d47389b5ca9595e617de5" Target="NI::Analysis::Probability::Random Permutation.gvi" xmlns="http://www.ni.com/MocCommon">
@@ -200,6 +208,14 @@
 						<Terminal DataType="Int32[]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 					</MethodCall>
+					<Literal Bounds="160 30 25 15" DataType="Boolean" Id="813" Label="814" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>True</p.Data>
+						<BooleanBehavior />
+					</Literal>
+					<NodeLabel AttachedTo="813" Bounds="160 12 30 15" Id="814" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>reset</p.Text>
+					</NodeLabel>
+					<Wire Id="815" Joints="N(813:Out)|(185,35) h(5) N(749:T0)|(190,75)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 437 195" Id="769" Pattern="&quot;TX Block&quot;">
 					<MethodCall Bounds="180 70 50 50" Id="786" ResolveFailedHint="MT Block Interleave (Matrix).gvi, Package: (NI Modulation Toolkit for Software Defined Radio for LabVIEW NXG 3.0, Version: 18.5.0)" Signature="@cc1f55f5fb21488199760d930ca4dcc1" Target="NI::Modulation::MT Block Interleave (Matrix).gvi" xmlns="http://www.ni.com/MocCommon">
