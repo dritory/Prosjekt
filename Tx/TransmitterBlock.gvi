@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="5D4F8D858F1DF0318FA55010F1298A67520C7ABF0ADC6E96DE0E9627291EA0D9CE0D8087E956B66FA30F1F7D63D783593B88B261DB63359CCFCD0DB4D2D86470" Timestamp="1D7351D7E89C6D1" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="DA1B7F8DD6EB95B5AE708806544B6DC0568ABEA91D2D2E794305B92E0CB164129CC449326F256EC28E2770DCEC3CCD415690C6EFA5A723BB104163C6418C9D65" Timestamp="1D73B68C3B9305F" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -150,7 +150,7 @@
 									<Terminal DataType="Int32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
 									<Terminal DataType="Int8[]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 								</MethodCall>
-								<Wire Id="2130" Joints="N(5547:2256)|(170,4) v(59) h(-90) v(42) N(2074:L0)|(95,105)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="2130" Joints="N(5547:2256)|(188,4) v(59) h(-90) v(42) N(2074:L0)|(95,105)" xmlns="http://www.ni.com/PlatformFramework" />
 								<Wire Id="2307" Joints="N(2074:R0)|(135,105) h(80) v(15) N(2308:2256)|(275,120)" xmlns="http://www.ni.com/PlatformFramework" />
 								<Wire Id="2336" Joints="N(2331:2256)|(4,145) N(2334:2256)|(275,145)" xmlns="http://www.ni.com/PlatformFramework" />
 							</CaseStructure.Case>
@@ -181,7 +181,7 @@
 							<CaseStructure.Tunnel Bounds="-4 145 13 10" Docking="Left" Id="2331" Terminals="2255=4120, 2256=2336, 2257=2386" />
 							<CaseStructure.Tunnel Bounds="280 145 13 10" Docking="Right" Id="2334" Terminals="2255=2335, 2256=2336, 2257=2386" />
 							<CaseStructure.Tunnel Bounds="-4 110 13 10" Docking="Left" Id="2458" Terminals="2255=4123, 2256, 2257=2457" />
-							<CaseStructure.Tunnel Bounds="170 -4 10 13" Docking="Top" Id="5547" Terminals="2255=5546, 2256=2130, 2257" />
+							<CaseStructure.Tunnel Bounds="188 -4 10 13" Docking="Top" Id="5547" Terminals="2255=5546, 2256=2130, 2257" />
 						</CaseStructure>
 						<DataAccessor Bounds="70 215 40 15" DataItem="2323" Id="2326" Label="2327" xmlns="http://www.ni.com/MocCommon">
 							<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -516,7 +516,7 @@
 						<NodeLabel AttachedTo="2128" Bounds="28 145 122 14" Id="2129" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>message length (bits)</p.Text>
 						</NodeLabel>
-						<Wire Id="5546" Joints="N(2128:Value)|(195,150) h(20) B(1) h(180) v(220) N(5368:y)|(405,370) B(1) N(5547:2255)|(215,236)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="5546" Joints="N(2128:Value)|(195,150) h(20) B(1) h(180) v(220) N(5368:y)|(405,370) B(1) v(86) N(5547:2255)|(233,236)" xmlns="http://www.ni.com/PlatformFramework" />
 					</CaseStructure.Case>
 					<CaseStructure.Selector Bounds="-4 385 13 10" Docking="Left" Id="2472" Terminals="2469=4292, 2470, 2471" />
 					<CaseStructure.Tunnel Bounds="1316 195 13 10" Docking="Right" Id="4106" Terminals="2469=191, 2470=4294, 2471=4105" />
@@ -619,7 +619,7 @@
 				<ArrayBehavior ElementType="UInt8" IndexEditorWidth="42">
 					<p.DefaultElementValue>0</p.DefaultElementValue>
 				</ArrayBehavior>
-				<Literal Bounds="49.4 4.4 40 15" DataType="UInt8" Id="2397">
+				<Literal Bounds="48.8 3.8 40 15" DataType="UInt8" Id="2397">
 					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
 				</Literal>
 			</ArrayLiteral>
@@ -750,7 +750,7 @@
 			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="2051" Interval="[int]1" IsReadOnly="[bool]False" Label="[UIModel]2070" Left="[float]162" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" TabIndex="[int]14" Top="[float]628" Value="{DataItemBinding Id=2050}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="2070" LabelOwner="[UIModel]2051" Left="[float]162" Text="[string]Symbol rate (sym/s)" Top="[float]608" Width="[float]105" xmlns="http://www.ni.com/PanelCommon" />
 			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=2086}" Enabled="[bool]True" Height="[float]242" Id="2087" Label="[UIModel]2097" Left="[float]500" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" TabIndex="[int]15" Top="[float]116" Width="[float]362" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="2088" IsInverted="[bool]False" Label="[string]Time [seconds]" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]2091" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 0.60000000000000009, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="2088" IsInverted="[bool]False" Label="[string]Time [seconds]" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]2091" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 0.70000000000000007, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="2091">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
@@ -828,7 +828,7 @@
 			<p.DefaultValue>0x40F86A0000000000</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="Double" Id="23" Name="carrier frequency" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>0x41CB44E560000000</p.DefaultValue>
+			<p.DefaultValue>0x41E2410110000000</p.DefaultValue>
 		</DataItem>
 		<DataItem DataType="Double" Id="26" Name="actual carrier frequency" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x40F86A0000000000</p.DefaultValue>
@@ -1065,7 +1065,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]error in" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@05f5d77b3f0b4054b4fa873457237738">
+					<Attributed AttributedType="@91db38147f214eb797b9e32f0467c711">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]reset" />
 						</AttributeValues>
@@ -1539,7 +1539,7 @@
 		<p.TypeReference TypeId="f80668f0fc0b4f71bd8ce62b77d8a4d0">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="Error" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="05f5d77b3f0b4054b4fa873457237738">
+		<p.TypeReference TypeId="91db38147f214eb797b9e32f0467c711">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="Boolean" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="2cbcf1c3e6c744e886ac101cb8b5489e">

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="E017652A0C4D2ADF2362B43A78DCC4DAB71CCB87D611D651EA1CAB97F7F82A129FF25D0014365AEC644ABB4499C8E1DAF9500D53E3100AF3359A87B63ADB32BC" Timestamp="1D735E08D7C7E2C" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="87D94121E7D433AA04949EB113521C7D5E74CE9E7F5F9AC698B039989B5B947365EEDD87B094D318868CD6C9A8345C7C20809E888BA72167F50FE20040BC1B80" Timestamp="1D73B6AC1793EBC" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -59,16 +59,16 @@
 				<Wire Id="30" Joints="N(28:x^2)|(85,35) h(10) v(40) N(29:c0t0v)|(100,75)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="31" Joints="N(27:abs(x\))|(45,35) N(28:x)|(55,35)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="32" Joints="N(23:i0)|(6,35) N(27:x)|(15,35)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="33" Joints="N(24:i0)|(6,90) N(29:c1t0v)|(100,90)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="34" Joints="N(29:o)|(130,85) N(25:i0)|(139,85)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="33" Joints="N(96:i0)|(6,90) N(29:c1t0v)|(100,90)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="34" Joints="N(29:o)|(130,85) h(4) v(5) N(94:21)|(139,90)" xmlns="http://www.ni.com/PlatformFramework" />
 				<LoopCount Bounds="1 1 15 15" Docking="Left" Id="22" Terminals="20, 21" />
 				<LoopTunnel AutoIndex="True" Bounds="-5 32 13 10" Docking="Left" Id="23" Terminals="o0=54, i0=32" TunnelMode="0" />
-				<LoopTunnel AutoIndex="True" Bounds="-5 87 13 10" Docking="Left" Id="24" Terminals="o0=42, i0=33" TunnelMode="0" />
-				<LoopTunnel AutoIndex="True" Bounds="141 82 13 10" Docking="Right" Id="25" Terminals="o0=43, i0=34" TunnelMode="0" />
+				<RightShiftRegister Bounds="141 87 13 10" Docking="Right" Id="94" Terminals="20=43, 21=34" />
+				<LeftShiftRegister Bounds="-5 87 13 10" Docking="Left" Id="96" RightRegister="94" Terminals="o0=42, i0=33" />
 			</ForLoop>
 			<InitializeArray Bounds="395 250 40 30" Id="35" Terminals="element=56, outArray=42, c0t0v=53" />
-			<AddArrayElements Bounds="700 245 30 30" Id="36" />
-			<Divide Bounds="740 255 30 30" Id="37" />
+			<AddArrayElements Bounds="690 240 30 30" Id="36" />
+			<Divide Bounds="740 250 30 30" Id="37" />
 			<ToDoublePrecisionFloat Bounds="525 315 30 10" Id="38" />
 			<Comment Bounds="505 130 200 15" Id="39" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>calculate mean power in window</p.Text>
@@ -76,10 +76,10 @@
 			<Comment Bounds="805 235 145 15" Id="41" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>frame if over threshold</p.Text>
 			</Comment>
-			<Wire Id="42" Joints="N(35:outArray)|(435,255) N(24:o0)|(518,255)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="43" Joints="N(25:o0)|(677,250) h(7) v(10) N(36:numeric array)|(700,260)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="44" Joints="N(36:sum)|(730,260) N(37:x)|(740,260)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="45" Joints="N(38:double precision float)|(555,320) h(180) v(-45) N(37:y)|(740,275)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="42" Joints="N(35:outArray)|(435,255) N(96:o0)|(518,255)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="43" Joints="N(94:20)|(677,255) N(36:numeric array)|(690,255)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="44" Joints="N(36:sum)|(720,255) N(37:x)|(740,255)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="45" Joints="N(38:double precision float)|(555,320) h(180) v(-50) N(37:y)|(740,270)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Comment Bounds="370 160 105 15" Id="47" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>generate winow</p.Text>
 			</Comment>
@@ -102,7 +102,7 @@
 			<NodeLabel AttachedTo="55" Bounds="348 250 30 15" Id="60" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>element</p.Text>
 			</NodeLabel>
-			<Wire Id="64" Joints="N(37:x/y)|(770,270) h(22) B(1) N(93:x)|(850,270) B(1) v(60) N(68:Value)|(958,330)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="64" Joints="N(37:x/y)|(770,265) h(22) v(5) B(2) N(93:x)|(850,270) B(2) v(60) N(68:Value)|(958,330)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="955 325 40 15" DataItem="65" Id="68" Label="69" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
