@@ -1,0 +1,8 @@
+ffmpeg -re -y -i elsys.mp3 -vn -b:a 8k -ar 8k -c:a libopus -f ogg udp://127.0.0.1:26363
+
+
+bitrate -b:a 8k
+sample rate -ar 8k 16k osv
+mono -ac
+codec -c:a libopus
+
