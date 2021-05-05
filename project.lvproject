@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="250E677C0184D1A32F0A5151B9F0A7775CA3F920C7E2D9B1C9767C364B9FEF5BA6F92BD3E0264C01EAD6A51D64C064555F982D5949B4DE4D9940D4B9672BEBD4" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="C2F334DFDFB22FEEFCDADBDE96FDC4ECB680A38E2CBB5947151CD72428B7F7A89C8CC0A1E5D1DB4C2456C15126004A9E1AE8DBEDF8636B8FC814849DB5083231" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Data" Name="http://www.ni.com/Data" OldestCompatibleVersion="6.2.0.0" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
@@ -81,15 +81,6 @@
 						</Instance>
 						<Instance Id="724" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
 							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="FFT Power Spectrum for 1 Chan (CDB)2_2.gvi" p10:Process.AssociatedIdentifier="712" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
-						</Instance>
-						<Instance Id="728" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
-							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="FreqOffset.gvi" p10:Process.AssociatedIdentifier="714" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
-						</Instance>
-						<Instance Id="732" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
-							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="TestProject.gvi" p10:Process.AssociatedIdentifier="716" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
-						</Instance>
-						<Instance Id="736" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
-							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="TimeOffset.gvi" p10:Process.AssociatedIdentifier="718" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
 						</Instance>
 						<Instance Id="1023" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
 							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="ReceiverBlock.gvi" p10:Process.AssociatedIdentifier="1021" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
@@ -187,6 +178,15 @@
 						<Instance Id="5253" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
 							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="Interleaver.gvi" p10:Process.AssociatedIdentifier="5251" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
 						</Instance>
+						<Instance Id="5617" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="TestProject.gvi" p10:Process.AssociatedIdentifier="5609" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="5621" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="TimeOffset.gvi" p10:Process.AssociatedIdentifier="5611" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="5613" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="FreqOffset.gvi" p10:Process.AssociatedIdentifier="5607" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
 						<Superimposition Id="7" Name="Root Superimposition">
 							<Superimpose Source="26">
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="324" />
@@ -206,9 +206,6 @@
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="706" />
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="720" />
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="724" />
-								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="728" />
-								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="732" />
-								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="736" />
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="742" />
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="1023" />
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="1029" />
@@ -242,6 +239,9 @@
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="5247" />
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="5253" />
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="5259" />
+								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="5613" />
+								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="5617" />
+								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="5621" />
 							</Superimpose>
 						</Superimposition>
 					</MappingManager>
@@ -453,9 +453,6 @@
 						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="704" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Channel_basic.gvi" StoragePath="Tests\Channel_basic.gvi" />
 						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="710" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="FadingProfile.gvi" StoragePath="..\Simulator_students_v2\FadingProfile.gvi" />
 						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="712" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="FFT Power Spectrum for 1 Chan (CDB)2_2.gvi" StoragePath="..\Simulator_students_v2\FFT Power Spectrum for 1 Chan (CDB)2_2.gvi" />
-						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="714" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="FreqOffset.gvi" StoragePath="..\Simulator_students_v2\FreqOffset.gvi" />
-						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="716" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TestProject.gvi" StoragePath="..\Simulator_students_v2\TestProject.gvi" />
-						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="718" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TimeOffset.gvi" StoragePath="..\Simulator_students_v2\TimeOffset.gvi" />
 						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="740" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Channel.gvi" StoragePath="..\Simulator_students_v2\Channel.gvi" />
 						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="1021" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="ReceiverBlock.gvi" StoragePath="Rx\ReceiverBlock.gvi" />
 						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="1027" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TransmitterBlock.gvi" StoragePath="Tx\TransmitterBlock.gvi" />
@@ -491,6 +488,9 @@
 						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="5245" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Receiver.gvi" StoragePath="Rx\Receiver.gvi" />
 						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="5251" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Interleaver.gvi" StoragePath="Common\Interleaver.gvi" />
 						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="5257" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Transmitter.gvi" StoragePath="Tx\Transmitter.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="5607" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="FreqOffset.gvi" StoragePath="..\Simulator_students_v2\FreqOffset.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="5609" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TestProject.gvi" StoragePath="..\Simulator_students_v2\TestProject.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="5611" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TimeOffset.gvi" StoragePath="..\Simulator_students_v2\TimeOffset.gvi" />
 					</EmbeddedDefinitionReference>
 					<EmbeddedDefinitionReference Bindings="RcxRepositoryManagerDefinition" Id="43" ModelDefinitionType="RepositoryManagerDefinition" Name="rcx.lib" Reparentable="False">
 						<RepositoryManagerDefinition />
@@ -559,9 +559,6 @@
 				<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="705" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Channel_basic.gvi" StoragePath="Tests\Channel_basic.gvi" />
 				<SourceFileReference Id="711" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="FadingProfile.gvi" StoragePath="..\Simulator_students_v2\FadingProfile.gvi" />
 				<SourceFileReference Id="713" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="FFT Power Spectrum for 1 Chan (CDB)2_2.gvi" StoragePath="..\Simulator_students_v2\FFT Power Spectrum for 1 Chan (CDB)2_2.gvi" />
-				<SourceFileReference Id="715" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="FreqOffset.gvi" StoragePath="..\Simulator_students_v2\FreqOffset.gvi" />
-				<SourceFileReference Id="717" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TestProject.gvi" StoragePath="..\Simulator_students_v2\TestProject.gvi" />
-				<SourceFileReference Id="719" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TimeOffset.gvi" StoragePath="..\Simulator_students_v2\TimeOffset.gvi" />
 				<SourceFileReference Id="741" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Channel.gvi" StoragePath="..\Simulator_students_v2\Channel.gvi" />
 				<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="1022" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="ReceiverBlock.gvi" StoragePath="Rx\ReceiverBlock.gvi" />
 				<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="1028" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TransmitterBlock.gvi" StoragePath="Tx\TransmitterBlock.gvi" />
@@ -597,6 +594,9 @@
 				<SourceFileReference Id="5246" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Receiver.gvi" StoragePath="Rx\Receiver.gvi" />
 				<SourceFileReference Id="5252" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Interleaver.gvi" StoragePath="Common\Interleaver.gvi" />
 				<SourceFileReference Id="5258" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Transmitter.gvi" StoragePath="Tx\Transmitter.gvi" />
+				<SourceFileReference Id="5608" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="FreqOffset.gvi" StoragePath="..\Simulator_students_v2\FreqOffset.gvi" />
+				<SourceFileReference Id="5610" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TestProject.gvi" StoragePath="..\Simulator_students_v2\TestProject.gvi" />
+				<SourceFileReference Id="5612" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TimeOffset.gvi" StoragePath="..\Simulator_students_v2\TimeOffset.gvi" />
 			</EmbeddedDefinitionReference>
 			<EmbeddedDefinitionReference Id="24" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
 				<PackageReferencesDefinition>
