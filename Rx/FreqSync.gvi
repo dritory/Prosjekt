@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="F5C8A56D841AECA5AE93F4FCD71EE5C2E0C2528E8ECEB1E13239DF8ACE6E99BD1BA7BA09A9A01111B7E0803C439E6969CEDF8E40B8480DA08CA10FA9DD01869A" Timestamp="1D72D24FC991565" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="E7627D49EF87A4D4DCC1351EEF01F71C3F2AD9B22DFE4CE94EFEF77A3A69F30425AC48602DA4F2E84CEE0B7659D167AAC87F87BB2233553C191CD0FAD746E3D5" Timestamp="1D741F31312A765" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -264,7 +264,7 @@
 				<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 			</PatternGeneratorRampBySamplesArray>
 			<ArraySize Bounds="975 360 40 20" Id="123" />
-			<Multiply Bounds="1065 330 30 30" Id="128" Terminals="o=130, c0t0v=848, c1t0v=323" />
+			<Multiply Bounds="1065 330 30 30" Id="128" Terminals="o=130, c0t0v=968, c1t0v=323" />
 			<Wire Id="130" Joints="N(128:o)|(1095,345) N(112:L1)|(1115,345)" xmlns="http://www.ni.com/PlatformFramework" />
 			<PolarToComplex Bounds="1355 285 30 30" Id="136" />
 			<DataAccessor Bounds="1685 270 40 15" DataItem="140" Id="144" Label="145" xmlns="http://www.ni.com/MocCommon">
@@ -301,7 +301,7 @@
 			<NodeLabel AttachedTo="178" Bounds="1445 370 50 14" Id="179" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>error out</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="130 590 40 40" Id="181" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Common\\BarkerCode.gvi&quot;" Signature="@0bfa9434e2da4a3a9412a41072805d5b" Target="BarkerCode.gvi" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="130 590 40 40" Id="181" ResolveFailedHint="&quot;C:\\Users\\lolsk\\OneDrive - NTNU\\Radiokom\\Prosjekt\\Common\\BarkerCode.gvi&quot;" Signature="@0bfa9434e2da4a3a9412a41072805d5b" Target="BarkerCode.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="barker code" />
@@ -380,7 +380,7 @@
 				<p.Text>input 1</p.Text>
 			</NodeLabel>
 			<Wire Id="791" Joints="N(789:Out)|(995,390) N(324:c1t0v)|(1025,390)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Add Bounds="1190 330 30 30" Id="795" Terminals="o=889, c0t0v=754, c1t0v=905" />
+			<Add Bounds="1190 330 30 30" Id="795" Terminals="o=889, c0t0v=754, c1t0v=970" />
 			<Wire Id="798" Joints="N(287:o)|(1425,275) N(144:Value)|(1688,275)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="804" Joints="N(248:o)|(335,680) h(310) v(-155) N(844:c1t0v)|(650,525)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="806" Joints="N(307:o)|(285,625) h(10) v(-145) N(68:L1)|(445,480)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -403,9 +403,7 @@
 			<Wire Id="841" Joints="N(840:-x)|(1340,305) N(136:theta)|(1355,305)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Add Bounds="530 290 30 30" Id="842" Terminals="o=908, c0t0v=909, c1t0v=838" />
 			<Subtract Bounds="700 500 30 30" Id="843" />
-			<Multiply Bounds="650 505 30 30" Id="844" Terminals="o=849, c0t0v=848, c1t0v=804" />
-			<Wire Id="845" Joints="N(60:R2)|(620,405) h(75) B(1) N(214:Value)|(788,405) B(1) v(100) N(843:x)|(700,505)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="848" Joints="N(60:R1)|(620,395) h(25) B(1) v(-30) B(2) N(193:Value)|(758,365) B(2) v(-30) N(128:c0t0v)|(1065,335) B(1) v(115) N(844:c0t0v)|(650,510)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Multiply Bounds="650 505 30 30" Id="844" Terminals="o=849, c0t0v=968, c1t0v=804" />
 			<Wire Id="849" Joints="N(844:o)|(680,520) N(843:y)|(700,520)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Comment Bounds="600 570 180 15" Id="850" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>Compensate for phase offset</p.Text>
@@ -418,7 +416,6 @@
 			</NodeLabel>
 			<Wire Id="889" Joints="N(795:o)|(1220,345) h(84) v(-40) N(840:x)|(1310,305)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="890" Joints="N(112:R4)|(1165,375) N(178:Value)|(1403,375)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="892" Joints="N(843:x-y)|(730,515) N(894:L0)|(825,515)" xmlns="http://www.ni.com/PlatformFramework" />
 			<MethodCall Bounds="825 510 50 50" Id="894" ResolveFailedHint="Wrap Angle (Scalar DBL).gvi, Package: (LabVIEW NXG Analysis Advanced Files, Version: 3.0.0)" Signature="@8d1130e9bd0a4df892c7a4dfdc7cf685" Target="NI::Analysis::Geometry::Wrap Angle (Scalar DBL).gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -486,9 +483,11 @@
 			<NodeLabel AttachedTo="899" Bounds="809 498 30 15" Id="902" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>angle units</p.Text>
 			</NodeLabel>
-			<Wire Id="905" Joints="N(894:R0)|(875,515) h(40) B(1) h(265) v(-165) N(795:c1t0v)|(1190,350) B(1) v(10) N(342:Value)|(923,525)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="908" Joints="N(842:o)|(560,305) h(6) v(45) h(-1) v(35) N(60:L0)|(570,385)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="909" Joints="N(33:R0)|(500,385) h(6) v(-90) N(842:c0t0v)|(530,295)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="968" Joints="N(60:R1)|(620,395) h(25) B(1) v(-30) B(2) N(193:Value)|(758,365) B(2) v(-30) N(128:c0t0v)|(1065,335) B(1) v(115) N(844:c0t0v)|(650,510)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="970" Joints="N(894:R0)|(875,515) h(40) B(1) h(264) v(-110) h(41) v(-40) h(-40) v(-15) N(795:c1t0v)|(1190,350) B(1) v(10) N(342:Value)|(923,525)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="974" Joints="N(60:R2)|(620,405) h(75) B(1) N(214:Value)|(788,405) B(1) v(70) B(3) h(75) v(40) N(894:L0)|(825,515) B(3) v(30) N(843:x)|(700,505)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
