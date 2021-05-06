@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="44C93D6AD504538E8D8201168C334F4237E35939D767850FB8598618A4148CDAC2F17DFF54E68069474A9CC093F1B67085617BAFB30AB980044CD7771BBFEFB8" Timestamp="1D742639DA9779F" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="31ADBE1E9CE83DD8F2AA9A82F8148CAF155FA5214BD9E953B59BE937A7D99265BA4B67D3A3E537FF3453B277DBAE46B5463B8E307D7E302F0280609D4CCA96A8" Timestamp="1D742711E1BB28E" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -203,7 +203,7 @@
 			<Wire Id="890" Joints="N(112:R4)|(1165,375) N(178:Value)|(1403,375)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="970" Joints="N(1726:1197)|(889,515) h(26) B(1) h(300) v(-165) N(991:c1t0v)|(1220,350) B(1) v(10) N(342:Value)|(923,525)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Add Bounds="1220 330 30 30" Id="991" Terminals="o=889, c0t0v=754, c1t0v=970" />
-			<ArrayIndex Bounds="-85 -10 40 40" Id="1035" Rank="2" Terminals="array=1037, c0t0v=1040, c0t1v, c0out=1168" />
+			<ArrayIndex Bounds="-85 -10 40 40" Id="1035" Rank="2" Terminals="array=1037, c0t0v=1040, c0t1v, c0out=2539" />
 			<Wire Id="1037" Joints="N(29:Value)|(-175,40) h(5) B(1) h(75) B(2) N(2049:o0)|(-37,40) B(2) v(-45) N(1035:array)|(-85,-5) B(1) v(-110) N(2195:array)|(-160,-70)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Literal Bounds="-125 10 40 15" DataType="Int32" Id="1039" Label="1041" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>0</p.Data>
@@ -214,7 +214,6 @@
 				<p.Text>row index</p.Text>
 			</NodeLabel>
 			<Wire Id="1097" Joints="N(106:Value)|(175,260) h(745) v(5) B(2) N(287:c0t0v)|(1395,265) B(2) v(100) N(123:array)|(975,365)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="1168" Joints="N(1035:c0out)|(-45,15) N(2052:o0)|(-37,15)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DisableStructure Bounds="-26 285 911 425" Id="1197" Selected="1199" UserSelectorBounds="402 0 107 17">
 				<DisableStructure.DisableDiagram Bounds="5 5 901 415" Id="1198" Pattern="Enabled" />
 				<DisableStructure.DisableDiagram Bounds="5 5 901 415" Id="1199" Pattern="Disabled">
@@ -436,7 +435,7 @@
 						<ArrayBehavior ElementType="ComplexDouble" IndexEditorWidth="42" VisibleRows="4">
 							<p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
 						</ArrayBehavior>
-						<Literal Bounds="49 4 40 15" DataType="ComplexDouble" Id="1095">
+						<Literal Bounds="49.4 4 40 15" DataType="ComplexDouble" Id="1095">
 							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 						</Literal>
 					</ArrayLiteral>
@@ -517,60 +516,35 @@
 			<NodeLabel AttachedTo="193" Bounds="815 60 60 14" Id="194" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>phase drift</p.Text>
 			</NodeLabel>
-			<ForLoop Bounds="-32 -37 321 213" DiagramId="1787" Id="1786">
-				<LoopIteration Bounds="0 140 15 15" Id="1789" />
-				<ArrayIndex Bounds="15 70 40 40" Id="1036" Rank="2" Terminals="array=2048, c0t0v=2283, c0t1v, c0out=2263" />
-				<ComplexToPolar Bounds="245 45 30 30" Id="1059" />
-				<AddArrayElements Bounds="215 45 30 30" Id="1166" />
-				<ComplexConjugate Bounds="155 35 30 30" Id="1167" />
-				<Multiply Bounds="185 45 30 30" Id="1169" Terminals="o=1172, c0t0v=1171, c1t0v=2214" />
-				<Divide Bounds="275 60 30 30" Id="1177" />
-				<Wire Id="2048" Joints="N(2049:i0)|(6,75) N(1036:array)|(15,75)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="2054" Joints="N(1177:x/y)|(305,75) N(2055:i0)|(309,75)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="1182" Joints="N(1166:sum)|(245,60) N(1059:r * e^(i*theta\))|(245,60)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="1183" Joints="N(1059:theta)|(275,65) N(1177:x)|(275,65)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="1172" Joints="N(1169:o)|(215,60) N(1166:numeric array)|(215,60)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="1171" Joints="N(1167:x - iy)|(185,50) N(1169:c0t0v)|(185,50)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Increment Bounds="15 130 30 30" Id="2191" />
-				<Wire Id="2192" Joints="N(1789:Output)|(15,145) N(2191:x)|(15,145)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="2214" Joints="N(2266:2215)|(159,95) h(6) v(-10) B(2) N(1107:array)|(175,85) B(2) v(-20) N(1169:c1t0v)|(185,65)" xmlns="http://www.ni.com/PlatformFramework" />
-				<CaseStructure Bounds="65 60 90 70" Default="2216" Id="2215" Selected="2217" UserSelectorBounds="1 0 88 17">
-					<CaseStructure.Case Bounds="5 5 80 60" Id="2216" Pattern="False">
-						<Reverse1DArray Bounds="15 35 40 20" Id="2268" />
-						<Wire Id="2288" Joints="N(2264:2216)|(4,30) h(6) B(1) N(2266:2216)|(76,30) B(1) v(10) N(2268:array)|(15,40)" xmlns="http://www.ni.com/PlatformFramework" />
-					</CaseStructure.Case>
-					<CaseStructure.Case Bounds="5 5 80 60" Id="2217" Pattern="True">
-						<Wire Id="2265" Joints="N(2264:2217)|(4,30) N(2266:2217)|(76,30)" xmlns="http://www.ni.com/PlatformFramework" />
-					</CaseStructure.Case>
-					<CaseStructure.Selector Bounds="-4 55 13 10" Docking="Left" Id="2218" Terminals="2215=2277, 2216, 2217" />
-					<CaseStructure.Tunnel Bounds="-4 30 13 10" Docking="Left" Id="2264" Terminals="2215=2263, 2216=2288, 2217=2265" />
-					<CaseStructure.Tunnel Bounds="81 30 13 10" Docking="Right" Id="2266" Terminals="2215=2214, 2216=2288, 2217=2265" />
-				</CaseStructure>
-				<ArraySize Bounds="175 80 40 20" Id="1107" />
-				<Wire Id="2261" Joints="N(2052:i0)|(6,50) N(1167:x + iy)|(155,50)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="2263" Joints="N(1036:c0out)|(55,95) N(2264:2215)|(61,95)" xmlns="http://www.ni.com/PlatformFramework" />
-				<QuotientAndRemainder Bounds="135 150 30 30" Id="2271" />
-				<Literal Bounds="95 165 40 15" DataType="Int32" Id="2272" Label="2273" xmlns="http://www.ni.com/MocCommon">
-					<p.Data>2</p.Data>
-					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
-				</Literal>
-				<NodeLabel AttachedTo="2272" Bounds="95 147 30 15" Id="2273" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>y</p.Text>
-				</NodeLabel>
-				<Wire Id="2274" Joints="N(2272:Out)|(135,170) N(2271:y)|(135,170)" xmlns="http://www.ni.com/PlatformFramework" />
-				<IsEqualTo0 Bounds="170 140 30 30" Id="2275" />
-				<Wire Id="2276" Joints="N(2271:x-y*floor(x/y\))|(165,155) N(2275:x)|(170,155)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="2277" Joints="N(2275:x = 0?)|(200,155) h(5) v(-15) h(-150) v(-20) N(2218:2215)|(61,120)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="2279" Joints="N(2280:o)|(250,105) h(10) v(-25) N(1177:y)|(275,80)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Multiply Bounds="220 90 30 30" Id="2280" Terminals="o=2279, c0t0v=2284, c1t0v=2283" />
-				<Wire Id="2283" Joints="N(2191:x+1)|(45,145) h(5) B(1) h(15) B(2) v(-15) h(150) v(-20) N(2280:c1t0v)|(220,110) B(2) v(10) N(2271:x)|(135,155) B(1) v(-20) h(-40) v(-30) N(1036:c0t0v)|(15,95)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="2284" Joints="N(1107:size(s\))|(215,95) N(2280:c0t0v)|(220,95)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ForLoop Bounds="-32 -32 321 208" DiagramId="1787" Id="1786">
+				<LoopIteration Bounds="0 135 15 15" Id="1789" />
+				<ArrayIndex Bounds="15 65 40 40" Id="1036" Rank="2" Terminals="array=2048, c0t0v=2295, c0t1v, c0out=2530" />
+				<ComplexToPolar Bounds="245 40 30 30" Id="1059" />
+				<AddArrayElements Bounds="215 40 30 30" Id="1166" />
+				<ComplexConjugate Bounds="155 30 30 30" Id="1167" />
+				<Multiply Bounds="185 40 30 30" Id="1169" Terminals="o=1172, c0t0v=1171, c1t0v=2530" />
+				<Divide Bounds="275 55 30 30" Id="1177" />
+				<Wire Id="2048" Joints="N(2049:i0)|(6,70) N(1036:array)|(15,70)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2054" Joints="N(1177:x/y)|(305,70) N(2055:i0)|(309,70)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="1182" Joints="N(1166:sum)|(245,55) N(1059:r * e^(i*theta\))|(245,55)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="1183" Joints="N(1059:theta)|(275,60) N(1177:x)|(275,60)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="1172" Joints="N(1169:o)|(215,55) N(1166:numeric array)|(215,55)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="1171" Joints="N(1167:x - iy)|(185,45) N(1169:c0t0v)|(185,45)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Increment Bounds="15 125 30 30" Id="2191" />
+				<Wire Id="2192" Joints="N(1789:Output)|(15,140) N(2191:x)|(15,140)" xmlns="http://www.ni.com/PlatformFramework" />
+				<ArraySize Bounds="175 75 40 20" Id="1107" />
+				<Wire Id="2261" Joints="N(2052:i0)|(6,45) N(1167:x + iy)|(155,45)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Multiply Bounds="220 85 30 30" Id="2280" Terminals="o=2317, c0t0v=2284, c1t0v=2295" />
+				<Wire Id="2284" Joints="N(1107:size(s\))|(215,90) N(2280:c0t0v)|(220,90)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2295" Joints="N(2191:x+1)|(45,140) h(5) B(1) h(15) v(-15) h(150) v(-20) N(2280:c1t0v)|(220,105) B(1) v(-20) h(-40) v(-30) N(1036:c0t0v)|(15,90)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2317" Joints="N(2280:o)|(250,100) h(10) v(-25) N(1177:y)|(275,75)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2530" Joints="N(1036:c0out)|(55,90) h(110) v(-10) B(2) N(1107:array)|(175,80) B(2) v(-20) N(1169:c1t0v)|(185,60)" xmlns="http://www.ni.com/PlatformFramework" />
 				<LoopCount Bounds="1 1 15 15" Docking="Left" Id="1788" Terminals="1786=2184, 1787" />
-				<LoopTunnel Bounds="-5 72 13 10" Docking="Left" Id="2049" Terminals="o0=1037, i0=2048" />
-				<LoopTunnel Bounds="-5 47 13 10" Docking="Left" Id="2052" Terminals="o0=1168, i0=2261" />
-				<LoopTunnel AutoIndex="True" Bounds="311 72 13 10" Docking="Right" Id="2055" Terminals="o0=2212, i0=2054" TunnelMode="0" />
+				<LoopTunnel Bounds="-5 67 13 10" Docking="Left" Id="2049" Terminals="o0=1037, i0=2048" />
+				<LoopTunnel Bounds="-5 42 13 10" Docking="Left" Id="2052" Terminals="o0=2539, i0=2261" />
+				<LoopTunnel AutoIndex="True" Bounds="311 67 13 10" Docking="Right" Id="2055" Terminals="o0=2212, i0=2054" TunnelMode="0" />
 			</ForLoop>
-			<MethodCall Bounds="-170 385 40 40" Id="181" ResolveFailedHint="&quot;C:\\Users\\lolsk\\OneDrive - NTNU\\Radiokom\\Prosjekt\\Common\\BarkerCode.gvi&quot;" Signature="@0bfa9434e2da4a3a9412a41072805d5b" Target="BarkerCode.gvi" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="-170 385 40 40" Id="181" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Common\\BarkerCode.gvi&quot;" Signature="@0bfa9434e2da4a3a9412a41072805d5b" Target="BarkerCode.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="barker code" />
@@ -591,12 +565,11 @@
 			<NodeLabel AttachedTo="773" Bounds="-311 385 66 14" Id="774" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>barker code</p.Text>
 			</NodeLabel>
-			<Wire Id="2184" Joints="N(2185:x-1)|(-40,-40) h(5) v(10) N(1788:1786)|(-31,-30)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2184" Joints="N(2185:x-1)|(-40,-40) h(3) v(15) N(1788:1786)|(-31,-25)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Decrement Bounds="-70 -55 30 30" Id="2185" />
 			<Wire Id="2194" Joints="N(181:R2)|(-130,410) N(2181:1197)|(-30,410)" xmlns="http://www.ni.com/PlatformFramework" />
 			<ArraySize Bounds="-160 -75 40 20" Id="2195" />
-			<ArrayIndex Bounds="-115 -65 40 30" Id="2197" Terminals="array=2198, c0t0v=2201, c0out=2202" />
-			<Wire Id="2198" Joints="N(2195:size(s\))|(-120,-60) N(2197:array)|(-115,-60)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ArrayIndex Bounds="-115 -65 40 30" Id="2197" Terminals="array=2541, c0t0v=2201, c0out=2202" />
 			<Literal Bounds="-127 -44 12 9" DataType="Int32" Id="2199" Label="2200" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>0</p.Data>
 				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
@@ -605,11 +578,11 @@
 			<NodeLabel AttachedTo="2199" Bounds="-127 -62 30 15" Id="2200" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>index</p.Text>
 			</NodeLabel>
-			<Wire Facade="WireInvisibleFacade" Id="2201" Joints="N(2199:Out)|(-87,-39) v(9) h(-33) v(-10) N(2197:c0t0v)|(-115,-40)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Facade="WireInvisibleFacade" Id="2201" Joints="N(2199:Out)|(-115,-39) v(9) h(-33) v(-10) N(2197:c0t0v)|(-115,-40)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="2202" Joints="N(2197:c0out)|(-75,-40) N(2185:x)|(-70,-40)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="2211" Joints="N(2289:R0)|(350,40) h(40) v(25) h(255) B(3) N(193:Value)|(773,65) B(3) v(30) h(410) v(240) N(128:c0t0v)|(1065,335)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="2212" Joints="N(2055:o0)|(292,40) N(2289:L0)|(300,40)" xmlns="http://www.ni.com/PlatformFramework" />
-			<MethodCall Bounds="300 35 50 50" Id="2289" ResolveFailedHint="Median.gvi, Package: (LabVIEW NXG Analysis Basic Files, Version: 3.0.0)" Signature="@6f65cd4766f2407e9df907cc2259707e" Target="NI::Analysis::Statistics::Median.gvi" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="300 35 50 50" Id="2289" ResolveFailedHint="Median.gvi, Package: (LabVIEW NXG Analysis Basic Files, Version: 3.0.0)" Signature="@3c9b6ad996af4eda983d44781c21d990" Target="NI::Analysis::Statistics::Median.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="x" />
@@ -623,6 +596,11 @@
 				<Terminal DataType="Double" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
+			<Comment Bounds="50 -60 120 15" Id="2290" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>Moose's algorithm</p.Text>
+			</Comment>
+			<Wire Id="2539" Joints="N(1035:c0out)|(-45,15) N(2052:o0)|(-37,15)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2541" Joints="N(2195:size(s\))|(-120,-60) N(2197:array)|(-115,-60)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
@@ -774,7 +752,7 @@
 				<DataType>UInt16</DataType>
 			</Enumeration>
 		</p.TypeReference>
-		<p.TypeReference TypeId="6f65cd4766f2407e9df907cc2259707e">
+		<p.TypeReference TypeId="3c9b6ad996af4eda983d44781c21d990">
 			<Attributed AttributedType="@7e75f31423524332a2b05a1d4b528ddc">
 				<AttributeValues>
 					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]50" />
@@ -893,7 +871,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]weight" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@f4dc81be9caf4c62ab0ddbb323d28954">
+					<Attributed AttributedType="@af8814800e4740218976fc8e5b29dc97">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]tolerance" />
 						</AttributeValues>
@@ -1070,7 +1048,7 @@
 		<p.TypeReference TypeId="cd3eb25b6dd74b47aef0f2109932e542">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="Double[]" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="f4dc81be9caf4c62ab0ddbb323d28954">
+		<p.TypeReference TypeId="af8814800e4740218976fc8e5b29dc97">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="Double" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="d88d7d2383dd4741920cf11a3f03d6fe">

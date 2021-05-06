@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="74ED0F2C31650205668B4E36298D22401795F4D2D851D645298E9953584B5DBCFCA251885BC096A2A6281FDC60EC2E0A4ACEDDD858C5909701A7460255059C9A" Timestamp="1D7426DF210792D" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Data" Name="http://www.ni.com/Data" OldestCompatibleVersion="6.2.0.0" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.2.1.50272" Name="LabVIEW NXG" Version="3.0.0" />
+	</SourceModelFeatureSet>
+	<DataIndexDefinition xmlns="http://www.ni.com/Data" />
+	<EnvoyManagerFile Id="1" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="2" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="3" Name="data.xml" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Id="4" ModelDefinitionType="TDMSRootDefinition" Name="TDMS_Root">
+				<TDMSRootDefinition StoragePath="Data-2021-04-13 202056 219.tdms" xmlns="http://www.ni.com/Data" />
+				<EmbeddedDefinitionReference Id="5" ModelDefinitionType="TDMSGroupDefinition" Name="TDMS_GROUP">
+					<TDMSGroupDefinition GroupName="Capture 1" Source="TestUDP.gvi" SourceType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Timestamp="04/13/2021 20:20:56" xmlns="http://www.ni.com/Data" />
+					<EmbeddedDefinitionReference Id="6" ModelDefinitionType="TDMSDataItemDefinition" Name="element">
+						<TDMSDataItemDefinition DataName="element" DataType="UInt8[]" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="7" ModelDefinitionType="TDMSDataItemDefinition" Name="sent output">
+						<TDMSDataItemDefinition DataName="sent output" DataType="UInt8[]" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="8" ModelDefinitionType="TDMSDataItemDefinition" Name="sink port">
+						<TDMSDataItemDefinition DataName="sink port" DataType="UInt16" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="9" ModelDefinitionType="TDMSDataItemDefinition" Name="source port">
+						<TDMSDataItemDefinition DataName="source port" DataType="UInt16" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="10" ModelDefinitionType="TDMSDataItemDefinition" Name="net address">
+						<TDMSDataItemDefinition DataName="net address" DataType="String" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="11" ModelDefinitionType="TDMSDataItemDefinition" Name="net address_2">
+						<TDMSDataItemDefinition DataName="net address_2" DataType="String" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="12" ModelDefinitionType="TDMSDataItemDefinition" Name="Error out">
+						<TDMSDataItemDefinition DataName="Error out" DataType="Error" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+				</EmbeddedDefinitionReference>
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Id="13" ModelDefinitionType="TDMSRootDefinition" Name="TDMS_Root_2">
+				<TDMSRootDefinition StoragePath="Data-2021-05-06 114959 055.tdms" xmlns="http://www.ni.com/Data" />
+				<EmbeddedDefinitionReference Id="14" ModelDefinitionType="TDMSGroupDefinition" Name="TDMS_GROUP_2">
+					<TDMSGroupDefinition GroupName="Capture 2" Source="ReceiverBlock2.0.gvi" SourceType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Timestamp="05/06/2021 11:49:59" xmlns="http://www.ni.com/Data" />
+					<EmbeddedDefinitionReference Id="15" ModelDefinitionType="TDMSDataItemDefinition" Name="IQ rate">
+						<TDMSDataItemDefinition DataName="IQ rate" DataType="Double" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="16" ModelDefinitionType="TDMSDataItemDefinition" Name="actual IQ rate">
+						<TDMSDataItemDefinition DataName="actual IQ rate" DataType="Double" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="17" ModelDefinitionType="TDMSDataItemDefinition" Name="carrier frequency">
+						<TDMSDataItemDefinition DataName="carrier frequency" DataType="Double" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="18" ModelDefinitionType="TDMSDataItemDefinition" Name="actual carrier frequency">
+						<TDMSDataItemDefinition DataName="actual carrier frequency" DataType="Double" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="19" ModelDefinitionType="TDMSDataItemDefinition" Name="gain (dB)">
+						<TDMSDataItemDefinition DataName="gain (dB)" DataType="Double" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="20" ModelDefinitionType="TDMSDataItemDefinition" Name="actual gain (dB)">
+						<TDMSDataItemDefinition DataName="actual gain (dB)" DataType="Double" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="21" ModelDefinitionType="TDMSDataItemDefinition" Name="active antenna">
+						<TDMSDataItemDefinition DataName="active antenna" DataType="String" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="22" ModelDefinitionType="TDMSDataItemDefinition" Name="error out_2">
+						<TDMSDataItemDefinition DataName="error out" DataType="Error" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="23" ModelDefinitionType="TDMSDataItemDefinition" Name="Device names">
+						<TDMSDataItemDefinition DataName="Device names" DataType="String" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="24" ModelDefinitionType="TDMSDataItemDefinition" Name="dequeueing iteration">
+						<TDMSDataItemDefinition DataName="dequeueing iteration" DataType="Int32" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="25" ModelDefinitionType="TDMSDataItemDefinition" Name="RF Channel">
+						<TDMSDataItemDefinition DataName="RF Channel" DataType="String" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="26" ModelDefinitionType="TDMSDataItemDefinition" Name="Symbol rate (sym/s)">
+						<TDMSDataItemDefinition DataName="Symbol rate (sym/s)" DataType="Int32" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="27" ModelDefinitionType="TDMSDataItemDefinition" Name="message length (symbols)">
+						<TDMSDataItemDefinition DataName="message length (symbols)" DataType="Int32" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="28" ModelDefinitionType="TDMSDataItemDefinition" Name="IQ diagram">
+						<TDMSDataItemDefinition DataName="IQ diagram" DataType="ComplexDouble[]" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="29" ModelDefinitionType="TDMSDataItemDefinition" Name="sync frame index (symbols)">
+						<TDMSDataItemDefinition DataName="sync frame index (symbols)" DataType="Int32" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="30" ModelDefinitionType="TDMSDataItemDefinition" Name="filter length">
+						<TDMSDataItemDefinition DataName="filter length" DataType="Int32" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="31" ModelDefinitionType="TDMSDataItemDefinition" Name="Power Threshold">
+						<TDMSDataItemDefinition DataName="Power Threshold" DataType="Double" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="32" ModelDefinitionType="TDMSDataItemDefinition" Name="samples/symbol">
+						<TDMSDataItemDefinition DataName="samples/symbol" DataType="Double" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="33" ModelDefinitionType="TDMSDataItemDefinition" Name="sync frame correlation">
+						<TDMSDataItemDefinition DataName="sync frame correlation" DataType="Double[]" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="34" ModelDefinitionType="TDMSDataItemDefinition" Name="Frame sync">
+						<TDMSDataItemDefinition DataName="Frame sync" DataType="Boolean" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="35" ModelDefinitionType="TDMSDataItemDefinition" Name="Freq sync">
+						<TDMSDataItemDefinition DataName="Freq sync" DataType="Boolean" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="36" ModelDefinitionType="TDMSDataItemDefinition" Name="barker code">
+						<TDMSDataItemDefinition DataName="barker code" DataType="@be9e6496893442a4b708bce654371ca2" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="37" ModelDefinitionType="TDMSDataItemDefinition" Name="decoding">
+						<TDMSDataItemDefinition DataName="decoding" DataType="Boolean" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="38" ModelDefinitionType="TDMSDataItemDefinition" Name="Interleaver">
+						<TDMSDataItemDefinition DataName="Interleaver" DataType="Boolean" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="39" ModelDefinitionType="TDMSDataItemDefinition" Name="number elements in queue">
+						<TDMSDataItemDefinition DataName="number elements in queue" DataType="Int32" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="40" ModelDefinitionType="TDMSDataItemDefinition" Name="milliseconds to wait">
+						<TDMSDataItemDefinition DataName="milliseconds to wait" DataType="UInt32" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="41" ModelDefinitionType="TDMSDataItemDefinition" Name="current index">
+						<TDMSDataItemDefinition DataName="current index" DataType="Int32" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="42" ModelDefinitionType="TDMSDataItemDefinition" Name="one package">
+						<TDMSDataItemDefinition DataName="one package" DataType="Double[]" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="43" ModelDefinitionType="TDMSDataItemDefinition" Name="BER graph">
+						<TDMSDataItemDefinition DataName="BER graph" DataType="Double[]" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="44" ModelDefinitionType="TDMSDataItemDefinition" Name="current BER">
+						<TDMSDataItemDefinition DataName="current BER" DataType="Double" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="45" ModelDefinitionType="TDMSDataItemDefinition" Name="Mean_BER">
+						<TDMSDataItemDefinition DataName="Mean_BER" DataType="Double" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="46" ModelDefinitionType="TDMSDataItemDefinition" Name="Reset BER">
+						<TDMSDataItemDefinition DataName="Reset BER" DataType="Boolean" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="47" ModelDefinitionType="TDMSDataItemDefinition" Name="Receive sound">
+						<TDMSDataItemDefinition DataName="Receive sound" DataType="Boolean" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="48" ModelDefinitionType="TDMSDataItemDefinition" Name="window length">
+						<TDMSDataItemDefinition DataName="window length" DataType="Int32" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="49" ModelDefinitionType="TDMSDataItemDefinition" Name="Raw input">
+						<TDMSDataItemDefinition DataName="Raw input" DataType="Double[]" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="50" ModelDefinitionType="TDMSDataItemDefinition" Name="Extra buffer backwards">
+						<TDMSDataItemDefinition DataName="Extra buffer backwards" DataType="Int32" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="51" ModelDefinitionType="TDMSDataItemDefinition" Name="receiver on">
+						<TDMSDataItemDefinition DataName="receiver on" DataType="Boolean" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="52" ModelDefinitionType="TDMSDataItemDefinition" Name="Correct Size">
+						<TDMSDataItemDefinition DataName="Correct Size" DataType="Boolean" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="53" ModelDefinitionType="TDMSDataItemDefinition" Name="number of samples per USRP fetch">
+						<TDMSDataItemDefinition DataName="number of samples per USRP fetch" DataType="Int64" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="54" ModelDefinitionType="TDMSDataItemDefinition" Name="Stop_RX_2">
+						<TDMSDataItemDefinition DataName="Stop_RX_2" DataType="Boolean" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="55" ModelDefinitionType="TDMSDataItemDefinition" Name="y">
+						<TDMSDataItemDefinition DataName="y" DataType="Int32" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="56" ModelDefinitionType="TDMSDataItemDefinition" Name="preamble?">
+						<TDMSDataItemDefinition DataName="preamble?" DataType="Boolean" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="57" ModelDefinitionType="TDMSDataItemDefinition" Name="preamble code">
+						<TDMSDataItemDefinition DataName="preamble code" DataType="@be9e6496893442a4b708bce654371ca2" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="58" ModelDefinitionType="TDMSDataItemDefinition" Name="Correlation threshold">
+						<TDMSDataItemDefinition DataName="Correlation threshold" DataType="Double" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="59" ModelDefinitionType="TDMSDataItemDefinition" Name="max correlation">
+						<TDMSDataItemDefinition DataName="max correlation" DataType="Double" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+				</EmbeddedDefinitionReference>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="be9e6496893442a4b708bce654371ca2">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="5" />
+					<EnumerationMember Value="1" Name="7" />
+					<EnumerationMember Value="2" Name="11" />
+					<EnumerationMember Value="3" Name="random" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
