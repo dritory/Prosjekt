@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B740D27ECC2A477FA0BF9DD19FEDF81F8EFCDBDCCFC061843F3A08F96C9688EA4B5E533AF7E1129133E140888B7D7F58148E007C320281525DF938964F6D3452" Timestamp="1D741EE65A5E271" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="93E186815576CAF38E148BF2622ED47EC9E80DB34293E5A3055BC5AB8C1ED484DC9AC837E619BB21D44000111E8A1864836B7EEB8560485F5ED9956E2AC4CBAD" Timestamp="1D7427A92991FCF" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -224,7 +224,7 @@
 						<Wire Id="52893" Joints="N(52892:52466)|(4,565) h(1696) v(35) h(-5) N(52872:52466)|(1695,676)" xmlns="http://www.ni.com/PlatformFramework" />
 					</CaseStructure.Case>
 					<CaseStructure.Case Bounds="5 5 1856 680" Id="52467" Pattern="True">
-						<MethodCall Bounds="260 235 50 50" Id="15" ResolveFailedHint="&quot;C:\\Users\\lolsk\\OneDrive - NTNU\\Radiokom\\Prosjekt\\Tx\\Transmitter.gvi&quot;" Signature="@d54bf4d7260f4b33a65908db263c7f24" Target="Transmitter.gvi" xmlns="http://www.ni.com/MocCommon">
+						<MethodCall Bounds="260 235 70 50" Id="15" ResolveFailedHint="&quot;C:\\Users\\lolsk\\OneDrive - NTNU\\Radiokom\\Prosjekt\\Tx\\Transmitter.gvi&quot;" Signature="@143c22b7f39843d6bca136e39032e609" Target="Transmitter.gvi" xmlns="http://www.ni.com/MocCommon">
 							<p.MethodDeclaration>
 								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 									<Parameter Id="B0" Desc="filter parameter" />
@@ -238,6 +238,8 @@
 									<Parameter Id="T0" Desc="Barker code" />
 									<Parameter Id="T1" Desc="Barker insert index" />
 									<Parameter Id="T2" Desc="encode" />
+									<Parameter Id="T3" Desc="preamble?" />
+									<Parameter Id="T4" Desc="Preamble code" />
 									<Parameter Id="R0" Desc="signal out" />
 									<Parameter Id="R1" Desc="IQ diagram" />
 									<Parameter Id="R2" Desc="total bit length" />
@@ -255,10 +257,12 @@
 							<Terminal DataType="@be9e6496893442a4b708bce654371ca2" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="Int32" Direction="Input" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="Boolean" Direction="Input" Hotspot="35 0" Id="T2" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Int32" Direction="Output" Hotspot="50 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Boolean" Direction="Input" Hotspot="45 0" Id="T3" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@be9e6496893442a4b708bce654371ca2" Direction="Input" Hotspot="55 0" Id="T4" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="70 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="70 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Int32" Direction="Output" Hotspot="70 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Error" Direction="Output" Hotspot="70 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
 						<MethodCall Bounds="910 290 80 70" Id="17" ResolveFailedHint="&quot;C:\\Users\\lolsk\\OneDrive - NTNU\\Radiokom\\Prosjekt\\Rx\\Receiver.gvi&quot;" Signature="@55e6d9fd9cbf488ea60b61dac4f5bc17" Target="Receiver.gvi" xmlns="http://www.ni.com/MocCommon">
 							<p.MethodDeclaration>
@@ -799,9 +803,9 @@
 						<Wire Id="41054" Joints="N(41052:Value)|(265,140) h(10) B(1) v(-5) h(670) N(17:T2)|(945,290) B(1) N(15:T0)|(275,235)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="41074" Joints="N(30:Value)|(265,120) h(20) B(1) h(650) N(17:T1)|(935,290) B(1) N(15:T1)|(285,235)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="41154" Joints="N(41152:Value)|(160,170) h(135) N(15:T2)|(295,235)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="41138" Joints="N(15:R0)|(310,240) N(41137:L0)|(370,240)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="156" Joints="N(15:R1)|(310,250) h(45) v(-35) N(178:Value)|(373,215)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="10263" Joints="N(15:R4)|(310,280) h(40) v(35) h(169) N(40987:40778)|(519,299)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="41138" Joints="N(15:R0)|(330,240) N(41137:L0)|(370,240)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="156" Joints="N(15:R1)|(330,250) h(25) v(-35) N(178:Value)|(373,215)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="10263" Joints="N(15:R4)|(330,280) h(20) v(35) h(169) N(40987:40778)|(519,299)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="41003" Joints="N(97:c2t0v)|(900,260) h(5) v(35) N(17:L0)|(910,295)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="41041" Joints="N(10429:Value)|(875,425) h(25) v(-80) N(17:L5)|(910,345)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="41037" Joints="N(40990:40778)|(614,260) h(190) v(95) N(17:L6)|(910,355)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -1068,7 +1072,7 @@
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
 				</Axis>
-				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="10216" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10219" Orientation="[SMOrientation]Vertical" Range="[IRange]-2, 2, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="10216" IsInverted="[bool]False" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10219" Orientation="[SMOrientation]Vertical" Range="[IRange]-3, 2, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="10219">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
 					</RangeLabeledDivisions>
@@ -1169,7 +1173,7 @@
 			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="10426" Interval="[double]1" IsReadOnly="[bool]False" Label="[UIModel]10427" Left="[float]52" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" TabIndex="[int]11" Top="[float]452" Value="{DataItemBinding Id=10425}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="10427" LabelOwner="[UIModel]10426" Left="[float]52" Text="[string]Min correlation" Top="[float]432" Width="[float]81" xmlns="http://www.ni.com/PanelCommon" />
 			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=10440}" DataSourceType="[Type]Double[]" Enabled="[bool]True" Height="[float]280" Id="10442" Label="[UIModel]10460" Left="[float]484" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]True" SuppressScaleLayout="[bool]False" TabIndex="[int]12" Top="[float]612" Width="[float]680" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="10443" IsInverted="[bool]False" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10454" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 700, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="10443" IsInverted="[bool]False" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]10454" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 1100, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="10454">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
@@ -1228,7 +1232,7 @@
 			<Switch BaseName="[string]Square LED" Enabled="[bool]True" FalseContent="[string]Off" Height="[float]72" Id="41150" IsReadOnly="[bool]False" Label="[UIModel]41155" Left="[float]356" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]21" Top="[float]116" TrueContent="[string]On" Value="{DataItemBinding Id=41149}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="41155" LabelOwner="[UIModel]41150" Left="[float]356" Text="[string]encode" Top="[float]96" Width="[float]39" xmlns="http://www.ni.com/PanelCommon" />
 			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=41156}" Enabled="[bool]True" Height="[float]296" Id="41158" Label="[UIModel]41176" Left="[float]772" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]True" SuppressScaleLayout="[bool]False" TabIndex="[int]22" Top="[float]324" Width="[float]392" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="41159" IsInverted="[bool]False" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]41170" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 140, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="41159" IsInverted="[bool]False" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]41170" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 150, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="41170">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
@@ -1276,7 +1280,7 @@
 			<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Enabled="[bool]True" Height="[float]104" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="52915" IsReadOnly="[bool]True" Label="[UIModel]52916" Left="[float]52" MinHeight="[float]24" TabIndex="[int]33" Text="{DataItemBinding Id=52914}" Top="[float]1028" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]264" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="52916" LabelOwner="[UIModel]52915" Left="[float]52" Text="[string]input" Top="[float]1008" Width="[float]28" xmlns="http://www.ni.com/PanelCommon" />
 			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=52995}" Enabled="[bool]True" Height="[float]232" Id="53002" Label="[UIModel]63022" Left="[float]324" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" TabIndex="[int]34" Top="[float]964" Width="[float]362" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="53003" IsInverted="[bool]False" Label="[string]Time [seconds]" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]63016" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 2700, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="53003" IsInverted="[bool]False" Label="[string]Time [seconds]" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]63016" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 9000, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="63016">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
@@ -11534,11 +11538,11 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="d54bf4d7260f4b33a65908db263c7f24">
-			<Attributed AttributedType="@7819c8b7c4124f0caad27d0e4dee809d">
+		<p.TypeReference TypeId="143c22b7f39843d6bca136e39032e609">
+			<Attributed AttributedType="@7f99bddc1b1a451a975c10e649330af2">
 				<AttributeValues>
 					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]50" />
-					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]50" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]70" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
@@ -11814,7 +11818,7 @@
 				</Parameters>
 			</Function>
 		</p.TypeReference>
-		<p.TypeReference TypeId="7819c8b7c4124f0caad27d0e4dee809d">
+		<p.TypeReference TypeId="7f99bddc1b1a451a975c10e649330af2">
 			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Transmitter.gvi" ReturnType="Void" GenericTypeDefinition="Void">
 				<Parameters>
 					<Attributed AttributedType="@371748fc892d40ee8cd0bfb9784bd12c">
@@ -11870,6 +11874,16 @@
 					<Attributed AttributedType="@eadaecd375734fdeb3a908362a274fcd">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]encode" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@8ac066ac5c2e47c69346c69ec19a9c6c">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]preamble?" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@94efd12591504ef5a2e1c88f6e1782a3">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Preamble code" />
 						</AttributeValues>
 					</Attributed>
 					<Attributed AttributedType="@ed3fb9c085444fa190a7178dd3b93e90">
@@ -12388,6 +12402,12 @@
 		<p.TypeReference TypeId="eadaecd375734fdeb3a908362a274fcd">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="T2" DataType="Boolean" />
 		</p.TypeReference>
+		<p.TypeReference TypeId="8ac066ac5c2e47c69346c69ec19a9c6c">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="T3" DataType="Boolean" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="94efd12591504ef5a2e1c88f6e1782a3">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="T4" DataType="@be9e6496893442a4b708bce654371ca2" />
+		</p.TypeReference>
 		<p.TypeReference TypeId="ed3fb9c085444fa190a7178dd3b93e90">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="ComplexDouble[]" />
 		</p.TypeReference>
@@ -12429,9 +12449,6 @@
 		</p.TypeReference>
 		<p.TypeReference TypeId="6ff0fa933faf4a6da60afc0bd412aeea">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="T2" DataType="@be9e6496893442a4b708bce654371ca2" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="8ac066ac5c2e47c69346c69ec19a9c6c">
-			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="T3" DataType="Boolean" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="73b669f946174c55b27e8812a200edfe">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="T4" DataType="Boolean" />
@@ -12630,12 +12647,12 @@
 		<p.IconModel Target="Transmitter.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
-					<Icon ListViewIconCrop="0 0 50 50">
-						<IconPanel Height="[float]50" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]50">
-							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" HorizontalAlignment="[HorizontalAlignment]Stretch" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" VerticalAlignment="[VerticalAlignment]Stretch" Width="[float]50">
+					<Icon ListViewIconCrop="0 0 70 50">
+						<IconPanel Height="[float]50" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]70">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" HorizontalAlignment="[HorizontalAlignment]Stretch" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" VerticalAlignment="[VerticalAlignment]Stretch" Width="[float]70">
 								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-								<FileNameText Attached="[bool]True" Height="[float]46" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Transmitter" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]46">
+								<FileNameText Attached="[bool]True" Height="[float]46" HorizontalAlignment="[HorizontalAlignment]Left" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]Fixed" Text="[string]Transmitter" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]40">
 									<FontSetting FontFamily="Verdana" FontSize="6" />
 								</FileNameText>
 							</IconTemplate>
