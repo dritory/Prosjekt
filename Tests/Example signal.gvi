@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="9F7AD97B406055F2A7DF8B4396CF775121DF73A3FF7C9A276817E663CA3C0E52DE143CC69F877C6A48820D4A234173C8925056A243C75D922B176B266F28331F" Timestamp="1D741EE4A0DA08C" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="F3F797A9E1253D554D160B1E1DEBA52D486B26B127C41F4C2BBF659CCDEE1B8DFB6F013BC7884B658C2325933329C173D0A6C5E090F127EF56A19FF55FFF732C" Timestamp="1D7428ECF8B86A7" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -119,7 +119,7 @@
 				<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
 			<Literal Bounds="255 275 25 15" DataType="Boolean" Id="86" Label="87" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>False</p.Data>
+				<p.Data>True</p.Data>
 				<BooleanBehavior />
 			</Literal>
 			<NodeLabel AttachedTo="86" Bounds="255 257 30 15" Id="87" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
@@ -129,10 +129,10 @@
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
-			<NumericText Height="[float]24" Id="63" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" IsReadOnly="[bool]False" Label="[UIModel]65" Left="[float]400" MinHeight="[float]24" RadixBase="[RadixBase]Binary" TabIndex="[int]0" Top="[float]256" Value="{DataItemBinding Id=62}" ValueFormatter="[string]Binary, Uppercase, Unsigned" ValueType="[Type]Int32" Width="[float]99" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+			<NumericText Enabled="[bool]True" Height="[float]24" Id="63" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[int]1" IsReadOnly="[bool]False" Label="[UIModel]65" Left="[float]400" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" RadixBase="[RadixBase]Binary" TabIndex="[int]0" Top="[float]256" Value="{DataItemBinding Id=62}" ValueFormatter="[string]Binary, Uppercase, Unsigned" ValueType="[Type]Int32" Width="[float]99" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<FontSetting FontSize="9" Id="64" xmlns="http://www.ni.com/PlatformFramework" />
 			</NumericText>
-			<Label Height="[float]16" Id="65" LabelOwner="[UIModel]63" Left="[float]400" Text="[string]seed in" Top="[float]236" Width="[float]38" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="65" LabelOwner="[UIModel]63" Left="[float]400" Text="[string]seed in" Top="[float]236" Width="[float]38" xmlns="http://www.ni.com/PanelCommon" />
 		</NativeFrontPanel>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="Int32" Id="28" Name="message length (bits)" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>1000</p.DefaultValue>
@@ -185,7 +185,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]PN sequence order" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@9b7f649bf6064cc7afe9cccb0fd2d600">
+					<Attributed AttributedType="@52e24a9437414bab92f84e5fb398458b">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]seed in" />
 						</AttributeValues>
@@ -200,7 +200,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]output bit stream" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@73a6661030914857a31ea2b086f1809a">
+					<Attributed AttributedType="@20a5a997e7814803828218db6e161b77">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]seed out" />
 						</AttributeValues>
@@ -222,7 +222,7 @@
 		<p.TypeReference TypeId="f99a8ec17cd047139c39b2a7a89e1f4c">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="Int32" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="9b7f649bf6064cc7afe9cccb0fd2d600">
+		<p.TypeReference TypeId="52e24a9437414bab92f84e5fb398458b">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="Int32" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="45b85b4d39c641de8bc24564bb4d3523">
@@ -231,7 +231,7 @@
 		<p.TypeReference TypeId="a7caadc12e8548e39975be65e1cdb179">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="Int8[]" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="73a6661030914857a31ea2b086f1809a">
+		<p.TypeReference TypeId="20a5a997e7814803828218db6e161b77">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R3" DataType="Int32" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="f201dd0663f74ed6888e534dd97b6278">

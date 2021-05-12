@@ -4,7 +4,7 @@ import vlc
 
 
 print("Starting vlc")
-i = vlc.Instance("--file-caching=1000", "--network-caching=1000","--live-caching=1000", "--clock-jitter=0")
+i = vlc.Instance("--file-caching=10000", "--network-caching=100","--live-caching=10000", "--clock-jitter=0", "-vv")
 
 p = i.media_player_new()
 p.set_mrl('udp://@:36363')

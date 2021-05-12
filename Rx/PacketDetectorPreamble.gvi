@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="7E400F7873452067AF0B3F2BEA3D2A6627355A7E48EA276DB4D38D9555CADD192BBB67322118F739A658067CC4C3615174786B59BA6FCEA9CE042740C9805678" Timestamp="1D7426C54933CBE" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="84FA84F7D0E961A4EE552BA8878DC0F39BC4F038C52FB4294665AAE30374F35D78195847C8DADE013F4FE4FEB084071C249DEC563D82D66D3CF4344FD3863660" Timestamp="1D74276F1636BCA" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -161,8 +161,8 @@
 			</NodeLabel>
 			<Wire Id="121" Joints="N(119:Value)|(320,-25) N(114:L0)|(350,-25)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="127" Joints="N(169:R0)|(555,-25) N(106:L0)|(790,-25)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Literal Bounds="650 0 110 15" DataType="@298d1739960c4a499e8fab32ceced48a" Id="129" Label="131" p4:ControlDefinitionChecksum="CADNC/JmTvWF1DG+dG+7dIiqNul8ntvVIEqhd7MoOso=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>1</p.Data>
+			<Literal Bounds="670 0 90 15" DataType="@298d1739960c4a499e8fab32ceced48a" Id="129" Label="131" p4:ControlDefinitionChecksum="CADNC/JmTvWF1DG+dG+7dIiqNul8ntvVIEqhd7MoOso=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="NI::Analysis::Operations::Normalization.gtype" />
 					<p4:TypeDefinitionTarget TargetName="NI::Analysis::Operations::Normalization.gtype::ControlDefinition" />
@@ -170,7 +170,7 @@
 				<EnumBehavior />
 			</Literal>
 			<Wire Id="130" Joints="N(129:Out)|(760,5) N(106:L3)|(790,5)" xmlns="http://www.ni.com/PlatformFramework" />
-			<NodeLabel AttachedTo="129" Bounds="615 0 30 15" Id="131" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="129" Bounds="635 0 30 15" Id="131" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>normalization</p.Text>
 			</NodeLabel>
 			<Wire Id="133" Joints="N(149:max value)|(970,-25) h(40) B(1) N(137:x)|(1060,-25) B(1) v(40) N(68:Value)|(1123,15)" xmlns="http://www.ni.com/PlatformFramework" />

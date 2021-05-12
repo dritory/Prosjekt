@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B1E92F0B359BFA62A308C01B79C3027BD66A8F5985C5815093E972A70BD69CDD5BADC58F416A91A607834F782C1BA9325482D4A4044B6E48FE71F44ECA451C7D" Timestamp="1D7336B5A9041D6" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="D7562AA258AE9CAA43364444BF8122AE06BC7B2E11588F75E439826FC2C636FF070284EDFC1A3A6BD85854CCEE4730FDDAF88F0023B770664E03BFB630E52894" Timestamp="1D7474E7FB90228" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Data Communication" Name="http://www.ni.com/LabVIEW.DataComms" OldestCompatibleVersion="5.1.0.0" Version="5.1.0.49152" />
@@ -92,6 +92,8 @@
 			</Cluster>
 			<Label Height="[float]16" Id="1297" LabelOwner="[UIModel]1290" Left="[float]415" Text="[string]error out" Top="[float]16" Width="[float]26" xmlns="http://www.ni.com/PanelCommon" />
 			<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="1402" Left="[float]0" Name="[string]notifier ref" RefnumType="[Type]@a4f4936030634db69eb3821e28f9d085" TabIndex="[int]6" Top="[float]0" Value="{DataItemBinding Id=1401}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="2350" Interval="[uint]1" IsReadOnly="[bool]False" Label="[UIModel]2351" Left="[float]68" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" TabIndex="[int]7" Top="[float]36" Value="{DataItemBinding Id=2349}" ValueFormatter="[string]LV:0" ValueType="[Type]UInt32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="2351" LabelOwner="[UIModel]2350" Left="[float]68" Text="[string]packet length" Top="[float]16" Width="[float]61" xmlns="http://www.ni.com/PanelCommon" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<DataAccessor Bounds="-20 615 40 15" DataItem="730" Id="682" Label="726" xmlns="http://www.ni.com/MocCommon">
@@ -212,20 +214,22 @@
 						<Wire Id="2305" Joints="N(2306:1418)|(4,185) h(26) v(15) N(706:error in)|(45,200)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="2311" Joints="N(2312:1418)|(4,85) h(101) v(15) N(816:813)|(111,100)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="797" Joints="N(706:data out)|(85,180) h(10) B(1) N(697:Value)|(163,180) B(1) v(-105) N(1157:813)|(111,75)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="811" Joints="N(1160:813)|(299,75) h(11) v(-40) N(699:element)|(325,35)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="811" Joints="N(1160:813)|(299,75) h(9.600006) v(-3.79998779) h(1.3999939) v(-36.2000122) N(699:element)|(325,35)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="1283" Joints="N(1278:813)|(299,115) h(21) v(-60) N(699:error in)|(325,55)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="1277" Joints="N(706:error out)|(85,200) h(55) N(1276:813)|(140,154)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="1376" Joints="N(1374:Out)|(45,190) N(706:timeout ms)|(45,190)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="2323" Joints="N(706:connection ID out)|(85,170) h(506) v(5) h(7) v(-5) N(2309:1418)|(596,170)" xmlns="http://www.ni.com/PlatformFramework" />
-						<MethodCall Bounds="530 90 40 40" Id="2325" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Common\\NotifyError.gvi&quot;" Signature="@30a028f0581f4769aba157306318b6b4" Target="NotifyError.gvi" xmlns="http://www.ni.com/MocCommon">
+						<MethodCall Bounds="530 90 40 40" Id="2325" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Common\\NotifyError.gvi&quot;" Signature="@7d3ef7010ebc4c3a92fc4d56ede9adce" Target="NotifyError.gvi" xmlns="http://www.ni.com/MocCommon">
 							<p.MethodDeclaration>
 								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 									<Parameter Id="L0" Desc="notifier ref" />
+									<Parameter Id="L1" Desc="Notify anyway" />
 									<Parameter Id="L3" Desc="error in" />
 									<Parameter Id="R3" Desc="Error out" />
 								</MethodDeclaration>
 							</p.MethodDeclaration>
 							<Terminal DataType="@a4f4936030634db69eb3821e28f9d085" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Boolean" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
@@ -333,6 +337,12 @@
 				<p.Text>notifier ref</p.Text>
 			</NodeLabel>
 			<Wire Id="1409" Joints="N(682:Value)|(20,620) h(5) v(105) N(715:error in)|(175,725)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="105 575 40 15" DataItem="2349" Id="2347" Label="2348" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="2347" Bounds="24 575 76 14" Id="2348" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>packet length</p.Text>
+			</NodeLabel>
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
@@ -388,6 +398,9 @@
 		<DataItem CallDirection="Input" CallIndex="5" DataType="@a4f4936030634db69eb3821e28f9d085" Id="1401" Name="notifier ref" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
+		<DataItem DataType="UInt32" Id="2349" Name="packet length" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>26363</p.DefaultValue>
+		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
 		<p.TypeReference TypeId="e5b33307e615467cb56515da1353df08">
@@ -430,8 +443,8 @@
 				<DataType>UInt16</DataType>
 			</Enumeration>
 		</p.TypeReference>
-		<p.TypeReference TypeId="30a028f0581f4769aba157306318b6b4">
-			<Attributed AttributedType="@0441dfa47e204ac7869133fe50aeaba2">
+		<p.TypeReference TypeId="7d3ef7010ebc4c3a92fc4d56ede9adce">
+			<Attributed AttributedType="@c042d49bca5f4df5bab314d360b01d02">
 				<AttributeValues>
 					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
 					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
@@ -501,12 +514,17 @@
 				</Parameters>
 			</Function>
 		</p.TypeReference>
-		<p.TypeReference TypeId="0441dfa47e204ac7869133fe50aeaba2">
+		<p.TypeReference TypeId="c042d49bca5f4df5bab314d360b01d02">
 			<Function Id="1" IsStatic="True" IsConstructor="False" Name="NotifyError.gvi" ReturnType="Void" GenericTypeDefinition="Void">
 				<Parameters>
 					<Attributed AttributedType="@088bbf0bc59c4f94b5a5b0a7a97960bb">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]notifier ref" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@55e8f1f6efe144cf8dec61ff2dd81607">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Notify anyway" />
 						</AttributeValues>
 					</Attributed>
 					<Attributed AttributedType="@b473a1d5786147b0b105193d92f053ac">
@@ -535,12 +553,12 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]code to clear" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@11ac171eec684f0caf289f7312154820">
+					<Attributed AttributedType="@db4e6f8f32694534bd98d7efd62c6c01">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]error out" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@ceb327659ddb481fbc0b86b6a8fde204">
+					<Attributed AttributedType="@49a819734c694e6d87b4c83d3220bdb5">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]error cleared?" />
 						</AttributeValues>
@@ -586,6 +604,9 @@
 		<p.TypeReference TypeId="088bbf0bc59c4f94b5a5b0a7a97960bb">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="@a4f4936030634db69eb3821e28f9d085" />
 		</p.TypeReference>
+		<p.TypeReference TypeId="55e8f1f6efe144cf8dec61ff2dd81607">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="Boolean" />
+		</p.TypeReference>
 		<p.TypeReference TypeId="b473a1d5786147b0b105193d92f053ac">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="Error" />
 		</p.TypeReference>
@@ -598,10 +619,10 @@
 		<p.TypeReference TypeId="b8bc5ccd0be54bce894d451c2a697d20">
 			<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="Int32" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="11ac171eec684f0caf289f7312154820">
+		<p.TypeReference TypeId="db4e6f8f32694534bd98d7efd62c6c01">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="Error" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="ceb327659ddb481fbc0b86b6a8fde204">
+		<p.TypeReference TypeId="49a819734c694e6d87b4c83d3220bdb5">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R1" DataType="Boolean" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="8f99f8b70af34dc3ae62fa7114f537d1">
