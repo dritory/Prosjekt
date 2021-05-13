@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="84FA84F7D0E961A4EE552BA8878DC0F39BC4F038C52FB4294665AAE30374F35D78195847C8DADE013F4FE4FEB084071C249DEC563D82D66D3CF4344FD3863660" Timestamp="1D74276F1636BCA" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="20B3E3E839BB1342C6F1988564B550D8A12303418E2F98A012C3B1E6E50730D2CF2B0A5AC0BDC43C0713A3C2C877071C45B5A06A160B2D327C59BA38C30DE13B" Timestamp="1D747D68645968E" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -139,16 +139,18 @@
 				<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 			</SignalCorrelationCrossCDB>
-			<MethodCall Bounds="350 -30 40 40" Id="114" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Common\\BarkerCode.gvi&quot;" Signature="@0bfa9434e2da4a3a9412a41072805d5b" Target="BarkerCode.gvi" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="350 -30 40 40" Id="114" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Common\\BarkerCode.gvi&quot;" Signature="@44d97641707644c0a77bc0b47c7d45d8" Target="BarkerCode.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="barker code" />
+						<Parameter Id="L2" Desc="Concatinate?" />
 						<Parameter Id="R0" Desc="code" />
 						<Parameter Id="R1" Desc="length of one subcode" />
 						<Parameter Id="R2" Desc="subcodes" />
 					</MethodDeclaration>
 				</p.MethodDeclaration>
 				<Terminal DataType="@be9e6496893442a4b708bce654371ca2" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 25" Id="L2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Double[]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Int32" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Int32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
@@ -234,6 +236,14 @@
 				<p.Text>Samples per symbol</p.Text>
 			</NodeLabel>
 			<Wire Id="205" Joints="N(203:Value)|(470,-45) h(5) v(30) N(169:L1)|(515,-15)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="290 -10 25 15" DataType="Boolean" Id="206" Label="208" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>False</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<Wire Id="207" Joints="N(206:Out)|(315,-5) N(114:L2)|(350,-5)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="206" Bounds="290 -28 30 15" Id="208" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Concatinate?</p.Text>
+			</NodeLabel>
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
@@ -310,8 +320,8 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="0bfa9434e2da4a3a9412a41072805d5b">
-			<Attributed AttributedType="@7232abba59a3443eba99b6791fe2e3b0">
+		<p.TypeReference TypeId="44d97641707644c0a77bc0b47c7d45d8">
+			<Attributed AttributedType="@225326eddb964a5d8858c23d3bea0f9b">
 				<AttributeValues>
 					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
 					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
@@ -384,12 +394,17 @@
 		<p.TypeReference TypeId="08bbb1c76f7d4a84b833bbec244ff178">
 			<Typedef TypedefName="Normalization.gtype" UnderlyingType="@896027daba6749beb156ee4395f5bb73" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="7232abba59a3443eba99b6791fe2e3b0">
+		<p.TypeReference TypeId="225326eddb964a5d8858c23d3bea0f9b">
 			<Function Id="1" IsStatic="True" IsConstructor="False" Name="BarkerCode.gvi" ReturnType="Void" GenericTypeDefinition="Void">
 				<Parameters>
 					<Attributed AttributedType="@8d789679b5ff4c9691721578ccd1230e">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]barker code" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@8fbf814f716548cdb0d3eeeb150c7f12">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Concatinate?" />
 						</AttributeValues>
 					</Attributed>
 					<Attributed AttributedType="@9eb0948c65cb486399c94db07ec81873">
@@ -483,6 +498,9 @@
 		</p.TypeReference>
 		<p.TypeReference TypeId="8d789679b5ff4c9691721578ccd1230e">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="@be9e6496893442a4b708bce654371ca2" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="8fbf814f716548cdb0d3eeeb150c7f12">
+			<Parameter InputParameterPassingRule="Optional" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="Boolean" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="9eb0948c65cb486399c94db07ec81873">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="Double[]" />

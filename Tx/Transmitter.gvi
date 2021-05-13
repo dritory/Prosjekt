@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="DAEAB1980305D2D05A5EF02DBC31D75E50DAB8204AE1B1DA9A05CDFAC3F235ABFFB514EC382464263FB58653ACC750728C16167D62CF0C2295BFEF025EBEFB34" Timestamp="1D740E03A3BB029" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="BC8075D85980F9DB3049FB06EF11F10D01A056264979FDC3A48FEEA94D806746745E6C356255192360D8B2AC90DAC14649FEDDE12246F5C313E7468EFDAF4892" Timestamp="1D747D71D052F91" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -20,7 +20,7 @@
 				</IconTemplate>
 			</IconPanel>
 		</Icon>
-		<ConnectorPane Height="50" Id="9" ListViewHeight="295" ListViewWidth="150" Width="70" xmlns="http://www.ni.com/PlatformFramework">
+		<ConnectorPane Height="50" Id="9" ListViewHeight="310" ListViewWidth="150" Width="70" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="30" />
 			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 140" Parameter="157" />
 			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 155" Parameter="161" />
@@ -30,7 +30,7 @@
 			<ConnectorPaneTerminal Hotspot="70 5" ListViewHotspot="150 50" Parameter="92" />
 			<ConnectorPaneTerminal Hotspot="70 15" ListViewHotspot="150 170" Parameter="10268" />
 			<ConnectorPaneTerminal Hotspot="70 25" ListViewHotspot="150 230" Parameter="10978" />
-			<ConnectorPaneTerminal Hotspot="70 35" />
+			<ConnectorPaneTerminal Hotspot="70 35" ListViewHotspot="150 290" Parameter="11556" />
 			<ConnectorPaneTerminal Hotspot="15 50" ListViewHotspot="0 110" Parameter="75" />
 			<ConnectorPaneTerminal Hotspot="25 50" ListViewHotspot="0 125" Parameter="82" />
 			<ConnectorPaneTerminal Hotspot="70 45" ListViewHotspot="150 65" Parameter="99" />
@@ -126,6 +126,10 @@
 			</EnumSelector>
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="11359" LabelOwner="[UIModel]11358" Left="[float]308" Text="[string]Preamble code" Top="[float]272" Width="[float]63" xmlns="http://www.ni.com/PanelCommon" />
 			<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="11370" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]36" MinWidth="[float]34" Name="[string]preamble?" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]14" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=11369}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<ArrayViewer ArrayElement="[UIModel]11558" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]126" Id="11557" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Left="[float]0" Name="[string]Symbols" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]15" Top="[float]20" Value="{DataItemBinding Id=11556}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]111" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="11558" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[ComplexDouble]1 + 0i" IsReadOnly="[bool]True" MinHeight="[float]24" ValueFormatter="[string]LV:G6" ValueType="[Type]ComplexDouble" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<MethodCall Bounds="650 240 40 40" Id="16" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Tx\\BPSKMod.gvi&quot;" Signature="@009d4a666f7a45c3b968ebafe7d2d567" Target="BPSKMod.gvi" xmlns="http://www.ni.com/MocCommon">
@@ -509,7 +513,7 @@
 			<Wire Id="11346" Joints="N(11344:R0)|(605,245) N(16:L0)|(650,245)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="11347" Joints="N(11344:R3)|(605,275) N(16:L3)|(650,275)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="11348" Joints="N(11022:11005)|(504,275) N(11344:L3)|(565,275)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="11355" Joints="N(11547:11365)|(1349,240) N(19:L0)|(1540,240)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="11355" Joints="N(11547:11365)|(1349,240) h(88) B(1) N(19:L0)|(1540,240) B(1) v(130) N(11560:Value)|(1538,370)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="1125 185 40 15" DataItem="11357" Id="11361" Label="11362" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@be9e6496893442a4b708bce654371ca2" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
@@ -551,6 +555,12 @@
 				<p.Text>preamble?</p.Text>
 			</NodeLabel>
 			<Wire Id="11374" Joints="N(11372:Value)|(1165,15) h(5) v(140) h(30) v(55) N(11368:11365)|(1206,210)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="1535 365 40 15" DataItem="11556" Id="11560" Label="11561" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="ComplexDouble[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="11560" Bounds="1580 365 47 14" Id="11561" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Symbols</p.Text>
+			</NodeLabel>
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
@@ -666,6 +676,9 @@
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="11" DataType="Boolean" Id="11369" Name="preamble?" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="4" DataType="ComplexDouble[]" Id="11556" Name="Symbols" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
