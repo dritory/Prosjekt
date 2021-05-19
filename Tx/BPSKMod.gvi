@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="EAA86DE503AD8E237975DB1B37F1BAB9F300E04BD97072F965F5BC7EA891BA8FFF5350DB98D47FD14CE575FC91B1A52857DD76F6262A64818F3274E6531A9578" Timestamp="1D72E23B7A678D7" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="6E7CF7FE308680D6080AB336EA0855E58620F30CA3409AE594A869DC795B81E86B4DE45D7AB1D045FBAB4E4F5B96B405B3C5EB4F32FCE24EBEDF55E2A424C517" Timestamp="1D74CB2853CD372" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -71,7 +71,7 @@
 			<Label Height="[float]16" Id="66" LabelOwner="[UIModel]59" Left="[float]247" Text="[string]error in" Top="[float]250" Width="[float]26" xmlns="http://www.ni.com/PanelCommon" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
-			<Wire Id="24" Joints="N(31:R0)|(680,275) h(90) v(-5) N(41:Value)|(778,270)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="24" Joints="N(31:R0)|(680,275) N(41:Value)|(903,275)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="25" Joints="N(31:R4)|(680,315) N(56:Value)|(698,315)" xmlns="http://www.ni.com/PlatformFramework" />
 			<MethodCall Bounds="630 270 50 50" Id="31" ResolveFailedHint="MT Map Bits to PSK Symbols.gvi, Package: (NI Modulation Toolkit for Software Defined Radio for LabVIEW NXG 3.0, Version: 18.5.0)" Signature="@bf0b9b909c864eee8e3ef663304aed0e" Target="NI::Modulation::MT Map Bits to PSK Symbols.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
@@ -102,10 +102,10 @@
 				<p.Text>input bit stream</p.Text>
 			</NodeLabel>
 			<Wire Id="40" Joints="N(33:Value)|(565,235) h(60) v(40) N(31:L0)|(630,275)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="775 265 40 15" DataItem="43" Id="41" Label="42" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="900 270 40 15" DataItem="43" Id="41" Label="42" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="ComplexDouble[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="41" Bounds="820 265 63 14" Id="42" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="41" Bounds="945 270 63 14" Id="42" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Symbol out</p.Text>
 			</NodeLabel>
 			<DataAccessor Bounds="695 310 40 15" DataItem="46" Id="56" Label="57" xmlns="http://www.ni.com/MocCommon">

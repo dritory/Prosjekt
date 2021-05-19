@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="59832878B87DE360FFE1E1804F145DA7004C761BD9BB0F0F53EED8EA0F3F07B4671886ED09B600F8BE8E4BBB846FA7A2FDFD711A230670C6B71EF7A38D65F18D" Timestamp="1D7336B3B6D9887" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="27E154E9F2E671B5D99C9957F5B871690BB54D9F39C1CC6DD031F1D00959A0262B079908BED05770BCC1E390EEAE03B9F94B15AE4D1354FF8262812150CCD9BC" Timestamp="1D74CA69721CAEF" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Data Communication" Name="http://www.ni.com/LabVIEW.DataComms" OldestCompatibleVersion="5.1.0.0" Version="5.1.0.49152" />
@@ -117,7 +117,7 @@
 			<NodeLabel AttachedTo="514" Bounds="1985 950 50 14" Id="515" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>error out</p.Text>
 			</NodeLabel>
-			<WhileLoop Bounds="995 800 880 385" DiagramId="1790" Id="1789">
+			<WhileLoop Bounds="995 800 880 395" DiagramId="1790" Id="1789">
 				<LoopIteration Bounds="10 345 15 15" Id="1800" />
 				<LoopCondition Bounds="85 215 15 15" Id="1801" />
 				<Wire Id="1802" Joints="N(1796:i0)|(4,30) N(1823:1812)|(106,30)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -142,15 +142,17 @@
 						<NodeLabel AttachedTo="1831" Bounds="675 175 64 14" Id="1833" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>sent output</p.Text>
 						</NodeLabel>
-						<MethodCall Bounds="685 95 40 40" Id="1840" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Common\\NotifyError.gvi&quot;" Signature="@30a028f0581f4769aba157306318b6b4" Target="NotifyError.gvi" xmlns="http://www.ni.com/MocCommon">
+						<MethodCall Bounds="685 95 40 40" Id="1840" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Common\\NotifyError.gvi&quot;" Signature="@7d3ef7010ebc4c3a92fc4d56ede9adce" Target="NotifyError.gvi" xmlns="http://www.ni.com/MocCommon">
 							<p.MethodDeclaration>
 								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 									<Parameter Id="L0" Desc="notifier ref" />
+									<Parameter Id="L1" Desc="Notify anyway" />
 									<Parameter Id="L3" Desc="error in" />
 									<Parameter Id="R3" Desc="Error out" />
 								</MethodDeclaration>
 							</p.MethodDeclaration>
 							<Terminal DataType="@a4f4936030634db69eb3821e28f9d085" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Boolean" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
@@ -450,8 +452,8 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="30a028f0581f4769aba157306318b6b4">
-			<Attributed AttributedType="@0441dfa47e204ac7869133fe50aeaba2">
+		<p.TypeReference TypeId="7d3ef7010ebc4c3a92fc4d56ede9adce">
+			<Attributed AttributedType="@c042d49bca5f4df5bab314d360b01d02">
 				<AttributeValues>
 					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
 					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
@@ -498,12 +500,17 @@
 				</ClosedGenericParameters>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="0441dfa47e204ac7869133fe50aeaba2">
+		<p.TypeReference TypeId="c042d49bca5f4df5bab314d360b01d02">
 			<Function Id="1" IsStatic="True" IsConstructor="False" Name="NotifyError.gvi" ReturnType="Void" GenericTypeDefinition="Void">
 				<Parameters>
 					<Attributed AttributedType="@088bbf0bc59c4f94b5a5b0a7a97960bb">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]notifier ref" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@55e8f1f6efe144cf8dec61ff2dd81607">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Notify anyway" />
 						</AttributeValues>
 					</Attributed>
 					<Attributed AttributedType="@b473a1d5786147b0b105193d92f053ac">
@@ -581,6 +588,9 @@
 		</p.TypeReference>
 		<p.TypeReference TypeId="088bbf0bc59c4f94b5a5b0a7a97960bb">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="@a4f4936030634db69eb3821e28f9d085" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="55e8f1f6efe144cf8dec61ff2dd81607">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="Boolean" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="b473a1d5786147b0b105193d92f053ac">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="Error" />

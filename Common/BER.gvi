@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B3A6EA212EF86881FFD980B2941F85F9062CA44F108B485896C73068A8FEA4C43F41EF94AB4C0919A739E961AD1821162CA530111233AFBDF199E8EC50C1C69B" Timestamp="1D71A7C5A375EFB" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="BAFBC269C9574248135D839979D1381EFEB09A4B73CE48F0D25710D7E88103DA45C8EADEE162C231B2157892D0B1C67F1B03426A4BCBC9E364CD539957CD55BD" Timestamp="1D74A37C55C3351" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="6.2.2.49804" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="6.2.2.49804" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="6.2.2.49804" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="6.2.2.49804" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="6.2.2.49804" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
-		<ApplicationVersionInfo Build="6.2.2.49804" Name="LabVIEW NXG" Version="3.0.0" />
+		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.2.1.50272" Name="LabVIEW NXG" Version="3.0.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
@@ -10173,11 +10173,10 @@
 			<DataAccessor Bounds="905 285 40 15" DataItem="20339" Id="20304" Label="20335" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<BooleanToInteger Bounds="845 365 30 10" Id="20305" />
+			<BooleanToInteger Bounds="845 365 30 10" Id="20305" Label="20495" />
 			<IsNotEqual Bounds="790 355 30 30" Id="20306" />
 			<Wire Id="20307" Joints="N(20306:x != y?)|(820,370) N(20305:Boolean)|(848,370)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="20308" Joints="N(20301:x = y?)|(855,290) N(20304:Value)|(908,290)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="20309" Joints="N(20305:0, 1)|(875,370) N(20314:20310)|(941,370)" xmlns="http://www.ni.com/PlatformFramework" />
 			<CaseStructure Bounds="945 335 100 95" DataType="Error" Default="20311" Id="20310" Selected="20312" UserSelectorBounds="0 0 100 17">
 				<CaseStructure.Case Bounds="5 5 90 85" Id="20311" Pattern="Error">
 					<Wire Id="20317" Joints="N(20313:20311)|(4,70) N(20315:20311)|(86,70)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -10208,7 +10207,7 @@
 					<Wire Id="20324" Joints="N(20320:R4)|(70,70) N(20315:20312)|(86,70)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Selector Bounds="-4 70 13 10" Docking="Left" Id="20313" Terminals="20310=20365, 20311=20317, 20312=20322" />
-				<CaseStructure.Tunnel Bounds="-4 30 13 10" Docking="Left" Id="20314" Terminals="20310=20309, 20311, 20312=20321" />
+				<CaseStructure.Tunnel Bounds="-4 30 13 10" Docking="Left" Id="20314" Terminals="20310=20499, 20311, 20312=20321" />
 				<CaseStructure.Tunnel Bounds="91 70 13 10" Docking="Right" Id="20315" Terminals="20310=20466, 20311=20317, 20312=20324" />
 				<CaseStructure.Tunnel Bounds="91 30 13 10" Docking="Right" Id="20316" Terminals="20310=10216, 20311=20319, 20312=20323" />
 			</CaseStructure>
@@ -10351,6 +10350,12 @@
 			<NodeLabel AttachedTo="20486" Bounds="1140 445 66 14" Id="20487" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>current BER</p.Text>
 			</NodeLabel>
+			<NodeLabel AttachedTo="20305" Bounds="845 348 104 14" Id="20495" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Boolean to Integer</p.Text>
+			</NodeLabel>
+			<ToDoublePrecisionFloat Bounds="900 365 30 10" Id="20498" />
+			<Wire Id="20499" Joints="N(20498:double precision float)|(930,370) N(20314:20310)|(941,370)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="20500" Joints="N(20305:0, 1)|(875,370) N(20498:number)|(903,370)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
@@ -10442,7 +10447,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]x" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@526967982324420c988219b3afba3422">
+					<Attributed AttributedType="@45b85b4d39c641de8bc24564bb4d3523">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]error in" />
 						</AttributeValues>
@@ -10452,7 +10457,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]mean" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@0923f9b789f743c1b07b824f97c55ca8">
+					<Attributed AttributedType="@f201dd0663f74ed6888e534dd97b6278">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]error out" />
 						</AttributeValues>
@@ -10478,7 +10483,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]error out" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@ceb327659ddb481fbc0b86b6a8fde204">
+					<Attributed AttributedType="@49a819734c694e6d87b4c83d3220bdb5">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]error cleared?" />
 						</AttributeValues>
@@ -10489,13 +10494,13 @@
 		<p.TypeReference TypeId="9945ac8ab320444c81e70e955e66fd80">
 			<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="Double[]" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="526967982324420c988219b3afba3422">
+		<p.TypeReference TypeId="45b85b4d39c641de8bc24564bb4d3523">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L4" DataType="Error" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="18505ec75a0d45aebcf5c71c7d651465">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="Double" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="0923f9b789f743c1b07b824f97c55ca8">
+		<p.TypeReference TypeId="f201dd0663f74ed6888e534dd97b6278">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R4" DataType="Error" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="6aabd1ae0bc94339a6331beda4e21225">
@@ -10507,7 +10512,7 @@
 		<p.TypeReference TypeId="11ac171eec684f0caf289f7312154820">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="Error" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="ceb327659ddb481fbc0b86b6a8fde204">
+		<p.TypeReference TypeId="49a819734c694e6d87b4c83d3220bdb5">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R1" DataType="Boolean" />
 		</p.TypeReference>
 	</DataTypeReferenceTable>

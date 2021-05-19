@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="713452764D4DDCCB419B06EB58E508A29B9FBF8688F36647779110188019DE9A0CA84302FB2D4C9B0933AEEA5E99F6FA5360ECC8130C9F61C9D2A11FF2DD34D7" Timestamp="1D735F67C62C76F" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="0C2C312AE5D1EC40D0D4F9EAB6C2A29133EE53810674C327D43EA0A9E3CCF7D064253281E364BC017A864E264E0B6F550412CA1434DDD87A41A95E608A4F9A42" Timestamp="1D74BDC3DA48AB8" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="6.2.2.49804" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="6.2.2.49804" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="6.2.2.49804" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="6.2.2.49804" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="6.2.2.49804" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
-		<ApplicationVersionInfo Build="6.2.2.49804" Name="LabVIEW NXG" Version="3.0.0" />
+		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.2.1.50272" Name="LabVIEW NXG" Version="3.0.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
@@ -74,7 +74,7 @@
 			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="1003" Interval="[int]1" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]24" Name="[string]Message length" TabIndex="[int]5" Top="[float]0" Value="{DataItemBinding Id=1002}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
-			<CaseStructure Bounds="-295 240 1017 340" DataType="@a2578e59405e411fa4c4616868bc9073" Id="63" Label="796" Selected="80" UserSelectorBounds="449 0 119 17">
+			<CaseStructure Bounds="-295 240 1017 340" DataType="@a2578e59405e411fa4c4616868bc9073" Id="63" Label="796" Selected="769" UserSelectorBounds="449 0 119 17">
 				<CaseStructure.Case Bounds="5 5 1007 330" Id="80" Pattern="&quot;TX&quot;">
 					<MethodCall Bounds="860 150 50 50" Id="711" ResolveFailedHint="MT Permute.gvi, Package: (NI Modulation Toolkit for Software Defined Radio for LabVIEW NXG 3.0, Version: 18.5.0)" Signature="@a1c275badefe48cda47fbf93a0450a8a" Target="NI::Modulation::MT Permute.gvi" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
@@ -145,7 +145,7 @@
 						<p.Text>reset</p.Text>
 					</NodeLabel>
 					<Wire Id="818" Joints="N(816:Out)|(755,130) h(30) N(732:T0)|(785,170)" xmlns="http://www.ni.com/PlatformFramework" />
-					<CaseStructure Bounds="164 30 407 225" Default="836" Id="835" Selected="837" UserSelectorBounds="160 0 88 17">
+					<CaseStructure Bounds="164 30 407 225" Default="836" Id="835" Selected="836" UserSelectorBounds="160 0 88 17">
 						<CaseStructure.Case Bounds="5 5 397 215" Id="836" Pattern="False">
 							<Wire Id="883" Joints="N(875:836)|(4,120) N(878:836)|(393,120)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
@@ -350,6 +350,30 @@
 					<Wire Id="788" Joints="N(786:R0)|(535,170) h(198) v(-15) N(659:769)|(1003,155)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="789" Joints="N(786:R4)|(535,210) h(198) v(10) N(573:769)|(1003,220)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="790" Joints="N(482:769)|(4,230) h(310) v(-20) N(786:L4)|(485,210)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Literal Bounds="480 245 25 15" DataType="Boolean" Id="1137" Label="1138" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>True</p.Data>
+						<BooleanBehavior />
+					</Literal>
+					<NodeLabel AttachedTo="1137" Bounds="480 227 30 15" Id="1138" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>reset?</p.Text>
+					</NodeLabel>
+					<Wire Id="1139" Joints="N(1137:Out)|(505,250) h(5) N(786:B1)|(510,215)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Literal Bounds="415 175 40 15" DataType="Int32" Id="1140" Label="1141" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>16</p.Data>
+						<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
+					</Literal>
+					<NodeLabel AttachedTo="1140" Bounds="415 157 30 15" Id="1141" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>number of rows</p.Text>
+					</NodeLabel>
+					<Wire Id="1142" Joints="N(1140:Out)|(455,180) N(786:L1)|(485,180)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Literal Bounds="415 190 40 15" DataType="Int32" Id="1143" Label="1144" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>8</p.Data>
+						<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
+					</Literal>
+					<NodeLabel AttachedTo="1143" Bounds="415 172 30 15" Id="1144" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>number of columns</p.Text>
+					</NodeLabel>
+					<Wire Id="1145" Joints="N(1143:Out)|(455,195) h(15) v(-5) N(786:L2)|(485,190)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 1007 330" Id="770" Pattern="&quot;RX Block&quot;">
 					<Wire Id="773" Joints="N(482:770)|(4,230) h(328) v(-20) N(791:L4)|(495,210)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -376,6 +400,30 @@
 						<Terminal DataType="Int32[]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 					</MethodCall>
+					<Literal Bounds="425 175 40 15" DataType="Int32" Id="1146" Label="1147" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>16</p.Data>
+						<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
+					</Literal>
+					<NodeLabel AttachedTo="1146" Bounds="425 157 30 15" Id="1147" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>number of rows</p.Text>
+					</NodeLabel>
+					<Wire Id="1148" Joints="N(1146:Out)|(465,180) N(791:L1)|(495,180)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Literal Bounds="425 190 40 15" DataType="Int32" Id="1149" Label="1150" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>8</p.Data>
+						<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
+					</Literal>
+					<NodeLabel AttachedTo="1149" Bounds="425 172 30 15" Id="1150" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>number of columns</p.Text>
+					</NodeLabel>
+					<Wire Id="1151" Joints="N(1149:Out)|(465,195) h(15) v(-5) N(791:L2)|(495,190)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Literal Bounds="490 245 25 15" DataType="Boolean" Id="1152" Label="1153" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>True</p.Data>
+						<BooleanBehavior />
+					</Literal>
+					<NodeLabel AttachedTo="1152" Bounds="490 227 30 15" Id="1153" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>reset?</p.Text>
+					</NodeLabel>
+					<Wire Id="1154" Joints="N(1152:Out)|(515,250) h(5) N(791:B1)|(520,215)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Selector Bounds="-4 80 13 10" Docking="Left" Id="66" Terminals="63=806, 80, 81, 769, 770" />
 				<CaseStructure.Tunnel Bounds="-4 165 13 10" Docking="Left" Id="176" Terminals="63=175, 80=881, 81=899, 769=787, 770=775" />
@@ -591,7 +639,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]error in" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@92b7e87375014cecba2041b20145c99d">
+					<Attributed AttributedType="@de93fb0b5a8a4b06bb481e0bdd5d4230">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]reset" />
 						</AttributeValues>
@@ -754,7 +802,7 @@
 		<p.TypeReference TypeId="52e24a9437414bab92f84e5fb398458b">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="Int32" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="92b7e87375014cecba2041b20145c99d">
+		<p.TypeReference TypeId="de93fb0b5a8a4b06bb481e0bdd5d4230">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="T0" DataType="Boolean" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="a04dfd3da46f4398a3cb8a5d0e737578">
