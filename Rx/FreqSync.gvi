@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="CB892B6EFA9367B2DD81CACFEA2AB7F833DD339CCD19589262DB2DA4D56AD18E2C57D60AFC9D694ED092AC12D53D55679EE39FADA9342D8025AFA197D1E21914" Timestamp="1D7427AEE6CC3B6" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="D67997D0DDF6E93F74E6F9B5D3078C0C336B8475959A2D340CB88F9648A4A4130D2A17C3CE094C009FECD01067063B2215701F25949F08BFED8477827413D5FA" Timestamp="1D74CF50CB65BA1" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -20,21 +20,21 @@
 				</IconTemplate>
 			</IconPanel>
 		</Icon>
-		<ConnectorPane Height="50" Id="9" ListViewHeight="220" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+		<ConnectorPane Height="50" Id="9" ListViewHeight="205" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="108" />
 			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="25" />
 			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 65" Parameter="77" />
-			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 155" Parameter="236" />
-			<ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 185" Parameter="770" />
+			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 125" Parameter="236" />
+			<ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 155" Parameter="770" />
 			<ConnectorPaneTerminal Hotspot="25 0" />
-			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 95" Parameter="140" />
-			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 125" Parameter="189" />
-			<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 140" Parameter="210" />
-			<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 170" Parameter="339" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 80" Parameter="140" />
+			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 110" Parameter="189" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 140" Parameter="339" />
 			<ConnectorPaneTerminal Hotspot="15 50" />
-			<ConnectorPaneTerminal Hotspot="25 50" ListViewHotspot="150 200" Parameter="852" />
-			<ConnectorPaneTerminal Hotspot="40 45" ListViewHotspot="150 110" Parameter="168" />
-			<ConnectorPaneTerminal Hotspot="0 45" ListViewHotspot="0 80" Parameter="47" />
+			<ConnectorPaneTerminal Hotspot="25 50" ListViewHotspot="150 170" Parameter="852" />
+			<ConnectorPaneTerminal Hotspot="40 45" ListViewHotspot="150 95" Parameter="168" />
+			<ConnectorPaneTerminal Hotspot="0 45" ListViewHotspot="0 185" Parameter="2711" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0">
@@ -42,29 +42,17 @@
 				<p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
 				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="27" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ComplexDouble]1 + 0i" IsReadOnly="[bool]False" MinHeight="[float]24" ValueFormatter="[string]LV:G6" ValueType="[Type]ComplexDouble" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
-			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="48" IsTabStop="[bool]True" Label="[UIModel]55" Left="[float]266" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]1" Top="[float]186" Value="{DataItemBinding Id=47}" Width="[float]176" p4:ControlDefinitionChecksum="e3nj023iwYRzhBkV8z61WFGSCt7pzzv3hwIJFanixR4=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
-				<p4:p.TypeDefinitionTargets>
-					<p4:TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype::ControlDefinition" />
-				</p4:p.TypeDefinitionTargets>
-				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]22" Id="49" Label="[UIModel]50" Left="[float]3" MinHeight="[float]22" MinWidth="[float]22" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=status}" Width="[float]22" p6:DisplayAsErrorStatus="True" xmlns:p6="http://www.ni.com/Controls.LabVIEW.Design" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-				<p4:Label Height="[float]16" Id="50" LabelOwner="[UIModel]49" Left="[float]3" Text="[string]status" Top="[float]4" Width="[float]32" />
-				<NumericText Height="[float]24" Id="51" Label="[UIModel]52" Left="[float]54" MinHeight="[float]24" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]111" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-				<p4:Label Height="[float]16" Id="52" LabelOwner="[UIModel]51" Left="[float]54" Text="[string]code" Top="[float]4" Width="[float]26" />
-				<StringControl AcceptsReturn="[bool]True" Height="[float]95" Id="53" Label="[UIModel]54" Left="[float]3" MinHeight="[float]24" TabIndex="[int]2" Text="{ClusterBinding FieldName=source}" Top="[float]70" Width="[float]162" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-				<p4:Label Height="[float]16" Id="54" LabelOwner="[UIModel]53" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
-			</Cluster>
-			<Label Height="[float]16" Id="55" LabelOwner="[UIModel]48" Left="[float]266" Text="[string]error in" Top="[float]166" Width="[float]26" xmlns="http://www.ni.com/PanelCommon" />
-			<NumericText Height="[float]24" Id="78" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" IsReadOnly="[bool]False" Label="[UIModel]79" Left="[float]316" MinHeight="[float]24" TabIndex="[int]2" Top="[float]94" Value="{DataItemBinding Id=77}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText Height="[float]24" Id="78" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" IsReadOnly="[bool]False" Label="[UIModel]79" Left="[float]316" MinHeight="[float]24" TabIndex="[int]1" Top="[float]94" Value="{DataItemBinding Id=77}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="79" LabelOwner="[UIModel]78" Left="[float]316" Text="[string]Samples per symbol" Top="[float]74" Width="[float]21" xmlns="http://www.ni.com/PanelCommon" />
-			<ArrayViewer ArrayElement="[UIModel]110" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]126" Id="109" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Left="[float]0" Name="[string]input" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]3" Top="[float]20" Value="{DataItemBinding Id=108}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]111" xmlns="http://www.ni.com/PanelCommon">
+			<ArrayViewer ArrayElement="[UIModel]110" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]126" Id="109" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Left="[float]0" Name="[string]input" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]2" Top="[float]20" Value="{DataItemBinding Id=108}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]111" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
 				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="110" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ComplexDouble]1 + 0i" IsReadOnly="[bool]False" MinHeight="[float]24" ValueFormatter="[string]LV:G6" ValueType="[Type]ComplexDouble" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
-			<ArrayViewer ArrayElement="[UIModel]142" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]126" Id="141" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Left="[float]0" Name="[string]output" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]4" Top="[float]20" Value="{DataItemBinding Id=140}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]111" xmlns="http://www.ni.com/PanelCommon">
+			<ArrayViewer ArrayElement="[UIModel]142" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]126" Id="141" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Left="[float]0" Name="[string]output" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]3" Top="[float]20" Value="{DataItemBinding Id=140}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]111" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
 				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="142" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[ComplexDouble]1 + 0i" IsReadOnly="[bool]True" MinHeight="[float]24" ValueFormatter="[string]LV:G6" ValueType="[Type]ComplexDouble" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
-			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="169" IsTabStop="[bool]True" Label="[UIModel]176" Left="[float]553" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]5" Top="[float]410" Value="{DataItemBinding Id=168}" Width="[float]176" p4:ControlDefinitionChecksum="e3nj023iwYRzhBkV8z61WFGSCt7pzzv3hwIJFanixR4=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="169" IsTabStop="[bool]True" Label="[UIModel]176" Left="[float]553" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]4" Top="[float]410" Value="{DataItemBinding Id=168}" Width="[float]176" p4:ControlDefinitionChecksum="e3nj023iwYRzhBkV8z61WFGSCt7pzzv3hwIJFanixR4=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype::ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
@@ -76,32 +64,36 @@
 				<p4:Label Height="[float]16" Id="175" LabelOwner="[UIModel]174" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
 			</Cluster>
 			<Label Height="[float]16" Id="176" LabelOwner="[UIModel]169" Left="[float]553" Text="[string]error out" Top="[float]390" Width="[float]26" xmlns="http://www.ni.com/PanelCommon" />
-			<NumericText Height="[float]24" Id="190" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsReadOnly="[bool]True" Label="[UIModel]191" Left="[float]860" LeftPositionMode="[GuidelineItemPositionMode]PositionNormal" Margin="[SMThickness]0,0,0,0" MinHeight="[float]24" SizeHeightMode="[GuidelineItemSizeMode]SizedFixed" SizeWidthMode="[GuidelineItemSizeMode]SizedFixed" TabIndex="[int]6" Top="[float]354" TopPositionMode="[GuidelineItemPositionMode]PositionNormal" Value="{DataItemBinding Id=189}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText Height="[float]24" Id="190" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsReadOnly="[bool]True" Label="[UIModel]191" Left="[float]860" LeftPositionMode="[GuidelineItemPositionMode]PositionNormal" Margin="[SMThickness]0,0,0,0" MinHeight="[float]24" SizeHeightMode="[GuidelineItemSizeMode]SizedFixed" SizeWidthMode="[GuidelineItemSizeMode]SizedFixed" TabIndex="[int]5" Top="[float]354" TopPositionMode="[GuidelineItemPositionMode]PositionNormal" Value="{DataItemBinding Id=189}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="191" LabelOwner="[UIModel]190" Left="[float]860" Text="[string]phase drift" Top="[float]334" Width="[float]29" xmlns="http://www.ni.com/PanelCommon" />
-			<NumericText Height="[float]24" Id="211" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsReadOnly="[bool]True" Label="[UIModel]212" Left="[float]860" LeftPositionMode="[GuidelineItemPositionMode]PositionNormal" Margin="[SMThickness]0,0,0,0" MinHeight="[float]24" SizeHeightMode="[GuidelineItemSizeMode]SizedFixed" SizeWidthMode="[GuidelineItemSizeMode]SizedFixed" TabIndex="[int]7" Top="[float]431" TopPositionMode="[GuidelineItemPositionMode]PositionNormal" Value="{DataItemBinding Id=210}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Height="[float]16" Id="212" LabelOwner="[UIModel]211" Left="[float]860" Text="[string]intercept" Top="[float]411" Width="[float]48" xmlns="http://www.ni.com/PanelCommon" />
-			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="238" Interval="[int]1" Left="[float]0" MinHeight="[float]24" Name="[string]Frame index" TabIndex="[int]8" Top="[float]0" Value="{DataItemBinding Id=236}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="340" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]phase offset" TabIndex="[int]9" Top="[float]0" Value="{DataItemBinding Id=339}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="771" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]barker code" TabIndex="[int]10" Top="[float]0" Value="{DataItemBinding Id=770}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="238" Interval="[int]1" Left="[float]0" MinHeight="[float]24" Name="[string]Frame index" TabIndex="[int]6" Top="[float]0" Value="{DataItemBinding Id=236}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="340" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]phase offset" TabIndex="[int]7" Top="[float]0" Value="{DataItemBinding Id=339}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="771" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]barker code" TabIndex="[int]8" Top="[float]0" Value="{DataItemBinding Id=770}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<EnumSelectorInfo DisplayValue="[string]5" Value="[ushort]0" ValueType="[Type]UInt16" />
 				<EnumSelectorInfo DisplayValue="[string]7" Value="[ushort]1" ValueType="[Type]UInt16" />
 				<EnumSelectorInfo DisplayValue="[string]11" Value="[ushort]2" ValueType="[Type]UInt16" />
 				<EnumSelectorInfo DisplayValue="[string]random" Value="[ushort]3" ValueType="[Type]UInt16" />
 			</EnumSelector>
-			<ArrayViewer ArrayElement="[UIModel]854" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]126" Id="853" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Left="[float]0" Name="[string]correction angles" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]11" Top="[float]20" Value="{DataItemBinding Id=852}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]111" xmlns="http://www.ni.com/PanelCommon">
+			<ArrayViewer ArrayElement="[UIModel]854" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]126" Id="853" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Left="[float]0" Name="[string]correction angles" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]9" Top="[float]20" Value="{DataItemBinding Id=852}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]111" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0x0</p.DefaultElementValue>
 				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="854" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsReadOnly="[bool]True" MinHeight="[float]24" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
-			<ArrayViewer ArrayElement="[UIModel]977" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="976" Label="[UIModel]978" Left="[float]860" LeftPositionMode="[GuidelineItemPositionMode]PositionNormal" Margin="[SMThickness]0,0,0,0" Orientation="[SMOrientation]Horizontal" Rows="[int]1" SizeHeightMode="[GuidelineItemSizeMode]SizedFixed" SizeWidthMode="[GuidelineItemSizeMode]SizedFixed" TabIndex="[int]12" Top="[float]280" TopPositionMode="[GuidelineItemPositionMode]PositionNormal" Value="{DataItemBinding Id=975}" Width="[float]139" xmlns="http://www.ni.com/PanelCommon">
-				<p.DefaultElementValue>0x0</p.DefaultElementValue>
-				<NumericText Height="[float]24" Id="977" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsReadOnly="[bool]True" MinHeight="[float]24" Name="[string]Child" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			</ArrayViewer>
-			<Label Height="[float]16" Id="978" LabelOwner="[UIModel]976" Left="[float]860" Text="[string]best linear fit" Top="[float]260" Width="[float]69" xmlns="http://www.ni.com/PanelCommon" />
-			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="2614" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]x - y" TabIndex="[int]13" Top="[float]0" Value="{DataItemBinding Id=2613}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<ArrayViewer ArrayElement="[UIModel]2685" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]126" Id="2684" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Left="[float]0" Name="[string]Output_2" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]14" Top="[float]20" Value="{DataItemBinding Id=2683}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]111" xmlns="http://www.ni.com/PanelCommon">
+			<ArrayViewer ArrayElement="[UIModel]2685" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]126" Id="2684" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Left="[float]0" Name="[string]Output_2" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]10" Top="[float]20" Value="{DataItemBinding Id=2683}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]111" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0x0</p.DefaultElementValue>
 				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="2685" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsReadOnly="[bool]True" MinHeight="[float]24" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
+			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="2712" IsTabStop="[bool]True" Label="[UIModel]2719" Left="[float]266" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]11" Top="[float]186" Value="{DataItemBinding Id=2711}" Width="[float]176" p4:ControlDefinitionChecksum="e3nj023iwYRzhBkV8z61WFGSCt7pzzv3hwIJFanixR4=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]22" Id="2713" Label="[UIModel]2714" Left="[float]3" MinHeight="[float]22" MinWidth="[float]22" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=status}" Width="[float]22" p6:DisplayAsErrorStatus="True" xmlns:p6="http://www.ni.com/Controls.LabVIEW.Design" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="2714" LabelOwner="[UIModel]2713" Left="[float]3" Text="[string]status" Top="[float]4" Width="[float]32" />
+				<NumericText Height="[float]24" Id="2715" Label="[UIModel]2716" Left="[float]54" MinHeight="[float]24" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]111" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="2716" LabelOwner="[UIModel]2715" Left="[float]54" Text="[string]code" Top="[float]4" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]95" Id="2717" Label="[UIModel]2718" Left="[float]3" MinHeight="[float]24" TabIndex="[int]2" Text="{ClusterBinding FieldName=source}" Top="[float]70" Width="[float]162" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="2718" LabelOwner="[UIModel]2717" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
+			</Cluster>
+			<Label Height="[float]16" Id="2719" LabelOwner="[UIModel]2712" Left="[float]266" Text="[string]error in" Top="[float]166" Width="[float]26" xmlns="http://www.ni.com/PanelCommon" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<DataAccessor Bounds="-215 35 40 15" DataItem="25" Id="29" Label="30" xmlns="http://www.ni.com/MocCommon">
@@ -110,13 +102,13 @@
 			<NodeLabel AttachedTo="29" Bounds="-300 35 80 14" Id="30" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Training codes</p.Text>
 			</NodeLabel>
-			<DataAccessor Bounds="135 255 40 15" DataItem="108" Id="106" Label="107" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="755 -300 40 15" DataItem="108" Id="106" Label="107" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="106" Bounds="101 255 29 14" Id="107" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="106" Bounds="721 -300 29 14" Id="107" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>input</p.Text>
 			</NodeLabel>
-			<PatternGeneratorRampBySamplesArray Bounds="1115 330 50 50" Id="112" ResolveFailedHint="Ramp Pattern by Samples.gvi, Package: (LabVIEW NXG Analysis Basic Files, Version: 3.0.0)" Signature="@67cee9b1bd3d42f1ae64111de2de8946" Target="NI::Analysis::Generation::Ramp Pattern by Samples.gvi">
+			<PatternGeneratorRampBySamplesArray Bounds="1080 -145 50 50" Id="112" ResolveFailedHint="Ramp Pattern by Samples.gvi, Package: (LabVIEW NXG Analysis Basic Files, Version: 3.0.0)" Signature="@67cee9b1bd3d42f1ae64111de2de8946" Target="NI::Analysis::Generation::Ramp Pattern by Samples.gvi">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="B1" Desc="samples" />
@@ -138,75 +130,71 @@
 				<Terminal DataType="Double[]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 			</PatternGeneratorRampBySamplesArray>
-			<ArraySize Bounds="975 360 40 20" Id="123" />
-			<Multiply Bounds="1065 330 30 30" Id="128" Terminals="o=130, c0t0v=2612, c1t0v=323" />
-			<Wire Id="130" Joints="N(128:o)|(1095,345) N(112:L1)|(1115,345)" xmlns="http://www.ni.com/PlatformFramework" />
-			<PolarToComplex Bounds="1355 285 30 30" Id="136" />
-			<DataAccessor Bounds="1685 270 40 15" DataItem="140" Id="144" Label="145" xmlns="http://www.ni.com/MocCommon">
+			<ArraySize Bounds="910 -100 40 20" Id="123" />
+			<Multiply Bounds="1025 -125 30 30" Id="128" Terminals="o=130, c0t0v=2612, c1t0v=323" />
+			<Wire Id="130" Joints="N(128:o)|(1055,-110) h(15) v(-20) N(112:L1)|(1080,-130)" xmlns="http://www.ni.com/PlatformFramework" />
+			<PolarToComplex Bounds="1270 -150 30 30" Id="136" />
+			<DataAccessor Bounds="1365 -300 40 15" DataItem="140" Id="144" Label="145" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="ComplexDouble[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="144" Bounds="1730 270 37 14" Id="145" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="144" Bounds="1410 -300 37 14" Id="145" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>output</p.Text>
 			</NodeLabel>
-			<Literal Bounds="1270 275 40 15" DataType="Double" Id="149" Label="150" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="1205 -165 40 15" DataType="Double" Id="149" Label="150" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>0x3FF0000000000000</p.Data>
 				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 			</Literal>
-			<NodeLabel AttachedTo="149" Bounds="1270 257 30 15" Id="150" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="149" Bounds="1205 -183 30 15" Id="150" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>r</p.Text>
 			</NodeLabel>
-			<Wire Id="151" Joints="N(149:Out)|(1310,280) h(5) v(10) N(136:r)|(1355,290)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Comment Bounds="1185 230 370 15" Id="155" xmlns="http://www.ni.com/MocCommon">
+			<Wire Id="151" Joints="N(149:Out)|(1245,-160) h(15) v(15) N(136:r)|(1270,-145)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="1140 -195 370 15" Id="155" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>compensate by multiplying with e^-j(n*phase/sub code length)</p.Text>
 			</Comment>
-			<Comment Bounds="1015 420 160 28" Id="160" xmlns="http://www.ni.com/MocCommon">
-				<p.Text>"n*phase/sub code length\r\nfrom 0 to N"</p.Text>
+			<Comment Bounds="965 -50 80 28" Id="160" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"n*phase\r\nfrom 0 to N"</p.Text>
 			</Comment>
-			<Wire Id="167" Joints="N(1723:1197)|(889,410) h(221) v(-35) N(112:L4)|(1115,375)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="1400 370 40 15" DataItem="168" Id="178" Label="179" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="1155 -105 40 15" DataItem="168" Id="178" Label="179" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="178" Bounds="1445 370 50 14" Id="179" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="178" Bounds="1200 -105 50 14" Id="179" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>error out</p.Text>
 			</NodeLabel>
-			<Multiply Bounds="1395 260 30 30" Id="287" Terminals="o=798, c0t0v=1097, c1t0v=289" />
-			<Wire Id="289" Joints="N(136:r * e^(i*theta\))|(1385,300) h(5) v(-20) N(287:c1t0v)|(1395,280)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="323" Joints="N(324:o)|(1055,385) h(5) B(1) h(80) N(112:B1)|(1140,380) B(1) v(-35) N(128:c1t0v)|(1065,350)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Add Bounds="1025 370 30 30" Id="324" Terminals="o=323, c0t0v=325, c1t0v=791" />
-			<Wire Id="325" Joints="N(123:size(s\))|(1015,375) N(324:c0t0v)|(1025,375)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Comment Bounds="1190 435 205 15" Id="335" xmlns="http://www.ni.com/MocCommon">
-				<p.Text>remove sync frame compensation</p.Text>
-			</Comment>
-			<Comment Bounds="980 285 205 15" Id="336" xmlns="http://www.ni.com/MocCommon">
+			<Multiply Bounds="1320 -155 30 30" Id="287" Terminals="o=798, c0t0v=1097, c1t0v=289" />
+			<Wire Id="289" Joints="N(136:r * e^(i*theta\))|(1300,-135) N(287:c1t0v)|(1320,-135)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="323" Joints="N(324:o)|(1000,-75) h(10) B(1) h(95) N(112:B1)|(1105,-95) B(1) v(-30) N(128:c1t0v)|(1025,-105)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Add Bounds="970 -90 30 30" Id="324" Terminals="o=323, c0t0v=325, c1t0v=791" />
+			<Wire Id="325" Joints="N(123:size(s\))|(950,-85) N(324:c0t0v)|(970,-85)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="915 -165 205 15" Id="336" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>create phase compensation array</p.Text>
 			</Comment>
-			<DataAccessor Bounds="920 520 40 15" DataItem="339" Id="342" Label="343" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="645 -220 40 15" DataItem="339" Id="342" Label="343" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="342" Bounds="965 520 68 14" Id="343" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="342" Bounds="690 -220 68 14" Id="343" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>phase offset</p.Text>
 			</NodeLabel>
-			<Wire Id="754" Joints="N(112:R0)|(1165,335) N(991:c0t0v)|(1220,335)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Literal Bounds="955 385 40 15" DataType="Int32" Id="789" Label="790" xmlns="http://www.ni.com/MocCommon">
+			<Wire Id="754" Joints="N(112:R0)|(1130,-140) N(991:c0t0v)|(1155,-140)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="910 -75 40 15" DataType="Int32" Id="789" Label="790" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>0</p.Data>
 				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
 			</Literal>
-			<NodeLabel AttachedTo="789" Bounds="955 367 30 15" Id="790" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="789" Bounds="910 -57 30 15" Id="790" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>input 1</p.Text>
 			</NodeLabel>
-			<Wire Id="791" Joints="N(789:Out)|(995,390) N(324:c1t0v)|(1025,390)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="798" Joints="N(287:o)|(1425,275) N(144:Value)|(1688,275)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Negate Bounds="1310 290 30 30" Id="840" />
-			<Wire Id="841" Joints="N(840:-x)|(1340,305) N(136:theta)|(1355,305)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="1400 325 40 15" DataItem="852" Id="856" Label="857" xmlns="http://www.ni.com/MocCommon">
+			<Wire Id="791" Joints="N(789:Out)|(950,-70) N(324:c1t0v)|(970,-70)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="798" Joints="N(287:o)|(1350,-140) h(10) v(-155) N(144:Value)|(1368,-295)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Negate Bounds="1210 -145 30 30" Id="840" />
+			<Wire Id="841" Joints="N(840:-x)|(1240,-130) N(136:theta)|(1270,-130)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="910 -145 40 15" DataItem="852" Id="856" Label="857" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="856" Bounds="1445 325 95 14" Id="857" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="856" Bounds="955 -145 95 14" Id="857" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>correction angles</p.Text>
 			</NodeLabel>
-			<Wire Id="889" Joints="N(991:o)|(1250,345) h(54) v(-40) N(840:x)|(1310,305)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="890" Joints="N(112:R4)|(1165,375) N(178:Value)|(1403,375)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Add Bounds="1220 330 30 30" Id="991" Terminals="o=889, c0t0v=754, c1t0v=2619" />
+			<Wire Id="889" Joints="N(991:o)|(1185,-130) N(840:x)|(1210,-130)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="890" Joints="N(112:R4)|(1130,-100) N(178:Value)|(1158,-100)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Add Bounds="1155 -145 30 30" Id="991" Terminals="o=889, c0t0v=754, c1t0v=2619" />
 			<ArrayIndex Bounds="-85 -10 40 40" Id="1035" Rank="2" Terminals="array=2648, c0t0v=1040, c0t1v, c0out=2539" />
 			<Literal Bounds="-125 10 40 15" DataType="Int32" Id="1039" Label="1041" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>0</p.Data>
@@ -216,337 +204,56 @@
 			<NodeLabel AttachedTo="1039" Bounds="-160 10 30 15" Id="1041" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>row index</p.Text>
 			</NodeLabel>
-			<Wire Id="1097" Joints="N(106:Value)|(175,260) h(745) v(5) B(2) N(287:c0t0v)|(1395,265) B(2) v(100) N(123:array)|(975,365)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DisableStructure Bounds="-26 285 911 425" Id="1197" Selected="1199" UserSelectorBounds="402 0 107 17">
-				<DisableStructure.DisableDiagram Bounds="5 5 901 415" Id="1198" Pattern="Enabled" />
-				<DisableStructure.DisableDiagram Bounds="5 5 901 415" Id="1199" Pattern="Disabled">
-					<ComplexToPolar Bounds="391 75 30 30" Id="32" />
-					<MethodCall Bounds="471 90 50 50" Id="33" ResolveFailedHint="Unwrap Phase.gvi, Package: (LabVIEW NXG Analysis Basic Files, Version: 3.0.0)" Signature="@4cf095ea836d4f44a67b42c2e5e938e7" Target="NI::Analysis::Conditioning::Unwrap Phase.gvi" xmlns="http://www.ni.com/MocCommon">
-						<p.MethodDeclaration>
-							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-								<Parameter Id="L0" Desc="input phase" />
-								<Parameter Id="L1" Desc="phase unit" />
-								<Parameter Id="L4" Desc="error in" />
-								<Parameter Id="R0" Desc="unwrapped phase" />
-								<Parameter Id="R4" Desc="error out" />
-							</MethodDeclaration>
-						</p.MethodDeclaration>
-						<Terminal DataType="Double[]" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="@483863da9533401382b57e96ea7062a3" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Double[]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
-					</MethodCall>
-					<Literal Bounds="256 120 160 15" DataType="@483863da9533401382b57e96ea7062a3" Id="44" Label="46" p6:ControlDefinitionChecksum="DpLbKW1/IZqIAz1gF+djuZMeDY2dVHHQeuts1AsR/lw=" xmlns:p6="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
-						<p.Data>0</p.Data>
-						<p6:p.TypeDefinitionTargets>
-							<p6:TypeDefinitionTarget TargetName="NI::Analysis::Support::Angle Units.gtype" />
-							<p6:TypeDefinitionTarget TargetName="NI::Analysis::Support::Angle Units.gtype::ControlDefinition" />
-						</p6:p.TypeDefinitionTargets>
-						<RingBehavior ValueFormatter="LV:G6">
-							<RingConstantInfo DisplayValue="radian in, radian out" ValueType="Int32">
-								<p.Value>0</p.Value>
-							</RingConstantInfo>
-							<RingConstantInfo DisplayValue="radian in, degree out" ValueType="Int32">
-								<p.Value>1</p.Value>
-							</RingConstantInfo>
-							<RingConstantInfo DisplayValue="degree in, degree out" ValueType="Int32">
-								<p.Value>2</p.Value>
-							</RingConstantInfo>
-							<RingConstantInfo DisplayValue="degree in, radian out" ValueType="Int32">
-								<p.Value>3</p.Value>
-							</RingConstantInfo>
-						</RingBehavior>
-					</Literal>
-					<DataAccessor Bounds="321 145 40 15" DataItem="47" Id="57" Label="58" xmlns="http://www.ni.com/MocCommon">
-						<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-					</DataAccessor>
-					<CurveFittingLinearDBLArray Bounds="591 90 50 50" Id="60" ResolveFailedHint="Linear Fit.gvi, Package: (LabVIEW NXG Analysis Basic Files, Version: 3.0.0)" Signature="@36f5c2ece5994b90b2471e56f95c66c2" Target="NI::Analysis::Fitting::Linear Fit.gvi">
-						<p.MethodDeclaration>
-							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-								<Parameter Id="B0" Desc="parameter bounds" />
-								<Parameter Id="B1" Desc="method" />
-								<Parameter Id="L0" Desc="y" />
-								<Parameter Id="L1" Desc="x" />
-								<Parameter Id="L2" Desc="weight" />
-								<Parameter Id="L3" Desc="tolerance" />
-								<Parameter Id="L4" Desc="error in" />
-								<Parameter Id="B2" Desc="residue" />
-								<Parameter Id="R0" Desc="best linear fit" />
-								<Parameter Id="R1" Desc="slope" />
-								<Parameter Id="R2" Desc="intercept" />
-								<Parameter Id="R4" Desc="error out" />
-							</MethodDeclaration>
-						</p.MethodDeclaration>
-						<Terminal DataType="@2a0428162cbc4339aac904d58a4f4382" Direction="Input" Hotspot="15 50" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="@67bb1c86151e4cab8544a9b4e2b01876" Direction="Input" Hotspot="25 50" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Double[]" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Double[]" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Double[]" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Double" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Double" Direction="Output" Hotspot="35 50" Id="B2" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Double[]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Double" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Double" Direction="Output" Hotspot="50 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
-					</CurveFittingLinearDBLArray>
-					<PatternGeneratorRampBySamplesArray Bounds="466 175 50 50" Id="68" ResolveFailedHint="Ramp Pattern by Samples.gvi, Package: (LabVIEW NXG Analysis Basic Files, Version: 3.0.0)" Signature="@67cee9b1bd3d42f1ae64111de2de8946" Target="NI::Analysis::Generation::Ramp Pattern by Samples.gvi">
-						<p.MethodDeclaration>
-							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-								<Parameter Id="B1" Desc="samples" />
-								<Parameter Id="L0" Desc="start" />
-								<Parameter Id="L1" Desc="end" />
-								<Parameter Id="L2" Desc="exclude end" />
-								<Parameter Id="L4" Desc="error in" />
-								<Parameter Id="T1" Desc="type" />
-								<Parameter Id="R0" Desc="ramp pattern" />
-								<Parameter Id="R4" Desc="error out" />
-							</MethodDeclaration>
-						</p.MethodDeclaration>
-						<Terminal DataType="Int32" Direction="Input" Hotspot="25 50" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Double" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Double" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Boolean" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="@fb43fa216bad444097bb303ade174746" Direction="Input" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Double[]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
-					</PatternGeneratorRampBySamplesArray>
-					<Comment Bounds="411 270 210 15" Id="91" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
-						<p.Text>Create a linear array for the x axis</p.Text>
-					</Comment>
-					<Literal Bounds="481 245 125 15" DataType="@67bb1c86151e4cab8544a9b4e2b01876" Id="102" Label="103" p6:ControlDefinitionChecksum="WTq1DBHrPZvpaJLkyuNJcOpiZcI1AM0YYS0jIkg9DUI=" xmlns:p6="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
-						<p.Data>0</p.Data>
-						<p6:p.TypeDefinitionTargets>
-							<p6:TypeDefinitionTarget TargetName="NI::Analysis::Fitting::Curve Fitting Criteria.gtype" />
-							<p6:TypeDefinitionTarget TargetName="NI::Analysis::Fitting::Curve Fitting Criteria.gtype::ControlDefinition" />
-						</p6:p.TypeDefinitionTargets>
-						<RingBehavior ValueFormatter="LV:G6">
-							<RingConstantInfo DisplayValue="Least Square" ValueType="UInt16">
-								<p.Value>0</p.Value>
-							</RingConstantInfo>
-							<RingConstantInfo DisplayValue="Least Absolute Residual" ValueType="UInt16">
-								<p.Value>1</p.Value>
-							</RingConstantInfo>
-							<RingConstantInfo DisplayValue="Bisquare" ValueType="UInt16">
-								<p.Value>2</p.Value>
-							</RingConstantInfo>
-						</RingBehavior>
-					</Literal>
-					<Comment Bounds="231 15 250 15" Id="158" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
-						<p.Text>Estimate phase offset between sub codes</p.Text>
-					</Comment>
-					<Comment Bounds="676 25 140 15" Id="159" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
-						<p.Text>phase/subcode length</p.Text>
-					</Comment>
-					<DataAccessor Bounds="806 110 40 15" DataItem="210" Id="214" Label="215" xmlns="http://www.ni.com/MocCommon">
-						<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-					</DataAccessor>
-					<Multiply Bounds="326 375 30 30" Id="248" Terminals="o=804, c0t0v=2606" />
-					<Multiply Bounds="276 310 30 30" Id="307" Terminals="o=806, c0t0v=1001, c1t0v=2606" />
-					<Literal Bounds="411 195 25 15" DataType="Boolean" Id="315" Label="316" xmlns="http://www.ni.com/MocCommon">
-						<p.Data>True</p.Data>
-						<BooleanBehavior />
-					</Literal>
-					<Literal Bounds="441 5 40 15" DataType="Double" Id="829" xmlns="http://www.ni.com/MocCommon">
-						<NumericBehavior ConstantType="Pi" Interpretation="Exact" ValueFormatter="LV:R" />
-						<FixedConstantFacade Facade="Pi" />
-					</Literal>
-					<Divide Bounds="481 5 30 30" Id="830" />
-					<Literal Bounds="441 20 40 15" DataType="Double" Id="833" Label="834" xmlns="http://www.ni.com/MocCommon">
-						<p.Data>0x4010000000000000</p.Data>
-						<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-					</Literal>
-					<Add Bounds="551 0 30 30" Id="842" Terminals="o=1093, c0t0v=909, c1t0v=838" />
-					<Subtract Bounds="721 210 30 30" Id="843" />
-					<Multiply Bounds="671 215 30 30" Id="844" Terminals="o=849, c0t0v=1750, c1t0v=804" />
-					<Comment Bounds="621 280 180 15" Id="850" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
-						<p.Text>Compensate for phase offset</p.Text>
-					</Comment>
-					<MethodCall Bounds="846 220 50 50" Id="894" ResolveFailedHint="Wrap Angle (Scalar DBL).gvi, Package: (LabVIEW NXG Analysis Advanced Files, Version: 3.0.0)" Signature="@8d1130e9bd0a4df892c7a4dfdc7cf685" Target="NI::Analysis::Geometry::Wrap Angle (Scalar DBL).gvi" xmlns="http://www.ni.com/MocCommon">
-						<p.MethodDeclaration>
-							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-								<Parameter Id="L0" Desc="angle" />
-								<Parameter Id="L3" Desc="wrapped angle range" />
-								<Parameter Id="L4" Desc="error in" />
-								<Parameter Id="T0" Desc="angle units" />
-								<Parameter Id="R0" Desc="wrapped angle" />
-								<Parameter Id="R4" Desc="error out" />
-							</MethodDeclaration>
-						</p.MethodDeclaration>
-						<Terminal DataType="Double" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="@0fea12a97c7148bea0edc8cecb33448e" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="@483863da9533401382b57e96ea7062a3" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Double" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
-					</MethodCall>
-					<Literal Bounds="834 250 12 9" DataType="@0fea12a97c7148bea0edc8cecb33448e" Id="897" Label="901" p6:ControlDefinitionChecksum="ksYdyIlEumNPEKqLDuwDWQlC/gd8NRF8w2xM+r2iQKQ=" xmlns:p6="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
-						<p.Data>1</p.Data>
-						<p6:p.TypeDefinitionTargets>
-							<p6:TypeDefinitionTarget TargetName="NI::Analysis::Geometry::Angle Range.gtype" />
-							<p6:TypeDefinitionTarget TargetName="NI::Analysis::Geometry::Angle Range.gtype::ControlDefinition" />
-						</p6:p.TypeDefinitionTargets>
-						<RingBehavior ValueFormatter="LV:G6">
-							<RingConstantInfo DisplayValue="none" ValueType="UInt16">
-								<p.Value>0</p.Value>
-							</RingConstantInfo>
-							<RingConstantInfo DisplayValue="-180 to 180 (-pi to pi)" ValueType="UInt16">
-								<p.Value>1</p.Value>
-							</RingConstantInfo>
-							<RingConstantInfo DisplayValue="0 to 360 (0 to 2pi)" ValueType="UInt16">
-								<p.Value>2</p.Value>
-							</RingConstantInfo>
-						</RingBehavior>
-						<DockedConstantFacade LabelPosition="Side" UndockedSize="170 15" />
-					</Literal>
-					<Literal Bounds="866 208 12 9" DataType="@483863da9533401382b57e96ea7062a3" Id="899" Label="902" p6:ControlDefinitionChecksum="DpLbKW1/IZqIAz1gF+djuZMeDY2dVHHQeuts1AsR/lw=" xmlns:p6="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
-						<p.Data>0</p.Data>
-						<p6:p.TypeDefinitionTargets>
-							<p6:TypeDefinitionTarget TargetName="NI::Analysis::Support::Angle Units.gtype" />
-							<p6:TypeDefinitionTarget TargetName="NI::Analysis::Support::Angle Units.gtype::ControlDefinition" />
-						</p6:p.TypeDefinitionTargets>
-						<RingBehavior ValueFormatter="LV:G6">
-							<RingConstantInfo DisplayValue="radian in, radian out" ValueType="Int32">
-								<p.Value>0</p.Value>
-							</RingConstantInfo>
-							<RingConstantInfo DisplayValue="radian in, degree out" ValueType="Int32">
-								<p.Value>1</p.Value>
-							</RingConstantInfo>
-							<RingConstantInfo DisplayValue="degree in, degree out" ValueType="Int32">
-								<p.Value>2</p.Value>
-							</RingConstantInfo>
-							<RingConstantInfo DisplayValue="degree in, radian out" ValueType="Int32">
-								<p.Value>3</p.Value>
-							</RingConstantInfo>
-						</RingBehavior>
-						<DockedConstantFacade LabelPosition="Side" UndockedSize="160 15" />
-					</Literal>
-					<ArrayLiteral Bounds="131 85 103 74" DataType="ComplexDouble[]" Id="1094" Label="1096" xmlns="http://www.ni.com/MocCommon">
-						<p.Data>
-							<Array Lengths="2530" IsBinary="True" Compression="GZip">
-								<BinaryElements>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</BinaryElements>
-							</Array>
-						</p.Data>
-						<ArrayBehavior ElementType="ComplexDouble" IndexEditorWidth="42" VisibleRows="4">
-							<p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
-						</ArrayBehavior>
-						<Literal Bounds="48.6 20.6 40 15" DataType="ComplexDouble" Id="1095">
-							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-						</Literal>
-					</ArrayLiteral>
-					<NodeLabel AttachedTo="44" Bounds="221 120 30 15" Id="46" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-						<p.Text>phase unit</p.Text>
-					</NodeLabel>
-					<NodeLabel AttachedTo="57" Bounds="274 145 42 14" Id="58" xmlns="http://www.ni.com/PlatformFramework">
-						<p.Text>error in</p.Text>
-					</NodeLabel>
-					<NodeLabel AttachedTo="102" Bounds="481 227 30 15" Id="103" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-						<p.Text>method</p.Text>
-					</NodeLabel>
-					<NodeLabel AttachedTo="214" Bounds="851 110 50 14" Id="215" xmlns="http://www.ni.com/PlatformFramework">
-						<p.Text>intercept</p.Text>
-					</NodeLabel>
-					<NodeLabel AttachedTo="315" Bounds="411 177 30 15" Id="316" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-						<p.Text>exclude end</p.Text>
-					</NodeLabel>
-					<NodeLabel AttachedTo="833" Bounds="441 2 30 15" Id="834" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-						<p.Text>y</p.Text>
-					</NodeLabel>
-					<NodeLabel AttachedTo="897" Bounds="799 250 30 15" Id="901" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-						<p.Text>wrapped angle range</p.Text>
-					</NodeLabel>
-					<NodeLabel AttachedTo="899" Bounds="831 208 30 15" Id="902" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-						<p.Text>angle units</p.Text>
-					</NodeLabel>
-					<NodeLabel AttachedTo="1094" Bounds="131 67 30 15" Id="1096" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-						<p.Text>input</p.Text>
-					</NodeLabel>
-					<Wire Id="1722" Joints="N(60:R4)|(641,135) h(50) v(-15) N(1723:1199)|(897,120)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="1725" Joints="N(894:R0)|(896,225) N(1726:1199)|(897,225)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="1728" Joints="N(60:R0)|(641,95) h(15) v(-80) N(980:Value)|(669,15)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="1098" Joints="N(1094:Out)|(234,90) N(32:r * e^(i*theta\))|(391,90)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="43" Joints="N(32:theta)|(421,95) N(33:L0)|(471,95)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="45" Joints="N(44:Out)|(416,125) h(30) v(-20) N(33:L1)|(471,105)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="59" Joints="N(57:Value)|(361,150) h(75) v(-15) N(33:L4)|(471,135)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="909" Joints="N(33:R0)|(521,95) h(6) v(-90) N(842:c0t0v)|(551,5)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="760" Joints="N(33:R4)|(521,135) N(60:L4)|(591,135)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="104" Joints="N(102:Out)|(606,250) h(10) N(60:B1)|(616,140)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="1093" Joints="N(842:o)|(581,15) h(6) v(70) h(-7) v(10) N(60:L0)|(591,95)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="69" Joints="N(68:R0)|(516,180) h(25) v(-75) N(60:L1)|(591,105)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="1000" Joints="N(60:R2)|(641,115) h(75) B(1) N(214:Value)|(809,115) B(1) v(100) N(843:x)|(721,215)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="1001" Joints="N(2181:1199)|(4,120) h(7) v(110) B(2) h(480) N(68:B1)|(491,225) B(2) v(85) N(307:c0t0v)|(276,315)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="806" Joints="N(307:o)|(306,325) h(10) v(-135) N(68:L1)|(466,190)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="317" Joints="N(315:Out)|(436,200) N(68:L2)|(466,200)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="804" Joints="N(248:o)|(356,390) h(310) v(-155) N(844:c1t0v)|(671,235)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="832" Joints="N(829:Out)|(481,10) N(830:x)|(481,10)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="838" Joints="N(830:x/y)|(511,20) N(842:c1t0v)|(551,20)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="835" Joints="N(833:Out)|(481,25) N(830:y)|(481,25)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="999" Joints="N(843:x-y)|(751,225) N(894:L0)|(846,225)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="849" Joints="N(844:o)|(701,230) N(843:y)|(721,230)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Facade="WireInvisibleFacade" Id="898" Joints="N(897:Out)|(846,255) N(894:L3)|(846,255)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Facade="WireInvisibleFacade" Id="900" Joints="N(899:Out)|(878,213) h(24) v(-10) h(-41) N(894:T0)|(861,220)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-					<DataAccessor Bounds="666 10 40 15" DataItem="975" Id="980" Label="981" xmlns="http://www.ni.com/MocCommon">
-						<Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-					</DataAccessor>
-					<NodeLabel AttachedTo="980" Bounds="711 10 74 14" Id="981" xmlns="http://www.ni.com/PlatformFramework">
-						<p.Text>best linear fit</p.Text>
-					</NodeLabel>
-					<Wire Id="1750" Joints="N(60:R1)|(641,105) h(25) v(115) N(844:c0t0v)|(671,220)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="2606" Joints="N(248:c0t0v)|(326,380) h(-70) v(-50) N(307:c1t0v)|(276,330)" xmlns="http://www.ni.com/PlatformFramework" />
-				</DisableStructure.DisableDiagram>
-				<DisableStructure.Tunnel Bounds="902 120 13 10" Docking="Right" Id="1723" Terminals="1197=167, 1198, 1199=1722" />
-				<DisableStructure.Tunnel Bounds="902 225 13 10" Docking="Right" Id="1726" Terminals="1197, 1198, 1199=1725" />
-				<DisableStructure.Tunnel Bounds="-4 120 13 10" Docking="Left" Id="2181" Terminals="1197=2194, 1198, 1199=1001" />
-			</DisableStructure>
-			<DataAccessor Bounds="770 60 40 15" DataItem="189" Id="193" Label="194" xmlns="http://www.ni.com/MocCommon">
+			<Wire Id="1097" Joints="N(106:Value)|(795,-295) h(109) B(1) h(410) v(145) N(287:c0t0v)|(1320,-150) B(1) v(200) N(123:array)|(910,-95)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="460 35 40 15" DataItem="189" Id="193" Label="194" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="193" Bounds="815 60 60 14" Id="194" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="193" Bounds="505 35 60 14" Id="194" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>phase drift</p.Text>
 			</NodeLabel>
-			<ForLoop Bounds="-32 -32 321 208" DiagramId="1787" Id="1786">
-				<LoopIteration Bounds="0 135 15 15" Id="1789" />
-				<ArrayIndex Bounds="15 65 40 40" Id="1036" Rank="2" Terminals="array=2048, c0t0v=2295, c0t1v, c0out=2530" />
-				<ComplexToPolar Bounds="245 40 30 30" Id="1059" />
-				<AddArrayElements Bounds="215 40 30 30" Id="1166" />
-				<ComplexConjugate Bounds="155 30 30 30" Id="1167" />
-				<Multiply Bounds="185 40 30 30" Id="1169" Terminals="o=1172, c0t0v=1171, c1t0v=2530" />
-				<Divide Bounds="275 55 30 30" Id="1177" />
-				<Wire Id="2048" Joints="N(2049:i0)|(6,70) N(1036:array)|(15,70)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="2054" Joints="N(1177:x/y)|(305,70) N(2055:i0)|(309,70)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="1182" Joints="N(1166:sum)|(245,55) N(1059:r * e^(i*theta\))|(245,55)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="1183" Joints="N(1059:theta)|(275,60) N(1177:x)|(275,60)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="1172" Joints="N(1169:o)|(215,55) N(1166:numeric array)|(215,55)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="1171" Joints="N(1167:x - iy)|(185,45) N(1169:c0t0v)|(185,45)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Increment Bounds="15 125 30 30" Id="2191" />
-				<Wire Id="2192" Joints="N(1789:Output)|(15,140) N(2191:x)|(15,140)" xmlns="http://www.ni.com/PlatformFramework" />
-				<ArraySize Bounds="175 75 40 20" Id="1107" />
-				<Wire Id="2261" Joints="N(2052:i0)|(6,45) N(1167:x + iy)|(155,45)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Multiply Bounds="220 85 30 30" Id="2280" Terminals="o=2317, c0t0v=2284, c1t0v=2295" />
-				<Wire Id="2284" Joints="N(1107:size(s\))|(215,90) N(2280:c0t0v)|(220,90)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="2295" Joints="N(2191:x+1)|(45,140) h(5) B(1) h(15) v(-15) h(150) v(-20) N(2280:c1t0v)|(220,105) B(1) v(-20) h(-40) v(-30) N(1036:c0t0v)|(15,90)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="2317" Joints="N(2280:o)|(250,100) h(10) v(-25) N(1177:y)|(275,75)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="2530" Joints="N(1036:c0out)|(55,90) h(110) v(-10) B(2) N(1107:array)|(175,80) B(2) v(-20) N(1169:c1t0v)|(185,60)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Comment Bounds="85 170 160 15" Id="2704" xmlns="http://www.ni.com/MocCommon">
+			<ForLoop Bounds="-27 -27 320 205" DiagramId="1787" Id="1786">
+				<LoopIteration Bounds="0 130 15 15" Id="1789" />
+				<ArrayIndex Bounds="15 60 40 40" Id="1036" Rank="2" Terminals="array=2048, c0t0v=2295, c0t1v, c0out=2530" />
+				<ComplexToPolar Bounds="245 35 30 30" Id="1059" />
+				<AddArrayElements Bounds="215 35 30 30" Id="1166" />
+				<ComplexConjugate Bounds="155 25 30 30" Id="1167" />
+				<Multiply Bounds="185 35 30 30" Id="1169" Terminals="o=1172, c0t0v=1171, c1t0v=2530" />
+				<Divide Bounds="275 50 30 30" Id="1177" />
+				<Wire Id="2048" Joints="N(2049:i0)|(6,65) N(1036:array)|(15,65)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2054" Joints="N(1177:x/y)|(305,65) N(2055:i0)|(308,65)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="1182" Joints="N(1166:sum)|(245,50) N(1059:r * e^(i*theta\))|(245,50)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="1183" Joints="N(1059:theta)|(275,55) N(1177:x)|(275,55)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="1172" Joints="N(1169:o)|(215,50) N(1166:numeric array)|(215,50)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="1171" Joints="N(1167:x - iy)|(185,40) N(1169:c0t0v)|(185,40)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Increment Bounds="15 120 30 30" Id="2191" />
+				<Wire Id="2192" Joints="N(1789:Output)|(15,135) N(2191:x)|(15,135)" xmlns="http://www.ni.com/PlatformFramework" />
+				<ArraySize Bounds="175 70 40 20" Id="1107" />
+				<Wire Id="2261" Joints="N(2052:i0)|(6,40) N(1167:x + iy)|(155,40)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Multiply Bounds="220 80 30 30" Id="2280" Terminals="o=2317, c0t0v=2284, c1t0v=2295" />
+				<Wire Id="2284" Joints="N(1107:size(s\))|(215,85) N(2280:c0t0v)|(220,85)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2295" Joints="N(2191:x+1)|(45,135) h(5) B(1) h(15) v(-15) h(150) v(-20) N(2280:c1t0v)|(220,100) B(1) v(-20) h(-40) v(-30) N(1036:c0t0v)|(15,85)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2317" Joints="N(2280:o)|(250,95) h(10) v(-25) N(1177:y)|(275,70)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2530" Joints="N(1036:c0out)|(55,85) h(110) v(-10) B(2) N(1107:array)|(175,75) B(2) v(-20) N(1169:c1t0v)|(185,55)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Comment Bounds="85 165 160 15" Id="2704" xmlns="http://www.ni.com/MocCommon">
 					<p.Text>Calculates the phase drift</p.Text>
 				</Comment>
 				<LoopCount Bounds="1 1 15 15" Docking="Left" Id="1788" Terminals="1786=2184, 1787" />
-				<LoopTunnel Bounds="-5 67 13 10" Docking="Left" Id="2049" Terminals="o0=2648, i0=2048" />
-				<LoopTunnel Bounds="-5 42 13 10" Docking="Left" Id="2052" Terminals="o0=2539, i0=2261" />
-				<LoopTunnel AutoIndex="True" Bounds="311 67 13 10" Docking="Right" Id="2055" Terminals="o0=2646, i0=2054" TunnelMode="0" />
+				<LoopTunnel Bounds="-5 62 13 10" Docking="Left" Id="2049" Terminals="o0=2648, i0=2048" />
+				<LoopTunnel Bounds="-5 37 13 10" Docking="Left" Id="2052" Terminals="o0=2539, i0=2261" />
+				<LoopTunnel AutoIndex="True" Bounds="310 62 13 10" Docking="Right" Id="2055" Terminals="o0=2646, i0=2054" TunnelMode="0" />
 			</ForLoop>
-			<MethodCall Bounds="-230 -300 40 40" Id="181" ResolveFailedHint="&quot;C:\\Users\\lolsk\\OneDrive - NTNU\\Radiokom\\Prosjekt\\Common\\BarkerCode.gvi&quot;" Signature="@0bfa9434e2da4a3a9412a41072805d5b" Target="BarkerCode.gvi" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="-230 -300 40 40" Id="181" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Common\\BarkerCode.gvi&quot;" Signature="@44d97641707644c0a77bc0b47c7d45d8" Target="BarkerCode.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="barker code" />
+						<Parameter Id="L2" Desc="Concatinate?" />
 						<Parameter Id="R0" Desc="code" />
 						<Parameter Id="R1" Desc="length of one subcode" />
 						<Parameter Id="R2" Desc="subcodes" />
 					</MethodDeclaration>
 				</p.MethodDeclaration>
 				<Terminal DataType="@be9e6496893442a4b708bce654371ca2" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 25" Id="L2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Double[]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Int32" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Int32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
@@ -558,9 +265,8 @@
 			<NodeLabel AttachedTo="773" Bounds="-371 -300 66 14" Id="774" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>barker code</p.Text>
 			</NodeLabel>
-			<Wire Id="2184" Joints="N(2185:x-1)|(-40,-40) h(3) v(15) N(1788:1786)|(-31,-25)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2184" Joints="N(2185:x-1)|(-40,-40) h(5) v(15) h(5) v(5) N(1788:1786)|(-26,-20)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Decrement Bounds="-70 -55 30 30" Id="2185" />
-			<Wire Id="2194" Joints="N(181:R2)|(-190,-275) h(5) v(685) N(2181:1197)|(-30,410)" xmlns="http://www.ni.com/PlatformFramework" />
 			<ArraySize Bounds="-160 -75 40 20" Id="2195" />
 			<ArrayIndex Bounds="-115 -65 40 30" Id="2197" Terminals="array=2583, c0t0v=2201, c0out=2582" />
 			<Literal Bounds="-127 -44 12 9" DataType="Int32" Id="2199" Label="2200" xmlns="http://www.ni.com/MocCommon">
@@ -571,8 +277,8 @@
 			<NodeLabel AttachedTo="2199" Bounds="-127 -62 30 15" Id="2200" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>index</p.Text>
 			</NodeLabel>
-			<Wire Facade="WireInvisibleFacade" Id="2201" Joints="N(2199:Out)|(-115,-39) v(9) h(-33) v(-10) N(2197:c0t0v)|(-115,-40)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-			<MethodCall Bounds="370 35 50 50" Id="2289" ResolveFailedHint="Median.gvi, Package: (LabVIEW NXG Analysis Basic Files, Version: 3.0.0)" Signature="@6f65cd4766f2407e9df907cc2259707e" Target="NI::Analysis::Statistics::Median.gvi" xmlns="http://www.ni.com/MocCommon">
+			<Wire Facade="WireInvisibleFacade" Id="2201" Joints="N(2199:Out)|(-115,-39) N(2197:c0t0v)|(-115,-40)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="370 35 50 50" Id="2289" ResolveFailedHint="Median.gvi, Package: (LabVIEW NXG Analysis Basic Files, Version: 3.0.0)" Signature="@3c9b6ad996af4eda983d44781c21d990" Target="NI::Analysis::Statistics::Median.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="x" />
@@ -589,7 +295,7 @@
 			<Comment Bounds="50 -60 120 15" Id="2290" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>Moose's algorithm</p.Text>
 			</Comment>
-			<Wire Id="2539" Joints="N(1035:c0out)|(-45,15) N(2052:o0)|(-37,15)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2539" Joints="N(1035:c0out)|(-45,15) N(2052:o0)|(-32,15)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="2582" Joints="N(2197:c0out)|(-75,-40) N(2185:x)|(-70,-40) B(1) v(-30) N(2641:c1t0v)|(-60,-70)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="2583" Joints="N(2195:size(s\))|(-120,-60) h(2.5) B(1) N(2197:array)|(-115,-60) B(1) v(-45) N(2634:array)|(-115,-105)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Subtract Bounds="510 -180 30 30" Id="2590" />
@@ -611,14 +317,8 @@
 			<Wire Id="2608" Joints="N(237:Value)|(300,-85) N(2597:c1t0v)|(405,-85)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="2610" Joints="N(81:Value)|(300,-100) N(2597:c0t0v)|(405,-100)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="2611" Joints="N(2597:o)|(435,-90) h(19) v(-65) N(2591:c1t0v)|(460,-155)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="2612" Joints="N(2289:R0)|(420,40) h(5) B(1) v(-210) N(2591:c0t0v)|(460,-170) B(1) v(25) h(220) B(5) N(193:Value)|(773,65) B(5) v(30) h(410) v(240) N(128:c0t0v)|(1065,335)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="570 -170 40 15" DataItem="2613" Id="2616" Label="2617" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-			</DataAccessor>
-			<NodeLabel AttachedTo="2616" Bounds="615 -170 26 14" Id="2617" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>x - y</p.Text>
-			</NodeLabel>
-			<Wire Id="2619" Joints="N(2590:x-y)|(540,-165) h(26) B(1) N(2616:Value)|(573,-165) B(1) v(445) h(324) v(125) h(85) v(110) B(7) h(-60) v(10) N(342:Value)|(923,525) B(7) h(240) v(-165) N(991:c1t0v)|(1220,350)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2612" Joints="N(2289:R0)|(420,40) h(30) B(1) N(193:Value)|(463,40) B(1) v(-160) B(3) N(128:c0t0v)|(1025,-120) B(3) v(-50) N(2591:c0t0v)|(460,-170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2619" Joints="N(2590:x-y)|(540,-165) h(29) B(1) h(580) v(40) N(991:c1t0v)|(1155,-125) B(1) v(-50) N(342:Value)|(648,-215)" xmlns="http://www.ni.com/PlatformFramework" />
 			<ArrayIndex Bounds="-115 -110 40 30" Id="2634" Terminals="array=2583, c0t0v=2636, c0out=2642" />
 			<Literal Bounds="-165 -90 40 15" DataType="Int32" Id="2635" Label="2637" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>1</p.Data>
@@ -646,46 +346,46 @@
 				<Terminal DataType="Double[]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
-			<Wire Id="2646" Joints="N(2055:o0)|(292,40) N(2645:L0)|(300,40)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2646" Joints="N(2055:o0)|(296,40) N(2645:L0)|(300,40)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="2647" Joints="N(2645:R0)|(350,40) N(2289:L0)|(370,40)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="2648" Joints="N(29:Value)|(-175,40) h(10) B(1) h(70) B(2) N(2049:o0)|(-37,40) B(2) v(-45) N(1035:array)|(-85,-5) B(1) v(-110) B(6) N(2195:array)|(-160,-70) B(6) v(-150) N(2655:o0)|(-47,-220)" xmlns="http://www.ni.com/PlatformFramework" />
-			<ForLoop Bounds="-42 -322 341 196" DiagramId="2652" Id="2651">
-				<LoopIteration Bounds="5 166 15 15" Id="2654" />
-				<Wire Id="2659" Joints="N(2658:i0)|(6,25) N(2660:array)|(30,25)" xmlns="http://www.ni.com/PlatformFramework" />
-				<ArraySubset Bounds="30 20 40 40" Id="2660" Terminals="array=2659, subarray=2700, index0=2663, length0=2664" />
-				<Wire Id="2663" Joints="N(2662:i0)|(6,35) h(14) v(10) N(2660:index0)|(30,45)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="2664" Joints="N(2653:2652)|(12,5) h(3) v(50) N(2660:length0)|(30,55)" xmlns="http://www.ni.com/PlatformFramework" />
-				<ComplexToPolar Bounds="235 65 30 30" Id="2666" />
-				<AddArrayElements Bounds="205 65 30 30" Id="2667" />
-				<ComplexConjugate Bounds="145 55 30 30" Id="2668" />
-				<Multiply Bounds="175 65 30 30" Id="2669" Terminals="o=2690, c0t0v=2689, c1t0v=2678" />
-				<Wire Id="2678" Joints="N(2655:i0)|(6,100) h(149) v(-15) N(2669:c1t0v)|(175,85)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="2680" Joints="N(2666:theta)|(265,85) h(20) v(10) N(2681:i0)|(329,95)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="2689" Joints="N(2668:x - iy)|(175,70) N(2669:c0t0v)|(175,70)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="2690" Joints="N(2669:o)|(205,80) N(2667:numeric array)|(205,80)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="2691" Joints="N(2667:sum)|(235,80) N(2666:r * e^(i*theta\))|(235,80)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="2698" Joints="N(2699:double precision complex)|(120,25) h(19) v(45) N(2668:x + iy)|(145,70)" xmlns="http://www.ni.com/PlatformFramework" />
-				<ToDoublePrecisionComplex Bounds="90 20 30 10" Id="2699" />
-				<Wire Id="2700" Joints="N(2660:subarray)|(70,25) N(2699:number)|(93,25)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Comment Bounds="70 155 170 15" Id="2705" xmlns="http://www.ni.com/MocCommon">
+			<Wire Id="2648" Joints="N(29:Value)|(-175,40) h(10) B(1) h(70) B(2) N(2049:o0)|(-32,40) B(2) v(-45) N(1035:array)|(-85,-5) B(1) v(-110) B(6) N(2195:array)|(-160,-70) B(6) v(-150) h(120) v(5) N(2655:o0)|(-42,-215)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ForLoop Bounds="-37 -317 340 195" DiagramId="2652" Id="2651">
+				<LoopIteration Bounds="0 165 15 15" Id="2654" />
+				<Wire Id="2659" Joints="N(2658:i0)|(6,25) h(-3) v(-5) N(2660:array)|(25,20)" xmlns="http://www.ni.com/PlatformFramework" />
+				<ArraySubset Bounds="25 15 40 40" Id="2660" Terminals="array=2659, subarray=2700, index0=2663, length0=2664" />
+				<Wire Id="2663" Joints="N(2662:i0)|(6,35) h(-3) v(-5) h(12) v(10) N(2660:index0)|(25,40)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2664" Joints="N(2653:2652)|(12,5) h(-2) v(45) N(2660:length0)|(25,50)" xmlns="http://www.ni.com/PlatformFramework" />
+				<ComplexToPolar Bounds="230 60 30 30" Id="2666" />
+				<AddArrayElements Bounds="200 60 30 30" Id="2667" />
+				<ComplexConjugate Bounds="140 50 30 30" Id="2668" />
+				<Multiply Bounds="170 60 30 30" Id="2669" Terminals="o=2690, c0t0v=2689, c1t0v=2678" />
+				<Wire Id="2678" Joints="N(2655:i0)|(6,100) h(-3) v(-5) h(147) v(-15) N(2669:c1t0v)|(170,80)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2680" Joints="N(2666:theta)|(260,80) h(20) v(10) h(40) v(5) N(2681:i0)|(328,95)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2689" Joints="N(2668:x - iy)|(170,65) N(2669:c0t0v)|(170,65)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2690" Joints="N(2669:o)|(200,75) N(2667:numeric array)|(200,75)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2691" Joints="N(2667:sum)|(230,75) N(2666:r * e^(i*theta\))|(230,75)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2698" Joints="N(2699:double precision complex)|(115,20) h(15) v(45) N(2668:x + iy)|(140,65)" xmlns="http://www.ni.com/PlatformFramework" />
+				<ToDoublePrecisionComplex Bounds="85 15 30 10" Id="2699" />
+				<Wire Id="2700" Joints="N(2660:subarray)|(65,20) N(2699:number)|(88,20)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Comment Bounds="65 150 170 15" Id="2705" xmlns="http://www.ni.com/MocCommon">
 					<p.Text>Calculates the phase offset</p.Text>
 				</Comment>
 				<LoopCount Bounds="1 1 15 15" Docking="Left" Id="2653" Terminals="2651, 2652=2664" />
 				<LoopTunnel AutoIndex="True" Bounds="-5 97 13 10" Docking="Left" Id="2655" Terminals="o0=2648, i0=2678" TunnelMode="0" />
 				<LoopTunnel Bounds="-5 22 13 10" Docking="Left" Id="2658" Terminals="o0=2657, i0=2659" />
 				<LoopTunnel Bounds="-5 32 13 10" Docking="Left" Id="2662" Terminals="o0=2661, i0=2663" />
-				<LoopTunnel AutoIndex="True" Bounds="331 92 13 10" Docking="Right" Id="2681" Terminals="o0=2682, i0=2680" TunnelMode="0" />
+				<LoopTunnel AutoIndex="True" Bounds="330 92 13 10" Docking="Right" Id="2681" Terminals="o0=2682, i0=2680" TunnelMode="0" />
 			</ForLoop>
-			<Wire Id="2657" Joints="N(181:R0)|(-190,-295) N(2658:o0)|(-47,-295)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="2661" Joints="N(181:R1)|(-190,-285) N(2662:o0)|(-47,-285)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="2682" Joints="N(2681:o0)|(302,-225) h(48.6700134) v(-35) B(2) N(2694:L0)|(390,-260) B(2) v(-65) N(2687:Value)|(383,-325)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2657" Joints="N(181:R0)|(-190,-295) h(145) v(5) N(2658:o0)|(-42,-290)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2661" Joints="N(181:R1)|(-190,-285) h(145) v(5) N(2662:o0)|(-42,-280)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2682" Joints="N(2681:o0)|(306,-220) h(-1) v(-5) h(45) v(-35) B(4) N(2694:L0)|(390,-260) B(4) v(-65) N(2687:Value)|(383,-325)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="380 -330 40 15" DataItem="2683" Id="2687" Label="2688" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="2687" Bounds="425 -330 53 14" Id="2688" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Output_2</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="460 -265 50 50" Id="2693" ResolveFailedHint="Median.gvi, Package: (LabVIEW NXG Analysis Basic Files, Version: 3.0.0)" Signature="@6f65cd4766f2407e9df907cc2259707e" Target="NI::Analysis::Statistics::Median.gvi" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="460 -265 50 50" Id="2693" ResolveFailedHint="Median.gvi, Package: (LabVIEW NXG Analysis Basic Files, Version: 3.0.0)" Signature="@3c9b6ad996af4eda983d44781c21d990" Target="NI::Analysis::Statistics::Median.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="x" />
@@ -720,24 +420,23 @@
 			<Comment Bounds="-50 -345 335 15" Id="2703" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>Least square estimation of phase with the reference code</p.Text>
 			</Comment>
+			<Wire Id="2706" Joints="N(2693:R4)|(510,-220) h(6) v(35) h(549) v(85) N(112:L4)|(1080,-100)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2707" Joints="N(2694:R4)|(440,-220) N(2693:L4)|(460,-220)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2708" Joints="N(2289:R4)|(420,80) h(6) v(-150) h(-46) v(-150) N(2694:L4)|(390,-220)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2709" Joints="N(2645:R4)|(350,80) N(2289:L4)|(370,80)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2710" Joints="N(2721:Value)|(-183,223.75) h(473) v(-143.75) N(2645:L4)|(300,80)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="-223 218.75 40 15" DataItem="2711" Id="2721" Label="2722" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="2721" Bounds="-270 218.75 42 14" Id="2722" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>error in</p.Text>
+			</NodeLabel>
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
 		</NativeFrontPanel>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="ComplexDouble[,]" Id="25" Name="Training codes" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
-		</DataItem>
-		<DataItem CallDirection="Input" CallIndex="3" DataType="Error" Id="47" Name="error in" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>
-				<Cluster>
-					<Field1>False</Field1>
-					<Field2>0</Field2>
-					<Field3>""</Field3>
-				</Cluster>
-			</p.DefaultValue>
-			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
-				<TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype" />
-			</p.TypeDefinitionTargets>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" DataType="Double" Id="77" Name="Samples per symbol" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x3FF0000000000000</p.DefaultValue>
@@ -763,9 +462,6 @@
 		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="2" DataType="Double" Id="189" Name="phase drift" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="3" DataType="Double" Id="210" Name="intercept" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>0x0</p.DefaultValue>
-		</DataItem>
 		<DataItem CallDirection="Input" CallIndex="5" DataType="Int32" Id="236" Name="Frame index" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
@@ -778,16 +474,20 @@
 		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="5" DataType="Double[]" Id="852" Name="correction angles" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" DataType="Double[]" Id="975" Name="best linear fit" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>
-				<Array Lengths="0" />
-			</p.DefaultValue>
-		</DataItem>
-		<DataItem AdaptToDiagramType="True" DataType="Double" Id="2613" Name="x - y" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>0x0</p.DefaultValue>
-		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="Double[]" Id="2683" Name="Output_2" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="3" DataType="Error" Id="2711" Name="error in" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype" />
+			</p.TypeDefinitionTargets>
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
@@ -806,60 +506,8 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="4cf095ea836d4f44a67b42c2e5e938e7">
-			<Attributed AttributedType="@058159c20e684be8aeb9f7ede5024c72">
-				<AttributeValues>
-					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]50" />
-					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]50" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="483863da9533401382b57e96ea7062a3">
-			<Attributed AttributedType="@8e2213af5192451da4b7aec922ffbac3">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI::Analysis::Support" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="36f5c2ece5994b90b2471e56f95c66c2">
-			<Attributed AttributedType="@d6d64243d6ed415992d2fafe5753db69">
-				<AttributeValues>
-					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]50" />
-					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]50" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="2a0428162cbc4339aac904d58a4f4382">
-			<Attributed AttributedType="@c72cc3c873b347dda168983edecf5083">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI::Analysis::Fitting" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="67bb1c86151e4cab8544a9b4e2b01876">
-			<Attributed AttributedType="@782d48543bdf47879b07686d5d8c1284">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI::Analysis::Fitting" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="8d1130e9bd0a4df892c7a4dfdc7cf685">
-			<Attributed AttributedType="@773e34eaf991427685b68b4f83f5941e">
-				<AttributeValues>
-					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]50" />
-					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]50" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="0fea12a97c7148bea0edc8cecb33448e">
-			<Attributed AttributedType="@1be9c5b982484f028a4ca5e91ca580e9">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI::Analysis::Geometry" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="0bfa9434e2da4a3a9412a41072805d5b">
-			<Attributed AttributedType="@7232abba59a3443eba99b6791fe2e3b0">
+		<p.TypeReference TypeId="44d97641707644c0a77bc0b47c7d45d8">
+			<Attributed AttributedType="@225326eddb964a5d8858c23d3bea0f9b">
 				<AttributeValues>
 					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
 					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
@@ -877,11 +525,26 @@
 				<DataType>UInt16</DataType>
 			</Enumeration>
 		</p.TypeReference>
-		<p.TypeReference TypeId="6f65cd4766f2407e9df907cc2259707e">
-			<Attributed AttributedType="@7e75f31423524332a2b05a1d4b528ddc">
+		<p.TypeReference TypeId="3c9b6ad996af4eda983d44781c21d990">
+			<Attributed AttributedType="@0feaae9816f4471d8b0c089967efb63a">
 				<AttributeValues>
 					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]50" />
 					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]50" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="4cf095ea836d4f44a67b42c2e5e938e7">
+			<Attributed AttributedType="@058159c20e684be8aeb9f7ede5024c72">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]50" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]50" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="483863da9533401382b57e96ea7062a3">
+			<Attributed AttributedType="@8e2213af5192451da4b7aec922ffbac3">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI::Analysis::Support" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
@@ -934,6 +597,63 @@
 		<p.TypeReference TypeId="05b12aad06204a808c275141f673747b">
 			<Typedef TypedefName="Ramp Pattern Type.gtype" UnderlyingType="UInt16" />
 		</p.TypeReference>
+		<p.TypeReference TypeId="225326eddb964a5d8858c23d3bea0f9b">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="BarkerCode.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@8d789679b5ff4c9691721578ccd1230e">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]barker code" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@8fbf814f716548cdb0d3eeeb150c7f12">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Concatinate?" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@9eb0948c65cb486399c94db07ec81873">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]code" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@9e17ca85f1384bd9adf481d4ac4ba00b">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]length of one subcode" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@15bf2eedb1214567b08a9d2bc20c8257">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]subcodes" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="0feaae9816f4471d8b0c089967efb63a">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Median.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@9945ac8ab320444c81e70e955e66fd80">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]x" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@45b85b4d39c641de8bc24564bb4d3523">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]error in" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@18505ec75a0d45aebcf5c71c7d651465">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]median" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@f201dd0663f74ed6888e534dd97b6278">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]error out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
 		<p.TypeReference TypeId="058159c20e684be8aeb9f7ede5024c72">
 			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Unwrap Phase.gvi" ReturnType="Void" GenericTypeDefinition="Void">
 				<Parameters>
@@ -968,169 +688,6 @@
 		<p.TypeReference TypeId="8e2213af5192451da4b7aec922ffbac3">
 			<Typedef TypedefName="Angle Units.gtype" UnderlyingType="Int32" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="d6d64243d6ed415992d2fafe5753db69">
-			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Linear Fit.gvi" ReturnType="Void" GenericTypeDefinition="Void">
-				<Parameters>
-					<Attributed AttributedType="@6d6706a1d1a941f3bf0f59102abef33d">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]parameter bounds" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@bd1e7f68d94b4a31b393309d0bafd8f1">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]method" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@9945ac8ab320444c81e70e955e66fd80">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]y" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@492e2cf66be2467da99897619c45d15c">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]x" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@cd3eb25b6dd74b47aef0f2109932e542">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]weight" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@f4dc81be9caf4c62ab0ddbb323d28954">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]tolerance" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@45b85b4d39c641de8bc24564bb4d3523">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]error in" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@d88d7d2383dd4741920cf11a3f03d6fe">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]residue" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@9eb0948c65cb486399c94db07ec81873">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]best linear fit" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@1c73cfdcdb7f479dae7f7b9acc933380">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]slope" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@a16ada89d7bf4eeba4a9c2fb54d77a39">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]intercept" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@f201dd0663f74ed6888e534dd97b6278">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]error out" />
-						</AttributeValues>
-					</Attributed>
-				</Parameters>
-			</Function>
-		</p.TypeReference>
-		<p.TypeReference TypeId="c72cc3c873b347dda168983edecf5083">
-			<Typedef TypedefName="Linear Fit Coef Bound.gtype" UnderlyingType="@11f64ec22ee344aea95228a12fc9357c" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="782d48543bdf47879b07686d5d8c1284">
-			<Typedef TypedefName="Curve Fitting Criteria.gtype" UnderlyingType="UInt16" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="773e34eaf991427685b68b4f83f5941e">
-			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Wrap Angle (Scalar DBL).gvi" ReturnType="Void" GenericTypeDefinition="Void">
-				<Parameters>
-					<Attributed AttributedType="@f2ab86f137404436b70c6fe707fa73f1">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]angle" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@37843b39e3f74a55b326c36e4e7386ca">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]wrapped angle range" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@45b85b4d39c641de8bc24564bb4d3523">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]error in" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@8d41daeece5944119f1149b1fee3f354">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]angle units" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@18505ec75a0d45aebcf5c71c7d651465">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]wrapped angle" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@f201dd0663f74ed6888e534dd97b6278">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]error out" />
-						</AttributeValues>
-					</Attributed>
-				</Parameters>
-			</Function>
-		</p.TypeReference>
-		<p.TypeReference TypeId="1be9c5b982484f028a4ca5e91ca580e9">
-			<Typedef TypedefName="Angle Range.gtype" UnderlyingType="UInt16" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="7232abba59a3443eba99b6791fe2e3b0">
-			<Function Id="1" IsStatic="True" IsConstructor="False" Name="BarkerCode.gvi" ReturnType="Void" GenericTypeDefinition="Void">
-				<Parameters>
-					<Attributed AttributedType="@8d789679b5ff4c9691721578ccd1230e">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]barker code" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@9eb0948c65cb486399c94db07ec81873">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]code" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@9e17ca85f1384bd9adf481d4ac4ba00b">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]length of one subcode" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@15bf2eedb1214567b08a9d2bc20c8257">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]subcodes" />
-						</AttributeValues>
-					</Attributed>
-				</Parameters>
-			</Function>
-		</p.TypeReference>
-		<p.TypeReference TypeId="7e75f31423524332a2b05a1d4b528ddc">
-			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Median.gvi" ReturnType="Void" GenericTypeDefinition="Void">
-				<Parameters>
-					<Attributed AttributedType="@9945ac8ab320444c81e70e955e66fd80">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]x" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@45b85b4d39c641de8bc24564bb4d3523">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]error in" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@18505ec75a0d45aebcf5c71c7d651465">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]median" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@f201dd0663f74ed6888e534dd97b6278">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]error out" />
-						</AttributeValues>
-					</Attributed>
-				</Parameters>
-			</Function>
-		</p.TypeReference>
 		<p.TypeReference TypeId="345dae9de0294ff58004e8595134bcef">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="B1" DataType="Int32" />
 		</p.TypeReference>
@@ -1155,66 +712,26 @@
 		<p.TypeReference TypeId="f201dd0663f74ed6888e534dd97b6278">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R4" DataType="Error" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="9945ac8ab320444c81e70e955e66fd80">
-			<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="Double[]" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="ae0509a6352f431099fb1956525696e1">
-			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="@483863da9533401382b57e96ea7062a3" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="6d6706a1d1a941f3bf0f59102abef33d">
-			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="B0" DataType="@2a0428162cbc4339aac904d58a4f4382" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="bd1e7f68d94b4a31b393309d0bafd8f1">
-			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="B1" DataType="@67bb1c86151e4cab8544a9b4e2b01876" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="492e2cf66be2467da99897619c45d15c">
-			<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="Double[]" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="cd3eb25b6dd74b47aef0f2109932e542">
-			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="Double[]" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="f4dc81be9caf4c62ab0ddbb323d28954">
-			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="Double" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="d88d7d2383dd4741920cf11a3f03d6fe">
-			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="B2" DataType="Double" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="1c73cfdcdb7f479dae7f7b9acc933380">
-			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R1" DataType="Double" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="a16ada89d7bf4eeba4a9c2fb54d77a39">
-			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R2" DataType="Double" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="11f64ec22ee344aea95228a12fc9357c">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="slope min" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="slope max" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="intercept min" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="intercept max" DataType="Double" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="f2ab86f137404436b70c6fe707fa73f1">
-			<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="Double" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="37843b39e3f74a55b326c36e4e7386ca">
-			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="@0fea12a97c7148bea0edc8cecb33448e" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="8d41daeece5944119f1149b1fee3f354">
-			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="T0" DataType="@483863da9533401382b57e96ea7062a3" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="18505ec75a0d45aebcf5c71c7d651465">
-			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="Double" />
-		</p.TypeReference>
 		<p.TypeReference TypeId="8d789679b5ff4c9691721578ccd1230e">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="@be9e6496893442a4b708bce654371ca2" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="8fbf814f716548cdb0d3eeeb150c7f12">
+			<Parameter InputParameterPassingRule="Optional" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="Boolean" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="9e17ca85f1384bd9adf481d4ac4ba00b">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R1" DataType="Int32" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="15bf2eedb1214567b08a9d2bc20c8257">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R2" DataType="Int32" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="9945ac8ab320444c81e70e955e66fd80">
+			<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="Double[]" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="18505ec75a0d45aebcf5c71c7d651465">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="Double" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="ae0509a6352f431099fb1956525696e1">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="@483863da9533401382b57e96ea7062a3" />
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
@@ -1235,72 +752,6 @@
 							<Path Data="[PathGeometry]M 9,18 L 10,18 L 10,42 L 36,42 L 37,42 L 39,42 L 40,42 L 40,43 L 9,43 M 22,34.9309998 L 22,41 L 27,41 L 27,32.1720009 L 22,34.9309998 Z M 28,31.6210003 L 33,28.8619995 L 33,41 L 28,41 L 28,31.6210003 Z M 40,25 L 40,41 L 34,41 L 34,28.3099995 L 40,25 Z M 21,35.4830017 L 21,41 L 16,41 L 16,38.2410011 L 21,35.4830017 Z M 11,41 L 15,38.7929993 L 15,41 L 11,41 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
 							<Path Data="[PathGeometry]M 48,4 L 48,12 L 2,12 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 21,2 L 18,5 L 16,5 L 16,8 L 18,8 L 21,11 L 21,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 Z M 37,6.83199978 L 36,5.83199978 C 35.1329994,7.13199997 34.1040001,8.22900009 33.1040001,8.22900009 C 32.0830002,8.22900009 31.2439995,7.57499981 30,5.83199978 C 28.8959999,4.28599977 27.6720009,3.97900009 26.3959999,3.97900009 C 23.9379997,3.97900009 22.0669994,7.22700024 22,7.35599995 L 23.7919998,7.77099991 C 24.1749992,7.02799988 25.1669998,5.5 26.3959999,5.4380002 C 27.4379997,5.38500023 28.0839996,5.73000002 28.802,6.78800011 C 30.2159996,8.87100029 31.6420002,9.83300018 33.0089989,9.83300018 C 33.0239983,9.83300018 33.0390015,9.83199978 33.0540009,9.83199978 C 34.8989983,9.80200005 36.3139992,7.86000013 37,6.83199978 Z M 41,23 L 39,23 L 39,25 L 41,25 L 41,23 Z M 34,27 L 32,27 L 32,29 L 34,29 L 34,27 Z M 28,31 L 26,31 L 26,33 L 28,33 L 28,31 Z M 22,34 L 20,34 L 20,36 L 22,36 L 22,34 Z M 16,37 L 14,37 L 14,39 L 16,39 L 16,37 Z" Fill="[SMSolidColorBrush]#ff58987f" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
 							<IconTemplate Height="[float]50" HorizontalAlignment="[HorizontalAlignment]Center" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]AAL_Generation_Base.gcomp" Top="[float]0" VerticalAlignment="[VerticalAlignment]Center" Width="[float]50" />
-						</IconPanel>
-					</Icon>
-				</MergeItem>
-			</MergeScript>
-		</p.IconModel>
-		<p.IconModel Target="NI::Analysis::Conditioning::Unwrap Phase.gvi">
-			<MergeScript>
-				<MergeItem Path="." IsPrimary="True">
-					<Icon ListViewIconCrop="0 0 50 50">
-						<IconPanel Height="[float]50" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]50">
-							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]50">
-								<Rectangle Fill="[SMSolidColorBrush]#ff999999" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
-								<Rectangle Fill="[SMSolidColorBrush]#ffe6e6e6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#ffffffff" Top="[float]0" />
-								<Rectangle Fill="[SMLinearGradientBrush]{Start: 0.5 0}, {End: 0.5 1}, {Stops: {Stop: #ffe6e6e6 0}, {Stop: #ffd9d9d9 1}}" Height="[float]6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]2,0,2,2" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2" RadiusY="[float]2" Top="[float]0" VerticalAlignment="[VerticalAlignment]Bottom" />
-								<Rectangle Fill="[SMLinearGradientBrush]{Start: 0.5 0}, {End: 0.5 1}, {Stops: {Stop: #fffafafa 0}, {Stop: #ffe6e6e6 1}}" Height="[float]6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]2,2,2,0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2" RadiusY="[float]2" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" />
-							</IconTemplate>
-							<Path Data="[PathGeometry]M 50,46 C 50,48.2000008 48.2000008,50 46,50 L 4,50 C 1.79999995,50 0,48.2000008 0,46 L 0,4 C 0,1.79999995 1.79999995,0 4,0 L 46,0 C 48.2000008,0 50,1.79999995 50,4 L 50,46 Z" Fill="[SMSolidColorBrush]#ff94a59f" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<Path Data="[PathGeometry]M 49,46 C 49,47.6500015 47.6500015,49 46,49 L 4,49 C 2.3499999,49 1,47.6500015 1,46 L 1,4 C 1,2.3499999 2.3499999,1 4,1 L 46,1 C 47.6500015,1 49,2.3499999 49,4 L 49,46 Z" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<Path Data="[PathGeometry]M 48,46 C 48,47.0999985 47.0999985,48 46,48 L 4,48 C 2.9000001,48 2,47.0999985 2,46 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,46 Z" Fill="[SMSolidColorBrush]#ffeff7ec" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<Path Data="[PathGeometry]M 45,31.5 L 41,29 L 42,31 L 8,31 L 8,18 L 10,19 L 7.5,15 L 5,19 L 7,18 L 7,31 L 5,31 L 5,32 L 7,32 L 7,42 L 8,42 L 8,32 L 42,32 L 41,34 L 45,31.5 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<Path Data="[PathGeometry]M 33.2849998,29.4559994 L 32.8209991,30.3419991 L 16,21.5209999 L 16.4640007,20.6350002 L 33.2849998,29.4559994 Z M 7.8130002,31.3910007 L 7.34899998,32.2770004 L 14.6569996,36.1100006 L 15.1210003,35.223999 L 7.8130002,31.3910007 Z" Fill="[SMSolidColorBrush]#bf6a726d" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<Path Data="[PathGeometry]M 16,22 L 15,22 L 15,21 L 16,21 L 16,22 Z M 16,27 L 15,27 L 15,28 L 16,28 L 16,27 Z M 16,30 L 15,30 L 15,31 L 16,31 L 16,30 Z M 16,33 L 15,33 L 15,34 L 16,34 L 16,33 Z M 16,24 L 15,24 L 15,25 L 16,25 L 16,24 Z M 16,36 L 15,36 L 15,37 L 16,37 L 16,36 Z" Fill="[SMSolidColorBrush]#ff6a726d" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<Path Data="[PathGeometry]M 46,2 L 4,2 C 2.9000001,2 2,2.9000001 2,4 L 2,12 L 48,12 L 48,4 C 48,2.9000001 47.0999985,2 46,2 Z M 18,11 L 16,11 L 16,8 L 18,8 L 18,11 Z M 18,7 L 16,7 C 15,4 12,6 12,6 L 11,6 L 11,3 L 12,3 C 12,3 14,5 16,3 C 16,3 17.5450001,3 18,3 C 21,3 22,7 22,7 C 22,7 19,3 18,7 Z M 35.0540009,9.83100033 C 35.0390015,9.83100033 35.0239983,9.83199978 35.0089989,9.83199978 C 33.6419983,9.83199978 32.2159996,8.86999989 30.802,6.78700018 C 30.0839996,5.72900009 29.4379997,5.38399982 28.3959999,5.4369998 C 27.1669998,5.5 26.1749992,7.02699995 25.7919998,7.76999998 L 24,7.35599995 C 24.066,7.22700024 25.9370003,3.97900009 28.3959999,3.97900009 C 29.6730003,3.97900009 30.8959999,4.28599977 32,5.83199978 C 33.2439995,7.57499981 34.0830002,8.22900009 35.1040001,8.22900009 C 36.1040001,8.22900009 37.1329994,7.13199997 38,5.83199978 L 39,6.83199978 C 38.3139992,7.86000013 36.8989983,9.80200005 35.0540009,9.83100033 Z M 32.3810005,44.2739983 L 31.9169998,45.1599998 L 16.1639996,36.8989983 L 16.6280003,36.0130005 L 32.3810005,44.2739983 Z" Fill="[SMSolidColorBrush]#ff58997f" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<IconTemplate Height="[float]50" HorizontalAlignment="[HorizontalAlignment]Center" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]AAL_Conditioning_Base.gcomp" Top="[float]0" VerticalAlignment="[VerticalAlignment]Center" Width="[float]50" />
-						</IconPanel>
-					</Icon>
-				</MergeItem>
-			</MergeScript>
-		</p.IconModel>
-		<p.IconModel Target="NI::Analysis::Fitting::Linear Fit.gvi">
-			<MergeScript>
-				<MergeItem Path="." IsPrimary="True">
-					<Icon ListViewIconCrop="2 2 27 27">
-						<IconPanel Background="[SMSolidColorBrush]#00ffffff" Height="[float]50" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]50">
-							<IconTemplate Height="[float]50" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]50">
-								<Rectangle Fill="[SMSolidColorBrush]#ff999999" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
-								<Rectangle Fill="[SMSolidColorBrush]#ffe6e6e6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#ffffffff" Top="[float]0" />
-								<Rectangle Fill="[SMLinearGradientBrush]{Start: 0.5 0}, {End: 0.5 1}, {Stops: {Stop: #ffe6e6e6 0}, {Stop: #ffd9d9d9 1}}" Height="[float]6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]2,0,2,2" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2" RadiusY="[float]2" Top="[float]0" VerticalAlignment="[VerticalAlignment]Bottom" />
-								<Rectangle Fill="[SMLinearGradientBrush]{Start: 0.5 0}, {End: 0.5 1}, {Stops: {Stop: #fffafafa 0}, {Stop: #ffe6e6e6 1}}" Height="[float]6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]2,2,2,0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2" RadiusY="[float]2" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" />
-							</IconTemplate>
-							<Path Data="[PathGeometry]M 50,46 C 50,48.2000008 48.2000008,50 46,50 L 4,50 C 1.79999995,50 0,48.2000008 0,46 L 0,4 C 0,1.79999995 1.79999995,0 4,0 L 46,0 C 48.2000008,0 50,1.79999995 50,4 L 50,46 Z" Fill="[SMSolidColorBrush]#ff727273" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<Path Data="[PathGeometry]M 49,46 C 49,47.6500015 47.6500015,49 46,49 L 4,49 C 2.3499999,49 1,47.6500015 1,46 L 1,4 C 1,2.3499999 2.3499999,1 4,1 L 46,1 C 47.6500015,1 49,2.3499999 49,4 L 49,46 Z" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<Path Data="[PathGeometry]M 48,46 C 48,47.0999985 47.0999985,48 46,48 L 4,48 C 2.9000001,48 2,47.0999985 2,46 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,46 Z" Fill="[SMSolidColorBrush]#ffeff6ec" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<Path Data="[PathGeometry]M 9,18 L 10,18 L 10,42 L 36,42 L 37,42 L 39,42 L 40,42 L 40,43 L 9,43 M 38.5559998,19.6049995 L 11,40.1990013 L 11.599,41 L 39.1549988,20.4060001 L 38.5559998,19.6049995 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<Path Data="[PathGeometry]M 29,36 L 27,36 L 27,34 L 29,34 L 29,36 Z M 25,27 L 23,27 L 23,29 L 25,29 L 25,27 Z M 32,27 L 30,27 L 30,29 L 32,29 L 32,27 Z M 17,31 L 15,31 L 15,33 L 17,33 L 17,31 Z M 25,19 L 23,19 L 23,21 L 25,21 L 25,19 Z M 42,24 L 40,24 L 40,26 L 42,26 L 42,24 Z M 21,38 L 19,38 L 19,40 L 21,40 L 21,38 Z M 23,33 L 21,33 L 21,35 L 23,35 L 23,33 Z M 35,21 L 33,21 L 33,23 L 35,23 L 35,21 Z M 48,4 L 48,12 L 2,12 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 Z M 35,4 L 33,4 L 33,5.13899994 L 28.7980003,8 L 27.2159996,8 L 22,4.98400021 L 22,4 L 20,4 L 20,5.05299997 L 15.6719999,8 L 14,8 L 14,10 L 16,10 L 16,8.98600006 L 20.3869991,6 L 21.7600002,6 L 27,9.02999973 L 27,10 L 29,10 L 29,9.07199955 L 33.5130005,6 L 35,6 L 35,4 Z" Fill="[SMSolidColorBrush]#ff58987f" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<IconTemplate Height="[float]50" HorizontalAlignment="[HorizontalAlignment]Center" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]AAL_Fitting_Base.gcomp" Top="[float]0" VerticalAlignment="[VerticalAlignment]Center" Width="[float]50" />
-						</IconPanel>
-					</Icon>
-				</MergeItem>
-			</MergeScript>
-		</p.IconModel>
-		<p.IconModel Target="NI::Analysis::Geometry::Wrap Angle (Scalar DBL).gvi">
-			<MergeScript>
-				<MergeItem Path="." IsPrimary="True">
-					<Icon ListViewIconCrop="0 0 40 40">
-						<IconPanel Height="[float]50" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]50">
-							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]50">
-								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
-								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-							</IconTemplate>
-							<Path Data="[PathGeometry]M 50,46 C 50,48.2000008 48.2000008,50 46,50 L 4,50 C 1.79999995,50 0,48.2000008 0,46 L 0,4 C 0,1.79999995 1.79999995,0 4,0 L 46,0 C 48.2000008,0 50,1.79999995 50,4 L 50,46 Z" Fill="[SMSolidColorBrush]#ff727373" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<Path Data="[PathGeometry]M 49,46 C 49,47.6500015 47.6500015,49 46,49 L 4,49 C 2.3499999,49 1,47.6500015 1,46 L 1,4 C 1,2.3499999 2.3499999,1 4,1 L 46,1 C 47.6500015,1 49,2.3499999 49,4 L 49,46 Z" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<Path Data="[PathGeometry]M 48,46 C 48,47.0999985 47.0999985,48 46,48 L 4,48 C 2.9000001,48 2,47.0999985 2,46 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,46 Z" Fill="[SMSolidColorBrush]#ffeff7ec" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<Path Data="[PathGeometry]M 37,32 L 37,33 L 13,33 L 13,32 L 28.7999992,16.493 L 29.507,17.2000008 L 14.7069998,32 L 37,32 Z M 15.4189997,39.1850014 L 13,39.1850014 L 13,38.2719994 L 15.4189997,38.2719994 L 15.4189997,39.1850014 Z M 21.2789993,37.0139999 L 20.5400009,37.0139999 L 20.5400009,41.4389992 L 19.323,41.4389992 L 19.323,37.0139999 L 17.8519993,37.0139999 L 17.8519993,41.4389992 L 16.6350002,41.4389992 L 16.6350002,37.0139999 L 15.8959999,37.0139999 L 15.8959999,36.1069984 L 21.2779999,36.1069984 L 21.2779999,37.0139999 Z M 23.368,39.5810013 L 22.2269993,42 L 21.5200005,42 L 22.1439991,39.5810013 L 23.368,39.5810013 Z M 29.7970009,39.1539993 L 28.1079998,39.1539993 L 28.1079998,40.8279991 L 27.2390003,40.8279991 L 27.2390003,39.1539993 L 25.5499992,39.1539993 L 25.5499992,38.3050003 L 27.2390003,38.3050003 L 27.2390003,36.6300011 L 28.1079998,36.6300011 L 28.1079998,38.3040009 L 29.7970009,38.3040009 L 29.7970009,39.1539993 Z M 36,37.0139999 L 35.2610016,37.0139999 L 35.2610016,41.4389992 L 34.0439987,41.4389992 L 34.0439987,37.0139999 L 32.5730019,37.0139999 L 32.5730019,41.4389992 L 31.3560009,41.4389992 L 31.3560009,37.0139999 L 30.6170006,37.0139999 L 30.6170006,36.1069984 L 36,36.1069984 L 36,37.0139999 Z M 12.4130001,42 L 10,42 L 10,34.9609985 L 12.4130001,34.9609985 L 12.4130001,35.8279991 L 11.1309996,35.8279991 L 11.1309996,41.132 L 12.4130001,41.132 L 12.4130001,42 Z M 37.5870018,41.1329994 L 38.8689995,41.1329994 L 38.8689995,35.8289986 L 37.5870018,35.8289986 L 37.5870018,34.9620018 L 40,34.9620018 L 40,42 L 37.5870018,42 L 37.5870018,41.1329994 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<Path Data="[PathGeometry]M 46,2 L 4,2 C 2.9000001,2 2,2.9000001 2,4 L 2,12 L 48,12 L 48,4 C 48,2.9000001 47.0999985,2 46,2 Z M 18,11 L 30,3 L 30,11 L 18,11 Z M 29,10 L 29,4.86899996 L 21.3029995,10 L 29,10 Z" Fill="[SMSolidColorBrush]#ff58997f" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
-							<IconTemplate Height="[float]50" HorizontalAlignment="[HorizontalAlignment]Center" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]AAL_Geometry.gcomp" Top="[float]0" VerticalAlignment="[VerticalAlignment]Center" Width="[float]50" />
 						</IconPanel>
 					</Icon>
 				</MergeItem>
@@ -1341,6 +792,30 @@
 							<Path Data="[PathGeometry]M 22.625,7.22900009 C 22.625,6.0206008 23.6046009,5.04099989 24.8129997,5.04099989 C 26.0214005,5.04099989 27.0009995,6.0206008 27.0009995,7.22900009 C 27.0009995,8.43739891 26.0214005,9.41699982 24.8129997,9.41699982 C 23.6046009,9.41699982 22.625,8.43739891 22.625,7.22900009 Z" Fill="[SMSolidColorBrush]#ff58967f" Height="[float]4.376" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]4.376" />
 							<Path Data="[PathGeometry]M 31.6879997,43.8160019 L 27.493,43.8160019 L 27.493,38 L 28.993,38 L 28.993,42.6910019 L 31.6879997,42.6910019 L 31.6879997,43.8160019 Z M 36.9959984,41.625 C 36.9959984,42.3460007 36.7859993,42.9150009 36.3650017,43.3300018 C 35.9440002,43.7449989 35.3540001,43.9529991 34.5940018,43.9529991 C 33.8339996,43.9529991 33.243,43.7449989 32.8230019,43.3300018 C 32.4029999,42.9150009 32.1920013,42.3460007 32.1920013,41.625 C 32.1920013,40.8979988 32.4029999,40.3279991 32.8269997,39.9140015 C 33.2509995,39.5 33.8390007,39.2929993 34.5950012,39.2929993 C 35.3610001,39.2929993 35.9519997,39.5009995 36.3699989,39.9179993 C 36.7879982,40.3349991 36.9959984,40.9039993 36.9959984,41.625 Z M 35.2659988,42.6910019 C 35.3569984,42.5789986 35.4259987,42.4440002 35.4710007,42.2869987 C 35.5159988,42.1300011 35.5390015,41.9119987 35.5390015,41.6329994 C 35.5390015,41.375 35.5159988,41.1590004 35.4690018,40.9850006 C 35.4220009,40.8110008 35.3569984,40.6710014 35.2739983,40.5670013 C 35.1910019,40.4599991 35.0900002,40.3849983 34.9729996,40.3400002 C 34.855999,40.2949982 34.7290001,40.2739983 34.5940018,40.2739983 C 34.4589996,40.2739983 34.3380013,40.2919998 34.2330017,40.3289986 C 34.1279984,40.3660011 34.026001,40.4379997 33.9300003,40.5480003 C 33.8440018,40.6500015 33.776001,40.7890015 33.7249985,40.9659996 C 33.6739998,41.1430016 33.6489983,41.3660011 33.6489983,41.6339989 C 33.6489983,41.8740005 33.6710014,42.0810013 33.7150002,42.257 C 33.7589989,42.4329987 33.8240013,42.5740013 33.9099998,42.6809998 C 33.993,42.7830009 34.0929985,42.8569984 34.2089996,42.9039993 C 34.3250008,42.9510002 34.4570007,42.973999 34.6049995,42.973999 C 34.7319984,42.973999 34.8549995,42.9529991 34.9700012,42.9099998 C 35.0849991,42.8670006 35.1850014,42.7929993 35.2659988,42.6910019 Z M 45,39.4300003 L 43.6409988,43.8170013 L 42.1479988,43.8170013 L 41.2540016,40.8600006 L 40.3709984,43.8170013 L 38.862999,43.8170013 L 37.5149994,39.4300003 L 38.9900017,39.4300003 L 39.743,42.4529991 L 40.6790009,39.4300003 L 41.9249992,39.4300003 L 42.8149986,42.4529991 L 43.5559998,39.4300003 L 45,39.4300003 Z M 41.1450005,24.0779991 L 39.6450005,24.0779991 L 39.6450005,21.5149994 L 37.4300003,21.5149994 L 37.4300003,24.0779991 L 35.9300003,24.0779991 L 35.9300003,18.2619991 L 37.4300003,18.2619991 L 37.4300003,20.3910007 L 39.6450005,20.3910007 L 39.6450005,18.2619991 L 41.1450005,18.2619991 L 41.1450005,24.0779991 Z M 44,19.066 L 42.512001,19.066 L 42.512001,18 L 44,18 L 44,19.066 Z M 43.9609985,24.0779991 L 42.5509987,24.0779991 L 42.5509987,19.691 L 43.9609985,19.691 L 43.9609985,24.0779991 Z M 24,22 L 24,23 L 24,33 L 23,33 L 23,23 L 13,23 L 13,22 L 23,22 L 24,22 Z M 21,24 L 11,24 L 11,25 L 21,25 L 21,35 L 22,35 L 22,25 L 22,24 L 21,24 Z M 19,26 L 9,26 L 9,27 L 19,27 L 19,37 L 20,37 L 20,27 L 20,26 L 19,26 Z M 18,28 L 18,39 L 7,39 L 7,28 L 18,28 Z M 15.2440004,35.5940018 L 11.875,35.5940018 L 11.875,29.7299995 L 10,29.7299995 L 10,37 L 15.2440004,37 L 15.2440004,35.5940018 Z M 43,30.5 L 39,28 L 40,30 L 28,30 L 28,31 L 40,31 L 39,33 L 43,30.5 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
 							<IconTemplate Height="[float]50" HorizontalAlignment="[HorizontalAlignment]Center" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]AAL_Statistics_Base.gcomp" Top="[float]0" VerticalAlignment="[VerticalAlignment]Center" Width="[float]50" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="NI::Analysis::Conditioning::Unwrap Phase.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 50 50">
+						<IconPanel Height="[float]50" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]50">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]50">
+								<Rectangle Fill="[SMSolidColorBrush]#ff999999" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe6e6e6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#ffffffff" Top="[float]0" />
+								<Rectangle Fill="[SMLinearGradientBrush]{Start: 0.5 0}, {End: 0.5 1}, {Stops: {Stop: #ffe6e6e6 0}, {Stop: #ffd9d9d9 1}}" Height="[float]6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]2,0,2,2" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2" RadiusY="[float]2" Top="[float]0" VerticalAlignment="[VerticalAlignment]Bottom" />
+								<Rectangle Fill="[SMLinearGradientBrush]{Start: 0.5 0}, {End: 0.5 1}, {Stops: {Stop: #fffafafa 0}, {Stop: #ffe6e6e6 1}}" Height="[float]6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]2,2,2,0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2" RadiusY="[float]2" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" />
+							</IconTemplate>
+							<Path Data="[PathGeometry]M 50,46 C 50,48.2000008 48.2000008,50 46,50 L 4,50 C 1.79999995,50 0,48.2000008 0,46 L 0,4 C 0,1.79999995 1.79999995,0 4,0 L 46,0 C 48.2000008,0 50,1.79999995 50,4 L 50,46 Z" Fill="[SMSolidColorBrush]#ff94a59f" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 49,46 C 49,47.6500015 47.6500015,49 46,49 L 4,49 C 2.3499999,49 1,47.6500015 1,46 L 1,4 C 1,2.3499999 2.3499999,1 4,1 L 46,1 C 47.6500015,1 49,2.3499999 49,4 L 49,46 Z" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 48,46 C 48,47.0999985 47.0999985,48 46,48 L 4,48 C 2.9000001,48 2,47.0999985 2,46 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,46 Z" Fill="[SMSolidColorBrush]#ffeff7ec" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 45,31.5 L 41,29 L 42,31 L 8,31 L 8,18 L 10,19 L 7.5,15 L 5,19 L 7,18 L 7,31 L 5,31 L 5,32 L 7,32 L 7,42 L 8,42 L 8,32 L 42,32 L 41,34 L 45,31.5 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 33.2849998,29.4559994 L 32.8209991,30.3419991 L 16,21.5209999 L 16.4640007,20.6350002 L 33.2849998,29.4559994 Z M 7.8130002,31.3910007 L 7.34899998,32.2770004 L 14.6569996,36.1100006 L 15.1210003,35.223999 L 7.8130002,31.3910007 Z" Fill="[SMSolidColorBrush]#bf6a726d" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 16,22 L 15,22 L 15,21 L 16,21 L 16,22 Z M 16,27 L 15,27 L 15,28 L 16,28 L 16,27 Z M 16,30 L 15,30 L 15,31 L 16,31 L 16,30 Z M 16,33 L 15,33 L 15,34 L 16,34 L 16,33 Z M 16,24 L 15,24 L 15,25 L 16,25 L 16,24 Z M 16,36 L 15,36 L 15,37 L 16,37 L 16,36 Z" Fill="[SMSolidColorBrush]#ff6a726d" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 46,2 L 4,2 C 2.9000001,2 2,2.9000001 2,4 L 2,12 L 48,12 L 48,4 C 48,2.9000001 47.0999985,2 46,2 Z M 18,11 L 16,11 L 16,8 L 18,8 L 18,11 Z M 18,7 L 16,7 C 15,4 12,6 12,6 L 11,6 L 11,3 L 12,3 C 12,3 14,5 16,3 C 16,3 17.5450001,3 18,3 C 21,3 22,7 22,7 C 22,7 19,3 18,7 Z M 35.0540009,9.83100033 C 35.0390015,9.83100033 35.0239983,9.83199978 35.0089989,9.83199978 C 33.6419983,9.83199978 32.2159996,8.86999989 30.802,6.78700018 C 30.0839996,5.72900009 29.4379997,5.38399982 28.3959999,5.4369998 C 27.1669998,5.5 26.1749992,7.02699995 25.7919998,7.76999998 L 24,7.35599995 C 24.066,7.22700024 25.9370003,3.97900009 28.3959999,3.97900009 C 29.6730003,3.97900009 30.8959999,4.28599977 32,5.83199978 C 33.2439995,7.57499981 34.0830002,8.22900009 35.1040001,8.22900009 C 36.1040001,8.22900009 37.1329994,7.13199997 38,5.83199978 L 39,6.83199978 C 38.3139992,7.86000013 36.8989983,9.80200005 35.0540009,9.83100033 Z M 32.3810005,44.2739983 L 31.9169998,45.1599998 L 16.1639996,36.8989983 L 16.6280003,36.0130005 L 32.3810005,44.2739983 Z" Fill="[SMSolidColorBrush]#ff58997f" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<IconTemplate Height="[float]50" HorizontalAlignment="[HorizontalAlignment]Center" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]AAL_Conditioning_Base.gcomp" Top="[float]0" VerticalAlignment="[VerticalAlignment]Center" Width="[float]50" />
 						</IconPanel>
 					</Icon>
 				</MergeItem>
