@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="02FB3D2FC96068FF5E3A9AF557C6ABE033FC13B9FD95B26F7EFFC947E64029ADAC7424D5B82681DF687F16D98C56FEED1C5D4ADE44EB711E262D2CC7A21A3D18" Timestamp="1D74C99D5C5860E" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="D53BB638DF5165147239FB1A829658809DC956114EF565A7F868B830E19E74E869C177A0F321AF96F983F47CCC7E9DF5F2C492FB930989B468C00CC4F6F79DF5" Timestamp="1D74CC44F41D22E" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -244,10 +244,10 @@
 				<p.Text>tx or rx</p.Text>
 			</NodeLabel>
 			<Wire Id="91" Joints="N(89:Out)|(1700,90) h(10) N(17:T1)|(1710,235)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="2020 230 40 15" DataItem="92" Id="96" Label="97" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="1925 235 40 15" DataItem="92" Id="96" Label="97" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="ComplexDouble[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="96" Bounds="2065 230 55 14" Id="97" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="96" Bounds="1970 235 55 14" Id="97" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>signal out</p.Text>
 			</NodeLabel>
 			<DataAccessor Bounds="1925 275 40 15" DataItem="99" Id="109" Label="110" xmlns="http://www.ni.com/MocCommon">
@@ -566,25 +566,7 @@
 				<p.Text>Interleaver mode</p.Text>
 			</NodeLabel>
 			<Wire Id="11669" Joints="N(11567:Value)|(315,145) h(5) v(15) h(-29) v(50) N(11670:11005)|(312,210)" xmlns="http://www.ni.com/PlatformFramework" />
-			<ForLoop Bounds="1788 173 161 76" DiagramId="11687" Id="11686">
-				<LoopIteration Bounds="5 46 15 15" Id="11689" />
-				<Multiply Bounds="95 20 30 30" Id="11671" Terminals="o=11696, c0t0v=11695, c1t0v=11690" />
-				<Wire Id="11690" Joints="N(11691:i0)|(6,40) N(11671:c1t0v)|(95,40)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Literal Bounds="10 20 55 15" DataType="ComplexDouble" Id="11693" Label="11694" xmlns="http://www.ni.com/MocCommon">
-					<p.Data>0x4000000000000000;0x4000000000000000</p.Data>
-					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-				</Literal>
-				<NodeLabel AttachedTo="11693" Bounds="10 2 30 15" Id="11694" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>input 0</p.Text>
-				</NodeLabel>
-				<Wire Id="11695" Joints="N(11693:Out)|(65,25) N(11671:c0t0v)|(95,25)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="11696" Joints="N(11671:o)|(125,35) N(11697:i0)|(149,35)" xmlns="http://www.ni.com/PlatformFramework" />
-				<LoopCount Bounds="1 1 15 15" Docking="Left" Id="11688" Terminals="11686, 11687" />
-				<LoopTunnel AutoIndex="True" Bounds="-5 37 13 10" Docking="Left" Id="11691" Terminals="o0=11692, i0=11690" TunnelMode="0" />
-				<LoopTunnel AutoIndex="True" Bounds="151 32 13 10" Docking="Right" Id="11697" Terminals="o0=11698, i0=11696" TunnelMode="0" />
-			</ForLoop>
-			<Wire Id="11692" Joints="N(17:R0)|(1735,240) h(10) v(-25) N(11691:o0)|(1783,215)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="11698" Joints="N(11697:o0)|(1952,210) h(43) v(25) N(96:Value)|(2023,235)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="11701" Joints="N(17:R0)|(1735,240) N(96:Value)|(1928,240)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />

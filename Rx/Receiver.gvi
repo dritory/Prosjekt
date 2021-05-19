@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="FD360DEDBBCA6308DF2B7BD241B0ECE35E8F67A10D3EAE9BC762C3930A5107A9A7B865ED186C8C9B867FFF9E4AC824A47490069F1E867FCDECC94F0F2A462CCC" Timestamp="1D74C8E7C624D38" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="73560854759BA3A46A754803CF9C0784B18AE19E4EDC9CA46D3E4757E880ACFC3F4CAC92974BBFD118133DEF905CA72F21450B5E62348807E92CB7570D079DCB" Timestamp="1D74CDD28C64220" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -10491,8 +10491,8 @@
 				<CaseStructure.Selector Bounds="-4 55 13 10" Docking="Left" Id="11057" Terminals="11054=11734, 11055, 11056" />
 				<CaseStructure.Tunnel Bounds="195 -4 10 13" Docking="Top" Id="11356" Terminals="11054=110, 11055, 11056=11355" />
 				<CaseStructure.Tunnel Bounds="172 -4 10 13" Docking="Top" Id="11362" Terminals="11054=11788, 11055, 11056=11361" />
-				<CaseStructure.Tunnel Bounds="-4 30 13 10" Docking="Left" Id="11365" Terminals="11054=11757, 11055=11724, 11056=11364" />
-				<CaseStructure.Tunnel Bounds="-4 70 13 10" Docking="Left" Id="11368" Terminals="11054=11758, 11055=11725, 11056=11367" />
+				<CaseStructure.Tunnel Bounds="-4 30 13 10" Docking="Left" Id="11365" Terminals="11054=14094, 11055=11724, 11056=11364" />
+				<CaseStructure.Tunnel Bounds="-4 70 13 10" Docking="Left" Id="11368" Terminals="11054=14093, 11055=11725, 11056=11367" />
 				<CaseStructure.Tunnel Bounds="185 -4 10 13" Docking="Top" Id="11371" Terminals="11054=10561, 11055, 11056=11370" />
 				<CaseStructure.Tunnel Bounds="155 96 10 13" Docking="Bottom" Id="11374" Terminals="11054=11709, 11055=11722, 11056=11373" />
 				<CaseStructure.Tunnel Bounds="218 70 13 10" Docking="Right" Id="11377" Terminals="11054=10569, 11055=11725, 11056=11376" />
@@ -10570,7 +10570,7 @@
 			<NodeLabel AttachedTo="11752" Bounds="66 410 54 14" Id="11753" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Freq sync</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="-55 230 40 40" Id="11755" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Common\\NormalizeVector.gvi&quot;" Signature="@23f15d70f120447191c17eb1c397c366" Target="NormalizeVector.gvi" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="-145 230 40 40" Id="11755" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Common\\NormalizeVector.gvi&quot;" Signature="@23f15d70f120447191c17eb1c397c366" Target="NormalizeVector.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="Vector" />
@@ -10580,9 +10580,7 @@
 				<Terminal DataType="ComplexDouble[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
-			<Wire Id="11756" Joints="N(59:Value)|(-220,235) N(11755:L0)|(-55,235)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="11757" Joints="N(11755:R0)|(-15,235) N(11365:11054)|(156,235)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="11758" Joints="N(92:Value)|(-220,295) h(70) v(-20) N(11368:11054)|(156,275)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="11756" Joints="N(59:Value)|(-220,235) N(11755:L0)|(-145,235)" xmlns="http://www.ni.com/PlatformFramework" />
 			<MethodCall Bounds="955 595 50 50" Id="11759" ResolveFailedHint="MT Format Eye Diagram (complex).gvi, Package: (NI Modulation Toolkit for Software Defined Radio for LabVIEW NXG 3.0, Version: 18.5.0)" Signature="@66713d9905ad4815941675fa6d42b658" Target="NI::Modulation::MT Format Eye Diagram (complex).gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -10847,6 +10845,8 @@
 				<CaseStructure.Tunnel Bounds="49 61 10 13" Docking="Bottom" Id="14079" Terminals="13984=13975, 13985=14085, 13986=14078" />
 				<CaseStructure.Tunnel Bounds="101 25 13 10" Docking="Right" Id="14082" Terminals="13984=13982, 13985=14085, 13986=14081" />
 			</CaseStructure>
+			<Wire Id="14093" Joints="N(92:Value)|(-220,295) h(367) v(-20) N(11368:11054)|(156,275)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="14094" Joints="N(11755:R0)|(-105,235) N(11365:11054)|(156,235)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />

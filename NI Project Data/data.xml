@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="74ED0F2C31650205668B4E36298D22401795F4D2D851D645298E9953584B5DBCFCA251885BC096A2A6281FDC60EC2E0A4ACEDDD858C5909701A7460255059C9A" Timestamp="1D7426DF210792D" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="503661C4D569D7C134416D2743F451E6D58A4FD71CA86DB37E393DD334A2C680A93131D6F206D8C40F019E72B9003AD61D308A45FBD8F716E0435EC4EA7B6EFA" Timestamp="1D74CF0658D36BF" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Data" Name="http://www.ni.com/Data" OldestCompatibleVersion="6.2.0.0" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
@@ -177,6 +177,24 @@
 					</EmbeddedDefinitionReference>
 				</EmbeddedDefinitionReference>
 			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Id="60" ModelDefinitionType="TDMSRootDefinition" Name="TDMS_Root_3">
+				<TDMSRootDefinition StoragePath="Data-2021-05-19 171540 269.tdms" xmlns="http://www.ni.com/Data" />
+				<EmbeddedDefinitionReference Id="61" ModelDefinitionType="TDMSGroupDefinition" Name="TDMS_GROUP_3">
+					<TDMSGroupDefinition GroupName="Capture 3" Source="TransmitterBlock.gvi" SourceType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Timestamp="05/19/2021 17:15:40" xmlns="http://www.ni.com/Data" />
+					<EmbeddedDefinitionReference Id="62" ModelDefinitionType="TDMSDataItemDefinition" Name="Baseband Waveform (absolute value)">
+						<TDMSDataItemDefinition DataName="Baseband Waveform (absolute value)" DataType="Wfm(Double)" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+				</EmbeddedDefinitionReference>
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Id="63" ModelDefinitionType="TDMSRootDefinition" Name="TDMS_Root_4">
+				<TDMSRootDefinition StoragePath="Data-2021-05-19 204857 286.tdms" xmlns="http://www.ni.com/Data" />
+				<EmbeddedDefinitionReference Id="64" ModelDefinitionType="TDMSGroupDefinition" Name="TDMS_GROUP_4">
+					<TDMSGroupDefinition GroupName="Capture 4" Source="ReceiverBlock2.0.gvi" SourceType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Timestamp="05/19/2021 20:48:57" xmlns="http://www.ni.com/Data" />
+					<EmbeddedDefinitionReference Id="65" ModelDefinitionType="TDMSDataItemDefinition" Name="eye diagram">
+						<TDMSDataItemDefinition DataName="eye diagram" DataType="@f532164b681041d3be9e7f411e4ce9ba" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+				</EmbeddedDefinitionReference>
+			</EmbeddedDefinitionReference>
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
@@ -190,6 +208,18 @@
 				</Members>
 				<DataType>UInt16</DataType>
 			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="f532164b681041d3be9e7f411e4ce9ba">
+			<VariableArray DereferenceType="@ab7178fa24b34aeea95211126f9a86ff" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="ab7178fa24b34aeea95211126f9a86ff">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="t0" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="dt" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Y" DataType="Double[]" />
+				</Members>
+			</Composite>
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 </SourceFile>

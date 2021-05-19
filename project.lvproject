@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="F5FAAB95E7705FFC0259AFEE9D2BD7DEEBA9C375EB92BCD0FC447785A83EE378FC12A91FF1BC860DA1E2B036BE937EA60C5DA4E84C5E99E3422D8A53C69FDF3B" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="70E03F54BCF07CBADC88BEBCE120A3FBEDAC10E612FEEAFD0B06F61A3752FA819DDBF814AE0066982B5B760B9FE6C55EB95DABFCE33BC6E0239DE29CCD1C63D8" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="Data" Name="http://www.ni.com/Data" OldestCompatibleVersion="6.2.0.0" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
@@ -199,6 +199,9 @@
 						<Instance Id="6339" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
 							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="MSE.gvi" p10:Process.AssociatedIdentifier="6337" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
 						</Instance>
+						<Instance Id="6701" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:ShowInDiagram="False" p10:Process.AliasName="SFOSync.gvi" p10:Process.AssociatedIdentifier="6699" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
 						<Superimposition Id="7" Name="Root Superimposition">
 							<Superimpose Source="26">
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="324" />
@@ -258,6 +261,7 @@
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="5977" />
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="6333" />
 								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="6339" />
+								<Superimpose Parent="{:/26}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" Source="6701" />
 							</Superimpose>
 						</Superimposition>
 					</MappingManager>
@@ -511,6 +515,7 @@
 						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="5975" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="preambleInserter.gvi" StoragePath="Rx\preambleInserter.gvi" />
 						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="6331" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TestMSE.gvi" StoragePath="Tests\TestMSE.gvi" />
 						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="6337" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MSE.gvi" StoragePath="Common\MSE.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="6699" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="SFOSync.gvi" StoragePath="Rx\SFOSync.gvi" />
 					</EmbeddedDefinitionReference>
 					<EmbeddedDefinitionReference Bindings="RcxRepositoryManagerDefinition" Id="43" ModelDefinitionType="RepositoryManagerDefinition" Name="rcx.lib" Reparentable="False">
 						<RepositoryManagerDefinition />
@@ -621,6 +626,7 @@
 				<SourceFileReference Id="5976" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="preambleInserter.gvi" StoragePath="Rx\preambleInserter.gvi" />
 				<SourceFileReference Id="6332" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TestMSE.gvi" StoragePath="Tests\TestMSE.gvi" />
 				<SourceFileReference Id="6338" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MSE.gvi" StoragePath="Common\MSE.gvi" />
+				<SourceFileReference Id="6700" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="SFOSync.gvi" StoragePath="Rx\SFOSync.gvi" />
 			</EmbeddedDefinitionReference>
 			<EmbeddedDefinitionReference Id="24" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
 				<PackageReferencesDefinition>
