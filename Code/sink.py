@@ -3,10 +3,10 @@ import time
 from timeit import default_timer as timer
 import opuslib
 import wave
-import simpleaudio as sa
+import pyaudio
 import multiprocessing
 IP = "127.0.0.1"
-source_port = 46363
+source_port = 36363
 
 channels = 1
 sample_rate = 48000
@@ -83,15 +83,18 @@ def decode(audio_queue, raw_queue):
         else:
             next = raw
 
-
-
-
 def player(audio_queue):
+    player = pyaudio.PyAudio()
+
+    stream = player.open(format = player.get_format_from_width(2),
+    channels = channels,
+    rate = sample_rate,
+    output = True)
+
+    sound = audio_queue.get()
+    while(True):
+        stream.write(sound)
         sound = audio_queue.get()
-        while(True):
-            play = sa.play_buffer(sound, channels, 2, sample_rate)
-            sound = audio_queue.get()
-            play.wait_done()
 
 if __name__ == '__main__':
 
