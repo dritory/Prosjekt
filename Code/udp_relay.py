@@ -15,6 +15,6 @@ last = time.time()
 while True:
     elapsed =  time.time() - last
     last = time.time()
-    data, addr = sock.recvfrom(16)
+    data, addr = sock.recvfrom(50000)
     #print(len(data),data.decode("ansi", errors = 'strict'))
     sock2.sendto(data, (IP, sink_port))

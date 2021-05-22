@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="73560854759BA3A46A754803CF9C0784B18AE19E4EDC9CA46D3E4757E880ACFC3F4CAC92974BBFD118133DEF905CA72F21450B5E62348807E92CB7570D079DCB" Timestamp="1D74CDD28C64220" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="D51BA8723C1DE79EDC9426BE8689BF44BECF3AFDF590C559BD143FD4AC2D3A85404039580198A2696703965712B0AA0DB6880454D7CE634AB5E1688D4FF6D455" Timestamp="1D74E22B7D92569" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -20,10 +20,10 @@
 				</IconTemplate>
 			</IconPanel>
 		</Icon>
-		<ConnectorPane Height="70" Id="9" ListViewHeight="355" ListViewWidth="150" Width="80" xmlns="http://www.ni.com/PlatformFramework">
+		<ConnectorPane Height="70" Id="9" ListViewHeight="370" ListViewWidth="150" Width="80" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="55" />
 			<ConnectorPaneTerminal Hotspot="0 15" />
-			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 350" Parameter="14526" />
 			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 155" Parameter="161" />
 			<ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 80" Parameter="97" />
 			<ConnectorPaneTerminal Hotspot="25 0" ListViewHotspot="0 95" Parameter="104" />
@@ -10491,8 +10491,8 @@
 				<CaseStructure.Selector Bounds="-4 55 13 10" Docking="Left" Id="11057" Terminals="11054=11734, 11055, 11056" />
 				<CaseStructure.Tunnel Bounds="195 -4 10 13" Docking="Top" Id="11356" Terminals="11054=110, 11055, 11056=11355" />
 				<CaseStructure.Tunnel Bounds="172 -4 10 13" Docking="Top" Id="11362" Terminals="11054=11788, 11055, 11056=11361" />
-				<CaseStructure.Tunnel Bounds="-4 30 13 10" Docking="Left" Id="11365" Terminals="11054=14094, 11055=11724, 11056=11364" />
-				<CaseStructure.Tunnel Bounds="-4 70 13 10" Docking="Left" Id="11368" Terminals="11054=14093, 11055=11725, 11056=11367" />
+				<CaseStructure.Tunnel Bounds="-4 30 13 10" Docking="Left" Id="11365" Terminals="11054=14101, 11055=11724, 11056=11364" />
+				<CaseStructure.Tunnel Bounds="-4 70 13 10" Docking="Left" Id="11368" Terminals="11054=14098, 11055=11725, 11056=11367" />
 				<CaseStructure.Tunnel Bounds="185 -4 10 13" Docking="Top" Id="11371" Terminals="11054=10561, 11055, 11056=11370" />
 				<CaseStructure.Tunnel Bounds="155 96 10 13" Docking="Bottom" Id="11374" Terminals="11054=11709, 11055=11722, 11056=11373" />
 				<CaseStructure.Tunnel Bounds="218 70 13 10" Docking="Right" Id="11377" Terminals="11054=10569, 11055=11725, 11056=11376" />
@@ -10507,7 +10507,7 @@
 					<Wire Id="11705" Joints="N(11687:11389)|(4,70) N(11690:11389)|(126,70)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 130 95" Id="11390" Pattern="True">
-					<MethodCall Bounds="59 25 40 50" Id="10568" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Rx\\FreqSync.gvi&quot;" Signature="@1ab209c498e143498c4dcef9d0c7f11d" Target="FreqSync.gvi" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="59 25 40 50" Id="10568" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Rx\\FreqSync.gvi&quot;" Signature="@da66dbedaebc4db793900cd9003ac576" Target="FreqSync.gvi" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="input" />
@@ -10519,7 +10519,6 @@
 								<Parameter Id="B1" Desc="correction angles" />
 								<Parameter Id="R0" Desc="output" />
 								<Parameter Id="R1" Desc="phase drift" />
-								<Parameter Id="R2" Desc="intercept" />
 								<Parameter Id="R3" Desc="phase offset" />
 								<Parameter Id="R4" Desc="error out" />
 							</MethodDeclaration>
@@ -10533,7 +10532,6 @@
 						<Terminal DataType="Double[]" Direction="Output" Hotspot="25 50" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Double" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Double" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Double" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Error" Direction="Output" Hotspot="40 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 					</MethodCall>
@@ -10803,7 +10801,7 @@
 			</NodeLabel>
 			<Wire Id="13564" Joints="N(13504:Value)|(-25,35) h(250) N(13565:11054)|(225,196)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="13568" Joints="N(13567:11054)|(391,265) N(13571:11388)|(416,265)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="13581" Joints="N(10596:32bit integer)|(-260,250) h(95) B(1) v(-80) h(90) B(3) h(515) B(4) h(165) B(5) h(204) N(23:T0)|(809,230) B(5) N(12000:11908)|(605,196) B(4) N(11702:11388)|(440,196) B(3) v(50) N(11386:11054)|(156,220) B(1) v(330) N(10232:number)|(-127,580)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="13581" Joints="N(10596:32bit integer)|(-260,250) h(95) B(1) v(-80) h(90) B(3) h(515) B(4) h(165) B(5) h(204) N(23:T0)|(809,230) B(5) N(12000:11908)|(605,196) B(4) N(11702:11388)|(440,196) B(3) v(20) h(226) v(30) N(11386:11054)|(156,220) B(1) v(330) N(10232:number)|(-127,580)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="13582" Joints="N(13583:subarray)|(905,235) h(20) B(1) N(10527:10246)|(936,235) B(1) v(215) B(3) h(-50) v(20) N(150:x + iy)|(885,470) B(3) h(19) v(-14) N(142:Value)|(952,436)" xmlns="http://www.ni.com/PlatformFramework" />
 			<ArraySubset Bounds="865 230 40 40" Id="13583" Terminals="array=13584, subarray=13582, index0=13981, length0=13982" />
 			<Wire Id="13584" Joints="N(23:R0)|(834,235) N(13583:array)|(865,235)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -10845,8 +10843,52 @@
 				<CaseStructure.Tunnel Bounds="49 61 10 13" Docking="Bottom" Id="14079" Terminals="13984=13975, 13985=14085, 13986=14078" />
 				<CaseStructure.Tunnel Bounds="101 25 13 10" Docking="Right" Id="14082" Terminals="13984=13982, 13985=14085, 13986=14081" />
 			</CaseStructure>
-			<Wire Id="14093" Joints="N(92:Value)|(-220,295) h(367) v(-20) N(11368:11054)|(156,275)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="14094" Joints="N(11755:R0)|(-105,235) N(11365:11054)|(156,235)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="14096" Joints="N(11755:R0)|(-105,235) N(14515:14102)|(-69,235)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="14098" Joints="N(14518:14102)|(94,255) h(46) v(20) N(11368:11054)|(156,275)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="14099" Joints="N(92:Value)|(-220,295) h(6) v(-50) N(14521:14102)|(-69,245)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="14101" Joints="N(14524:14102)|(94,232) h(31) v(3) N(11365:11054)|(156,235)" xmlns="http://www.ni.com/PlatformFramework" />
+			<CaseStructure Bounds="-65 195 155 120" Default="14103" Id="14102" Selected="14103" UserSelectorBounds="34 0 88 17">
+				<CaseStructure.Case Bounds="5 5 145 110" Id="14103" Pattern="False">
+					<Wire Id="14533" Joints="N(14515:14103)|(4,35) h(132) v(-3) N(14524:14103)|(141,32)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="14534" Joints="N(14521:14103)|(4,45) h(5) v(10) N(14518:14103)|(141,55)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 145 110" Id="14104" Pattern="True">
+					<MethodCall Bounds="45 30 40 40" Id="14095" ResolveFailedHint="&quot;Z:\\TTT4145 - Radiokommunikasjon\\Prosjekt\\Rx\\SFOSync.gvi&quot;" Signature="@80de41fd4075414c849034f6432c10cd" Target="SFOSync.gvi" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="input signal" />
+								<Parameter Id="L3" Desc="error in" />
+								<Parameter Id="R0" Desc="output signal" />
+								<Parameter Id="R1" Desc="Estimated phase" />
+								<Parameter Id="R2" Desc="best linear fit" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="ComplexDouble[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Double" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Double[]" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<Wire Id="14514" Joints="N(14515:14104)|(4,35) N(14095:L0)|(45,35)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="14517" Joints="N(14095:R3)|(85,65) h(15) v(-10) N(14518:14104)|(141,55)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="14520" Joints="N(14521:14104)|(4,45) h(5) v(20) N(14095:L3)|(45,65)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="14523" Joints="N(14095:R0)|(85,35) h(15) v(-3) N(14524:14104)|(141,32)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 85 13 10" Docking="Left" Id="14105" Terminals="14102=14531, 14103, 14104" />
+				<CaseStructure.Tunnel Bounds="-4 35 13 10" Docking="Left" Id="14515" Terminals="14102=14096, 14103=14533, 14104=14514" />
+				<CaseStructure.Tunnel Bounds="146 55 13 10" Docking="Right" Id="14518" Terminals="14102=14098, 14103=14534, 14104=14517" />
+				<CaseStructure.Tunnel Bounds="-4 45 13 10" Docking="Left" Id="14521" Terminals="14102=14099, 14103=14534, 14104=14520" />
+				<CaseStructure.Tunnel Bounds="146 32 13 10" Docking="Right" Id="14524" Terminals="14102=14101, 14103=14533, 14104=14523" />
+			</CaseStructure>
+			<DataAccessor Bounds="-139 280 40 15" DataItem="14526" Id="14529" Label="14530" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="14529" Bounds="-167 280 23 14" Id="14530" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>SFO</p.Text>
+			</NodeLabel>
+			<Wire Id="14531" Joints="N(14529:Value)|(-99,285) N(14105:14102)|(-69,285)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
@@ -10856,6 +10898,8 @@
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="10557" LabelOwner="[UIModel]10556" Left="[float]432" Text="[string]Min correlation" Top="[float]172" Width="[float]81" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="13501" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[int]1" IsReadOnly="[bool]False" Label="[UIModel]13502" Left="[float]416" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" TabIndex="[int]2" Top="[float]320" Value="{DataItemBinding Id=13500}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="13502" LabelOwner="[UIModel]13501" Left="[float]416" Text="[string]sync frame buffer (symbols)" Top="[float]300" Width="[float]147" xmlns="http://www.ni.com/PanelCommon" />
+			<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="14527" IsReadOnly="[bool]False" Label="[UIModel]14532" Left="[float]416" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]3" Top="[float]436" TrueContent="[string]On" Value="{DataItemBinding Id=14526}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="14532" LabelOwner="[UIModel]14527" Left="[float]416" Text="[string]SFO" Top="[float]416" Width="[float]22" xmlns="http://www.ni.com/PanelCommon" />
 		</NativeFrontPanel>
 		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="Int32[]" Id="26" Name="output bit stream" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
@@ -10950,6 +10994,9 @@
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="3" DataType="@a2578e59405e411fa4c4616868bc9073" Id="13589" Name="Interleaver mode" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="4" DataType="Boolean" Id="14526" Name="SFO" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
 		<p.TypeReference TypeId="ab7178fa24b34aeea95211126f9a86ff">
@@ -11007,8 +11054,8 @@
 				<DataType>UInt16</DataType>
 			</Enumeration>
 		</p.TypeReference>
-		<p.TypeReference TypeId="1ab209c498e143498c4dcef9d0c7f11d">
-			<Attributed AttributedType="@646d758760ba4ffd96791431ce7e14fa">
+		<p.TypeReference TypeId="da66dbedaebc4db793900cd9003ac576">
+			<Attributed AttributedType="@0d5c55f411b147dd8062b44d7eeb3187">
 				<AttributeValues>
 					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]50" />
 					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
@@ -11108,6 +11155,14 @@
 		</p.TypeReference>
 		<p.TypeReference TypeId="57117dcd532b42089c9a5310b1f13276">
 			<Attributed AttributedType="@39c5efa6ea094dc3a588783830f05ab2">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="80de41fd4075414c849034f6432c10cd">
+			<Attributed AttributedType="@903462e9457b42c5b4b1b9d305e13a65">
 				<AttributeValues>
 					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
 					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
@@ -11263,7 +11318,7 @@
 				</Parameters>
 			</Function>
 		</p.TypeReference>
-		<p.TypeReference TypeId="646d758760ba4ffd96791431ce7e14fa">
+		<p.TypeReference TypeId="0d5c55f411b147dd8062b44d7eeb3187">
 			<Function Id="1" IsStatic="True" IsConstructor="False" Name="FreqSync.gvi" ReturnType="Void" GenericTypeDefinition="Void">
 				<Parameters>
 					<Attributed AttributedType="@f7a459b8440f4e8da39435ae4d495e97">
@@ -11309,11 +11364,6 @@
 					<Attributed AttributedType="@1c73cfdcdb7f479dae7f7b9acc933380">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]phase drift" />
-						</AttributeValues>
-					</Attributed>
-					<Attributed AttributedType="@a16ada89d7bf4eeba4a9c2fb54d77a39">
-						<AttributeValues>
-							<AttributeValue Name="NI.UserDefinedName" Value="[string]intercept" />
 						</AttributeValues>
 					</Attributed>
 					<Attributed AttributedType="@3a6067a04e1441679845e968836ee8e4">
@@ -11545,6 +11595,42 @@
 				</Parameters>
 			</Function>
 		</p.TypeReference>
+		<p.TypeReference TypeId="903462e9457b42c5b4b1b9d305e13a65">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="SFOSync.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@f7a459b8440f4e8da39435ae4d495e97">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]input signal" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@b473a1d5786147b0b105193d92f053ac">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]error in" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@ed3fb9c085444fa190a7178dd3b93e90">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]output signal" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@1c73cfdcdb7f479dae7f7b9acc933380">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Estimated phase" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@8a783d70fa5f4c91b1083dcfd530f54d">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]best linear fit" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@17bf61b52c9c4b0083ca3aeab43abcb0">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]error out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
 		<p.TypeReference TypeId="f7a459b8440f4e8da39435ae4d495e97">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="ComplexDouble[]" />
 		</p.TypeReference>
@@ -11623,9 +11709,6 @@
 		<p.TypeReference TypeId="1c73cfdcdb7f479dae7f7b9acc933380">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R1" DataType="Double" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="a16ada89d7bf4eeba4a9c2fb54d77a39">
-			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R2" DataType="Double" />
-		</p.TypeReference>
 		<p.TypeReference TypeId="3a6067a04e1441679845e968836ee8e4">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R3" DataType="Double" />
 		</p.TypeReference>
@@ -11679,6 +11762,9 @@
 		</p.TypeReference>
 		<p.TypeReference TypeId="65edcc952e694904abbec3080445ad71">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="UInt8[]" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="8a783d70fa5f4c91b1083dcfd530f54d">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R2" DataType="Double[]" />
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
@@ -11855,6 +11941,23 @@
 								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 								<FileNameText Attached="[bool]True" Height="[float]36" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]FrameScrambler" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="SFOSync.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]36" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]SFOSync" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
 									<FontSetting FontFamily="Verdana" FontSize="6" />
 								</FileNameText>
 							</IconTemplate>

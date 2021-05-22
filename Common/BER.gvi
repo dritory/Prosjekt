@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="BAFBC269C9574248135D839979D1381EFEB09A4B73CE48F0D25710D7E88103DA45C8EADEE162C231B2157892D0B1C67F1B03426A4BCBC9E364CD539957CD55BD" Timestamp="1D74A37C55C3351" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="71D882E60B2E5A45321DD3A241AF6DED337779B6B4EC701BF0E81030F3F1A30245C6FF6D3B1EA3DFCD25B36B78E17FD2C8B3C6771B9E93560B234D3DF88528CA" Timestamp="1D74E12DFF2F785" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -10122,7 +10122,7 @@
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<InsertIntoArray Bounds="975 510 40 40" Id="10209" Terminals="inArray=10228, outArray=20425, index0, c0t0v=10216" />
-			<DataAccessor Bounds="1400 660 40 15" DataItem="10238" Id="10210" Label="10233" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="1490 660 40 15" DataItem="10238" Id="10210" Label="10233" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<DataAccessor Bounds="1090 485 40 15" DataItem="10239" Id="10213" Label="10234" xmlns="http://www.ni.com/MocCommon">
@@ -10150,7 +10150,7 @@
 				<CaseStructure.Tunnel Bounds="145 40 13 10" Docking="Right" Id="10223" Terminals="10218=10228, 10219=10224, 10220=10226" />
 			</CaseStructure>
 			<Wire Id="10228" Joints="N(10223:10218)|(663,515) N(10209:inArray)|(975,515)" xmlns="http://www.ni.com/PlatformFramework" />
-			<NodeLabel AttachedTo="10210" Bounds="1445 660 59 14" Id="10233" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="10210" Bounds="1535 660 59 14" Id="10233" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Mean_BER</p.Text>
 			</NodeLabel>
 			<NodeLabel AttachedTo="10213" Bounds="1135 485 58 14" Id="10234" xmlns="http://www.ni.com/PlatformFramework">
@@ -10208,7 +10208,7 @@
 				</CaseStructure.Case>
 				<CaseStructure.Selector Bounds="-4 70 13 10" Docking="Left" Id="20313" Terminals="20310=20365, 20311=20317, 20312=20322" />
 				<CaseStructure.Tunnel Bounds="-4 30 13 10" Docking="Left" Id="20314" Terminals="20310=20499, 20311, 20312=20321" />
-				<CaseStructure.Tunnel Bounds="91 70 13 10" Docking="Right" Id="20315" Terminals="20310=20466, 20311=20317, 20312=20324" />
+				<CaseStructure.Tunnel Bounds="91 70 13 10" Docking="Right" Id="20315" Terminals="20310=20523, 20311=20317, 20312=20324" />
 				<CaseStructure.Tunnel Bounds="91 30 13 10" Docking="Right" Id="20316" Terminals="20310=10216, 20311=20319, 20312=20323" />
 			</CaseStructure>
 			<Wire Id="20330" Joints="N(20295:Value)|(600,310) h(45) B(1) N(20300:array)|(650,310) B(1) v(50) N(20306:x)|(790,360)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -10229,25 +10229,9 @@
 			</NodeLabel>
 			<Wire Id="20364" Joints="N(20362:Value)|(600,375) h(75) B(1) N(20306:y)|(790,375) B(1) v(-35) N(20444:array)|(690,340)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="20365" Joints="N(20282:Value)|(600,410) N(20313:20310)|(941,410)" xmlns="http://www.ni.com/PlatformFramework" />
-			<MethodCall Bounds="1340 660 50 50" Id="20368" ResolveFailedHint="Mean (DBL).gvi, Package: (LabVIEW NXG Analysis Basic Files, Version: 3.0.0)" Signature="@09d315cbe5564753a1007e7e25c793f1" Target="NI::Analysis::Statistics::Mean (DBL).gvi" xmlns="http://www.ni.com/MocCommon">
-				<p.MethodDeclaration>
-					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-						<Parameter Id="L0" Desc="x" />
-						<Parameter Id="L4" Desc="error in" />
-						<Parameter Id="R0" Desc="mean" />
-						<Parameter Id="R4" Desc="error out" />
-					</MethodDeclaration>
-				</p.MethodDeclaration>
-				<Terminal DataType="Double[]" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="Double" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
-			</MethodCall>
-			<Wire Id="20369" Joints="N(20378:20376)|(1244,665) N(20368:L0)|(1340,665)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="1400 700 40 15" DataItem="20403" Id="20373" Label="20399" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="1580 700 40 15" DataItem="20403" Id="20373" Label="20399" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<Wire Id="20374" Joints="N(20368:R4)|(1390,705) N(20373:Value)|(1403,705)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Comment Bounds="1020 565 215 60" Id="20375" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>Remove all values that are -1 from array. -1 is the value returned as BER when an error occured or no frame is detected.</p.Text>
 			</Comment>
@@ -10277,13 +10261,12 @@
 				<Wire Id="20392" Joints="N(20390:Out)|(100,100) N(20394:y)|(130,100)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="20393" Joints="N(20394:x = y?)|(160,95) N(20380:Input)|(175,95)" xmlns="http://www.ni.com/PlatformFramework" />
 				<IsEqual Bounds="130 80 30 30" Id="20394" />
-				<RightShiftRegister Bounds="211 35 13 10" Docking="Right" Id="20378" Terminals="20376=20369, 20377=20387" />
+				<RightShiftRegister Bounds="211 35 13 10" Docking="Right" Id="20378" Terminals="20376=20518, 20377=20387" />
 				<LeftShiftRegister Bounds="-4 35 13 10" Docking="Left" Id="20379" RightRegister="20378" Terminals="o0=20425, i0=20386" />
 			</WhileLoop>
-			<NodeLabel AttachedTo="20373" Bounds="1445 700 50 14" Id="20399" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="20373" Bounds="1625 700 50 14" Id="20399" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>error out</p.Text>
 			</NodeLabel>
-			<Wire Id="20424" Joints="N(20368:R0)|(1390,665) N(10210:Value)|(1403,665)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="20425" Joints="N(10209:outArray)|(1015,515) h(5) B(1) h(65) B(2) N(20479:Value)|(1093,515) B(2) v(-25) N(10213:Value)|(1093,490) B(1) v(40) h(-10) v(110) N(20379:o0)|(1016,665)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="431 530 40 15" DataItem="20426" Id="20429" Label="20430" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -10314,7 +10297,7 @@
 			<NodeLabel AttachedTo="20454" Bounds="865 320 88 14" Id="20455" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Input array size</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="1220 395 40 40" Id="20459" ResolveFailedHint="Filter Error Code.gvi, Package: (LabVIEW NXG G Standard Library Files, Version: 3.0.0)" Signature="@fd29ffb8299b477ab597b2749920f855" Target="NI::G Core::Error::Filter Error Code.gvi" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="1505 700 40 40" Id="20459" ResolveFailedHint="Filter Error Code.gvi, Package: (LabVIEW NXG G Standard Library Files, Version: 3.0.0)" Signature="@fd29ffb8299b477ab597b2749920f855" Target="NI::G Core::Error::Filter Error Code.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="error in" />
@@ -10328,16 +10311,14 @@
 				<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
-			<Literal Bounds="1135 410 65 15" DataType="Int32" Id="20460" Label="20464" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="1420 715 65 15" DataType="Int32" Id="20460" Label="20464" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>-20003</p.Data>
 				<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:0" />
 			</Literal>
-			<Wire Id="20461" Joints="N(20460:Out)|(1200,415) h(10) v(-5) N(20459:L1)|(1220,410)" xmlns="http://www.ni.com/PlatformFramework" />
-			<NodeLabel AttachedTo="20460" Bounds="1135 392 30 15" Id="20464" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+			<Wire Id="20461" Joints="N(20460:Out)|(1485,720) h(10) v(-5) N(20459:L1)|(1505,715)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="20460" Bounds="1420 697 30 15" Id="20464" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>code to clear</p.Text>
 			</NodeLabel>
-			<Wire Id="20465" Joints="N(20459:R0)|(1260,400) h(55) v(305) N(20368:L4)|(1340,705)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="20466" Joints="N(20315:20310)|(1049,410) h(6) v(-10) N(20459:L0)|(1220,400)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="1090 510 40 15" DataItem="20481" Id="20479" Label="20480" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
@@ -10356,6 +10337,45 @@
 			<ToDoublePrecisionFloat Bounds="900 365 30 10" Id="20498" />
 			<Wire Id="20499" Joints="N(20498:double precision float)|(930,370) N(20314:20310)|(941,370)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="20500" Joints="N(20305:0, 1)|(875,370) N(20498:number)|(903,370)" xmlns="http://www.ni.com/PlatformFramework" />
+			<CaseStructure Bounds="1305 630 100 95" DataType="Error" Default="20502" Id="20501" Selected="20503" UserSelectorBounds="0 0 100 17">
+				<CaseStructure.Case Bounds="5 5 90 85" Id="20502" Pattern="Error">
+					<Wire Id="20508" Joints="N(20504:20502)|(4,70) N(20506:20502)|(86,70)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Literal Bounds="25 25 40 15" DataType="Double" Id="20509" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>0xBFF0000000000000</p.Data>
+						<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+					</Literal>
+					<Wire Id="20510" Joints="N(20509:Out)|(65,30) N(20507:20502)|(86,30)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 90 85" Id="20503" Pattern="No Error">
+					<MethodCall Bounds="20 25 50 50" Id="20511" ResolveFailedHint="Mean (DBL).gvi, Package: (LabVIEW NXG Analysis Basic Files, Version: 3.0.0)" Signature="@09d315cbe5564753a1007e7e25c793f1" Target="NI::Analysis::Statistics::Mean (DBL).gvi" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="x" />
+								<Parameter Id="L4" Desc="error in" />
+								<Parameter Id="R0" Desc="mean" />
+								<Parameter Id="R4" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="Double[]" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Double" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<Wire Id="20512" Joints="N(20505:20503)|(4,30) N(20511:L0)|(20,30)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="20513" Joints="N(20504:20503)|(4,70) N(20511:L4)|(20,70)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="20514" Joints="N(20511:R0)|(70,30) N(20507:20503)|(86,30)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="20515" Joints="N(20511:R4)|(70,70) N(20506:20503)|(86,70)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 70 13 10" Docking="Left" Id="20504" Terminals="20501=20523, 20502=20508, 20503=20513" />
+				<CaseStructure.Tunnel Bounds="-4 30 13 10" Docking="Left" Id="20505" Terminals="20501=20518, 20502, 20503=20512" />
+				<CaseStructure.Tunnel Bounds="91 70 13 10" Docking="Right" Id="20506" Terminals="20501=20524, 20502=20508, 20503=20515" />
+				<CaseStructure.Tunnel Bounds="91 30 13 10" Docking="Right" Id="20507" Terminals="20501=20519, 20502=20510, 20503=20514" />
+			</CaseStructure>
+			<Wire Id="20518" Joints="N(20378:20376)|(1244,665) N(20505:20501)|(1301,665)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="20519" Joints="N(20507:20501)|(1409,665) N(10210:Value)|(1493,665)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="20522" Joints="N(20459:R0)|(1545,705) N(20373:Value)|(1583,705)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="20523" Joints="N(20315:20310)|(1049,410) h(226) v(295) N(20504:20501)|(1301,705)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="20524" Joints="N(20506:20501)|(1409,705) N(20459:L0)|(1505,705)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
@@ -10483,7 +10503,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]error out" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@49a819734c694e6d87b4c83d3220bdb5">
+					<Attributed AttributedType="@ceb327659ddb481fbc0b86b6a8fde204">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]error cleared?" />
 						</AttributeValues>
@@ -10512,7 +10532,7 @@
 		<p.TypeReference TypeId="11ac171eec684f0caf289f7312154820">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="Error" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="49a819734c694e6d87b4c83d3220bdb5">
+		<p.TypeReference TypeId="ceb327659ddb481fbc0b86b6a8fde204">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R1" DataType="Boolean" />
 		</p.TypeReference>
 	</DataTypeReferenceTable>

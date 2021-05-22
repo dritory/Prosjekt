@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="AC63CC38A7148C6EA1AAD1122CC29232CE8A096C1BBB68A0EF08D6CC87E0406A3B4687C7DAD94ADB1E18579059983D93EA53A2D6A4C88DF3DCEC59308F019BE7" Timestamp="1D74CAC82D68306" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="7258F2C3A90774EE867CA9C95C7C6553065B83FF0A81E0EFE8D1BD57EF66D9102243D5D4FF56414C46DA1DBA2F12C60C8891D1E032DF38C80C99E8E662CE7DCA" Timestamp="1D74F0A1FCE6F2C" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.1.50272" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -90,7 +90,7 @@
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<Wire Id="15" Joints="N(86:Value)|(385,-150) N(19:index0)|(415,-150)" xmlns="http://www.ni.com/PlatformFramework" />
-			<ArraySubset Bounds="415 -175 40 40" Id="19" Terminals="array=157, subarray=223, index0=15, length0=163" />
+			<ArraySubset Bounds="415 -175 40 40" Id="19" Terminals="array=157, subarray=237, index0=15, length0=163" />
 			<Comment Bounds="390 -210 105 15" Id="47" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>generate winow</p.Text>
 			</Comment>
@@ -167,7 +167,6 @@
 				<p.Text>preamble code</p.Text>
 			</NodeLabel>
 			<Wire Id="121" Joints="N(119:Value)|(320,-25) N(114:L0)|(350,-25)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="127" Joints="N(169:R0)|(555,-25) N(106:L0)|(740,-25)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="133" Joints="N(149:max value)|(970,-25) h(40) B(1) N(137:x)|(1060,-25) B(1) v(40) N(68:Value)|(1123,15)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Comment Bounds="1015 -55 145 15" Id="134" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>frame if over threshold</p.Text>
@@ -249,7 +248,8 @@
 				<p.Text>max index</p.Text>
 			</NodeLabel>
 			<Wire Id="222" Joints="N(149:max index(es\))|(970,-15) h(35) v(60) N(220:Value)|(1123,45)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="223" Joints="N(19:subarray)|(455,-170) h(200) v(155) N(106:L1)|(740,-15)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="229" Joints="N(169:R0)|(555,-25) N(106:L0)|(740,-25)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="237" Joints="N(19:subarray)|(455,-170) h(55) v(50) h(145) v(105) N(106:L1)|(740,-15)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
