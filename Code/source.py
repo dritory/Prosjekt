@@ -12,7 +12,7 @@ import wave
 from reedsolo import RSCodec
 
 IP = "127.0.0.1"
-source_port = 36363
+source_port = 26363
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 sample_rate = 48000
