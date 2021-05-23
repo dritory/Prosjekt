@@ -52,7 +52,7 @@ def decode(audio_queue, raw_queue):
 
     decoder = opuslib.Decoder(sample_rate, channels)
 
-    audio_buffer_size = 200
+    audio_buffer_size = 25
     audio_buffer = [0]*audio_buffer_size
     audio_cur_pos = 0
     next = b''
