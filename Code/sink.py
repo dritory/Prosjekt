@@ -5,7 +5,7 @@ import opuslib
 import wave
 import pyaudio
 import multiprocessing
-from reedsolo import RSCodec
+#from reedsolo import RSCodec, ReedSolomonError
 
 IP = "127.0.0.1"
 source_port = 36363
@@ -46,7 +46,7 @@ def count_biterrors(x, y):
         nxor = (a ^ b)
         total_errors += popcount_py(nxor)
     return total_errors
-    
+
 #%%
 def decode(audio_queue, raw_queue):
 
@@ -57,12 +57,12 @@ def decode(audio_queue, raw_queue):
     audio_cur_pos = 0
     next = b''
 
-    header = bytes.fromhex('01234567').hex()
-    msg_len = 508
+    header = bytes.fromhex('0123456789abcedfdecba987').hex()
+    msg_len = 500
     frame_len = 20
 
-    
-    rsc = RSCodec(4)
+    #reedsolomon_bytes = 8
+    #rsc = RSCodec(reedsolomon_bytes//2)
 
     h_len = len(header)//2
     while True:
@@ -80,9 +80,11 @@ def decode(audio_queue, raw_queue):
             packet = raw[frame_index + h_len:frame_index + h_len + msg_len]
             print(frame_index, len(packet), len(next))
             next = raw[frame_index + h_len + msg_len:]
-
-            packet = bytes(rsc.decode(packet)[0])
-            
+            # try:
+            #     packet = bytes(rsc.decode(packet)[0])
+            # except ReedSolomonError as e:
+            #     print(e)
+            #     packet = packet[:-reedsolomon_bytes]
             for i in range(0, len(packet), frame_len):
                 try:
                     decoded = decoder.decode(packet[i:i+frame_len], framesize)
