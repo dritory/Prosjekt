@@ -12,7 +12,7 @@ import wave
 import simpleaudio as sa
 
 IP = "127.0.0.1"
-source_port = 26363
+source_port = 36363
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 sample_rate = 48000
@@ -67,7 +67,7 @@ while wav.tell() < framestop:
     encoded = encode_data(wav)
     encoded_data += encoded
     if(len(encoded_data) >= 20*25):
-        encoded_data = bytes.fromhex('012301230123012301230123') + encoded_data
+        encoded_data = bytes.fromhex('0123456789abcdefedcba987') + encoded_data
         sock.sendto(encoded_data, (IP, source_port))
         print(len(encoded), len(encoded_data))
         encoded_data=b""

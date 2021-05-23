@@ -34,9 +34,18 @@ def udp_sink (raw_queue):
 
         raw_queue.put(raw)
         last = data
+#%%
+def popcount_py(x):
+    return bin(x).count("1")
 
-
-
+def count_biterrors(x, y):
+    total_errors = 0
+    for a, b in zip(x,y):
+        nxor = (a ^ b)
+        total_errors += popcount_py(nxor)
+    return total_errors
+    
+#%%
 def decode(audio_queue, raw_queue):
 
     decoder = opuslib.Decoder(sample_rate, channels)
@@ -46,7 +55,7 @@ def decode(audio_queue, raw_queue):
     audio_cur_pos = 0
     next = b''
 
-    header = bytes.fromhex('012301230123012301230123').hex()
+    header = bytes.fromhex('0123456789abcdefedcba987').hex()
     msg_len = 500
     frame_len = 20
 
@@ -56,8 +65,9 @@ def decode(audio_queue, raw_queue):
         frame_index = -1
         packet = b''
         for b in range(0, len(raw), 1):
-            seq = raw[b:b+h_len].hex()
-            if(seq == header):
+            seq = raw[b:b+h_len]
+            errors  = count_biterrors(seq, bytes.fromhex(header))
+            if(errors < h_len*8//2):
                 frame_index = b
                 break
         if frame_index >= 0:
