@@ -9,7 +9,7 @@ import socket
 import time
 import opuslib
 import wave
-import simpleaudio as sa
+from reedsolo import RSCodec
 
 IP = "127.0.0.1"
 source_port = 36363
@@ -29,6 +29,8 @@ bitrate = 8000/(20*8)
 period = 1/bitrate
 
 t = time.time()
+
+rsc = RSCodec(4)
 
 wav =  wave.open("RadioGaGa.wav", "r")
 #%%
@@ -67,7 +69,8 @@ while wav.tell() < framestop:
     encoded = encode_data(wav)
     encoded_data += encoded
     if(len(encoded_data) >= 20*25):
-        encoded_data = bytes.fromhex('0123456789abcdefedcba987') + encoded_data
+        encoded_data = rsc.encode(encoded_data)
+        encoded_data = bytes.fromhex('01234567') + encoded_data
         sock.sendto(encoded_data, (IP, source_port))
         print(len(encoded), len(encoded_data))
         encoded_data=b""

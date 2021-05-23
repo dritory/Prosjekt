@@ -5,6 +5,8 @@ import opuslib
 import wave
 import pyaudio
 import multiprocessing
+from reedsolo import RSCodec
+
 IP = "127.0.0.1"
 source_port = 36363
 
@@ -55,9 +57,12 @@ def decode(audio_queue, raw_queue):
     audio_cur_pos = 0
     next = b''
 
-    header = bytes.fromhex('0123456789abcdefedcba987').hex()
-    msg_len = 500
+    header = bytes.fromhex('01234567').hex()
+    msg_len = 508
     frame_len = 20
+
+    
+    rsc = RSCodec(4)
 
     h_len = len(header)//2
     while True:
@@ -67,7 +72,7 @@ def decode(audio_queue, raw_queue):
         for b in range(0, len(raw), 1):
             seq = raw[b:b+h_len]
             errors  = count_biterrors(seq, bytes.fromhex(header))
-            if(errors < h_len*8//2):
+            if(errors < h_len*8//4):
                 frame_index = b
                 break
         if frame_index >= 0:
@@ -76,6 +81,8 @@ def decode(audio_queue, raw_queue):
             print(frame_index, len(packet), len(next))
             next = raw[frame_index + h_len + msg_len:]
 
+            packet = bytes(rsc.decode(packet)[0])
+            
             for i in range(0, len(packet), frame_len):
                 try:
                     decoded = decoder.decode(packet[i:i+frame_len], framesize)
